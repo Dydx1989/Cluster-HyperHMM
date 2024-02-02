@@ -3,7 +3,7 @@ Hypercubic Inference for Large-Scale Genomic Data.
 Cluster-HyperHMM is an extension of HyperHMM [1], from https://academic.oup.com/bioinformatics/article/39/1/btac803/6895098. 
 ![image](https://github.com/Dydx1989/Cluster-HyperHMM/assets/53042175/feb73be9-258f-4885-96b4-485dd57ce505)
 
-The extendent version is presented below:
+## The extendent version is presented below:
 
 ![image](https://github.com/Dydx1989/Cluster-HyperHMM/assets/53042175/b0fabdb0-07e5-42fb-b2db-85b2f6ecfc26)
 
