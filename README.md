@@ -5,7 +5,8 @@ Cluster-HyperHMM is an extension of HyperHMM [1], from https://academic.oup.com/
 
 The extendent version is presented below:
 
-![image](https://github.com/Dydx1989/Cluster-HyperHMM/assets/53042175/916582da-60be-45cb-a254-8af09735d922)
+![image](https://github.com/Dydx1989/Cluster-HyperHMM/assets/53042175/b0fabdb0-07e5-42fb-b2db-85b2f6ecfc26)
+
 
 
 
