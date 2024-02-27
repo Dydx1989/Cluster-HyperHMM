@@ -2,9 +2,9 @@
 # Cluster-HyperHMM Steps
  ### Data preprocessing stage: See synthetic example and real-life data on K. Pneumania below. 
 1. Read in binary matrix (**AMR_binary.csv: isolate and genes matrix**)
-2. Perform clustering toget optimal number of cluster to generate  **Gene_cluster.csv:Cluster and Genes matrix**
-3. Produce two "working" datasets in txt – cross-sectional (ie just cluster sets) and phylogenetic (estimating a relationship by similarity between bitstring): **Cross_sectional_data.txt** and **phylogeny_data.txt**
-4. Construct transition sets for HyperHMM – for cross-sectional this is just 0000 -> (each observation); for phylogenetic it's (estimated) ancestor -> descendant pairs
+2. Perform clustering toget optimal number of cluster to generate  **Gene_cluster.csv:Cluster and Genes matrix**. The R codes is **Cluster_code.R**
+3. Produce two "working" datasets in txt – cross-sectional (ie just cluster sets) and phylogenetic (estimating a relationship by similarity between bitstring): **Cross_sectional_data.txt** and **phylogeny_data.txt**. The R codes  are **Cross_sectiona-data.R** and **Phylogenetic-Estimation.R**
+4. Construct transition sets for HyperHMM – for cross-sectional this is just 0000 -> (each observation); for phylogenetic it's (estimated) ancestor -> descendant pairs. 
 5. Run HyperHMM on both cross-sectional and phylogenetic transition sets and plot output of each, and summary matrix folding both outputs together
 ##  HyperHMM Figure Illustration
 Hypercubic Inference for Large-Scale Genomic Data.
