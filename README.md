@@ -5,7 +5,7 @@
 2. Perform clustering toget optimal number of cluster to generate  **Gene_cluster.csv:Cluster and Genes matrix**. The R codes is **Cluster_code.R**
 3. Produce two "working" datasets in txt – cross-sectional (ie just cluster sets) and phylogenetic (estimating a relationship by similarity between bitstring): **Cross_sectional_data.txt** and **phylogeny_data.txt**. The R codes  are **Cross_sectiona-data.R** and **Phylogenetic-Estimation.R**
 4. Construct transition sets for HyperHMM – for cross-sectional this is just 0000 -> (each observation); for phylogenetic it's (estimated) ancestor -> descendant pairs. 
-5. Run HyperHMM on both cross-sectional and phylogenetic transition sets and plot output of each, and summary matrix folding both outputs together
+5. Run HyperHMM on both cross-sectional and phylogenetic transition sets and plot output of each, and summary matrix folding both outputs together. Rcode for cross and phylogeny is **Run HyperHMM on both cross-sectional and phylogenetic.r** and for cross-continents comparison. 
 ##  HyperHMM Figure Illustration
 Hypercubic Inference for Large-Scale Genomic Data.
 Cluster-HyperHMM is an extension of HyperHMM [1], from https://academic.oup.com/bioinformatics/article/39/1/btac803/6895098. 
