@@ -8,7 +8,7 @@ Cluster-HyperHMM is an extension of HyperHMM [1], from https://academic.oup.com/
 ### The extendent version of HyperHMM (Cluster-HyperHMM) is presented below:
 
 ![image](https://github.com/Dydx1989/Cluster-HyperHMM/assets/53042175/b0fabdb0-07e5-42fb-b2db-85b2f6ecfc26)
-
+# Preprocessing steps from Raw data
 ## Synthetic Illustration of Data Preprocessing in Cluster-HyperHMM 
 
 ```{r}
