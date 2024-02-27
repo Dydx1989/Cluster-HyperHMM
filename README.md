@@ -1,4 +1,11 @@
 # Cluster-HyperHMM
+# Cluster-HyperHMM Steps
+ ### Data preprocessing stage: See synthetic example and real-life data on K. Pneumania below. 
+1. Read in binary matrix (**AMR_binary.csv: isolate and genes matrix**)
+2. Perform clustering toget optimal number of cluster to generate  **Gene_cluster.csv:Cluster and Genes matrix**
+3. Produce two "working" datasets in txt – cross-sectional (ie just cluster sets) and phylogenetic (estimating a relationship by similarity between bitstring): **Cross_sectional_data.txt** and **phylogeny_data.txt**
+4. Construct transition sets for HyperHMM – for cross-sectional this is just 0000 -> (each observation); for phylogenetic it's (estimated) ancestor -> descendant pairs
+5. Run HyperHMM on both cross-sectional and phylogenetic transition sets and plot output of each, and summary matrix folding both outputs together
 ##  HyperHMM Figure Illustration
 Hypercubic Inference for Large-Scale Genomic Data.
 Cluster-HyperHMM is an extension of HyperHMM [1], from https://academic.oup.com/bioinformatics/article/39/1/btac803/6895098. 
@@ -8,7 +15,7 @@ Cluster-HyperHMM is an extension of HyperHMM [1], from https://academic.oup.com/
 ### The extendent version of HyperHMM (Cluster-HyperHMM) is presented below:
 
 ![image](https://github.com/Dydx1989/Cluster-HyperHMM/assets/53042175/b0fabdb0-07e5-42fb-b2db-85b2f6ecfc26)
-# Preprocessing steps from Raw data
+# Preprocessing steps for Raw data to form Binary Matrix 
 ## Synthetic Illustration of Data Preprocessing in Cluster-HyperHMM 
 
 ```{r}
@@ -48,9 +55,9 @@ MM
 ## [5,]    1    0    1
 ```
 
-## Klebsiella pneumnonia Data Preprocessing in Cluster-HyperHMM 
+## Klebsiella pneumnonia Data Preprocessing in Cluster-HyperHMM (Raw:BIGSdb_3708197_1272842014_68324.csv)
 
-###   Data Preprocessing: Stage 1
+###   Data Preprocessing
 
 ### Subset out everything with a nonzero entry in the resistance info column
 
@@ -63,7 +70,7 @@ MM
 
 ![image](https://github.com/Dydx1989/Cluster-HyperHMM/assets/53042175/efa846cd-b20b-4570-b78e-2a07699dfb49)
 
-###   Data Preprocessing: Stage 2
+###   Data Preprocessing 
 In this stage, we remove all the isolates with completely empty cells and retain only isolates with nonempty cells
 
 
