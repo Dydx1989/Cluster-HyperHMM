@@ -29,22 +29,22 @@ cube.read.longitudinal = function(fname) {
 }
 
 
-### ovarian cancer dataset
-cgh.mat = cube.read.crosssectional("Data/Cross_sectional_data.txt")
-fit.cgh = HyperHMM(cgh.mat)
-plot.cgh = plot.standard(fit.cgh)
+### Cross-sectional: Klebsiella pneumonia dataset (CKp)
+CKp.mat = cube.read.crosssectional("Data/Cross_sectional_data.txt")
+fit.CKp = HyperHMM(cgh.mat)
+plot.CKp = plot.standard(fit.cgh)
 
-### TB dataset
-tb.list = cube.read.longitudinal("Data//phylogeny_data.txt")
-fit.tb = HyperHMM(tb.list$to, initialstates=tb.list$from, nboot=1)
-plot.tb = plot.standard(fit.tb)
+### Phylogeny: Klebsiella pneumonia dataset (PKp)
+PKp.list = cube.read.longitudinal("Data//phylogeny_data.txt")
+fit.PKp = HyperHMM(tb.list$to, initialstates=tb.list$from, nboot=1)
+plot.PKp = plot.standard(fit.tb)
 #png("newplot1.png",width=1200, height=700)
 # put these more specialised plots together
-#ggarrange(plot.cgh, plot.tb,ncol = 2,nrow = 2, vjust = 15)
+#ggarrange(plot.CKp, plot.PKp,ncol = 2,nrow = 2, vjust = 15)
 #dev.off()
 
-plot1=plot.hypercube.flux(fit.cgh)
-plot2=plot.hypercube.flux(fit.tb)
+plot1=plot.hypercube.flux(fit.CKp)
+plot2=plot.hypercube.flux(fit.PKp)
 
 #png("cross_phylo_plot.png",width=1200, height=750)
 
