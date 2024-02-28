@@ -36,8 +36,8 @@ plot.CKp = plot.standard(fit.CKp)
 
 ### Phylogeny: Klebsiella pneumonia dataset (PKp)
 PKp.list = cube.read.longitudinal("Data//phylogeny_data.txt")
-fit.PKp = HyperHMM(PKp.list$to, initialstates=tb.list$from, nboot=1)
-plot.PKp = plot.standard(fit.tb)
+fit.PKp = HyperHMM(PKp.list$to, initialstates=PKp.list$from, nboot=1)
+plot.PKp = plot.standard(fit.PKp)
 #png("newplot1.png",width=1200, height=700)
 # put these more specialised plots together
 #ggarrange(plot.CKp, plot.PKp,ncol = 2,nrow = 2, vjust = 15)
