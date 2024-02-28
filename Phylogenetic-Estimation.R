@@ -144,6 +144,7 @@ for (i in 1:nrow(sorted_pairs)) {
 
 ## Save the data as phylogeny_data in txt for HyperHMM 
 # set your working directory or find your pc director getwd() and setwd("C:\\file\\")
+# for my PC use setwd("C:\\Users")
 output_file <- "C:\\Users\\phylogeny_data.txt"
 
 # Write the sorted pairs to the text file
