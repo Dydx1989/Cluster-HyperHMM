@@ -31,12 +31,12 @@ cube.read.longitudinal = function(fname) {
 
 ### Cross-sectional: Klebsiella pneumonia dataset (CKp)
 CKp.mat = cube.read.crosssectional("Data/Cross_sectional_data.txt")
-fit.CKp = HyperHMM(cgh.mat)
-plot.CKp = plot.standard(fit.cgh)
+fit.CKp = HyperHMM(CKp.mat)
+plot.CKp = plot.standard(fit.CKp)
 
 ### Phylogeny: Klebsiella pneumonia dataset (PKp)
 PKp.list = cube.read.longitudinal("Data//phylogeny_data.txt")
-fit.PKp = HyperHMM(tb.list$to, initialstates=tb.list$from, nboot=1)
+fit.PKp = HyperHMM(PKp.list$to, initialstates=tb.list$from, nboot=1)
 plot.PKp = plot.standard(fit.tb)
 #png("newplot1.png",width=1200, height=700)
 # put these more specialised plots together
