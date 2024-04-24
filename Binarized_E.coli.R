@@ -27,7 +27,7 @@ dim(binarized_data_filtered)
 # Calculate the percentage of presence for each gene
 presence_percent <- colMeans(binarized_data_filtered)
 
-# Identify genes that are present in at least 70% of the samples
+# Identify genes that are present in at least between 60%-70% of the samples
 genes_to_keep <- colnames(binarized_data_filtered)[presence_percent >= 0.67]
 # Subset the original data frame to retain only the selected genes
 binarized_data_filtered <- binarized_data_filtered[, genes_to_keep]
