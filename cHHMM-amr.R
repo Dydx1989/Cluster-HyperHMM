@@ -15,12 +15,16 @@ AMR.data = read.csv("AMR_binary.csv", row.names=1)
 clustered.structure = cHHMM.cluster.features(AMR.data,method="Gap")
 
 ### uncomment these for other test cases
-### either
-# other.data = t(read.csv("c4-curated.csv", header=FALSE))
-### or
-# other.data = t(read.csv("jallow_dataset_binary_with2s.csv"))
-# other.data[other.data==2] = 1
-# clustered.structure = cHHMM.cluster.features(other.data, n.boot = 10)
+other.data = t(read.csv("jallow_dataset_binary_with2s.csv"))
+# other.data = other.data[2:nrow(other.data),]
+
+other.data = other.data[2:nrow(other.data),1:200]
+ 
+class(other.data) = "numeric"
+other.data[other.data==2] = 1
+other.data = as.data.frame(other.data)
+
+clustered.structure = cHHMM.cluster.features(other.data, method="Gap")
 
 
 ## Use plot for Gap method without Monte Carlo (“bootstrap”) samples (B)

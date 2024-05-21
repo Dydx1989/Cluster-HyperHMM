@@ -32,7 +32,7 @@ source("hypercube-plots.R")
 # take data, return named list with data and cluster assignments
 #method1: method="Gap"--Gap without Monte Carlo (Bootstrap) samples (Tibshirani et al.,2001)
 #method2: method="NbClust"--NbClust method (Charrad et al., 2014)
-cHHMM.cluster.features = function(binary_data,method="default",
+cHHMM.cluster.features = function(binary_data,method="Gap",
                                   max.clusters = 25) {
   
   # initialise return structure
