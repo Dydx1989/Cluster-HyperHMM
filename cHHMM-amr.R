@@ -65,7 +65,7 @@ pheatmap(matrix.comp$results_matrix, show_rownames = TRUE,cluster_cols=F,cluster
 ############## Optimal cluster: NbClust
 
 # NbClust method without Monte Carlo (“bootstrap”) samples  Charrad et al., 2014
-source("cHHMM_KD_methods.R")
+
 # we must have source data with observations as rows and features as columns
 # there was still specific code assuming 8 features (e.g. x+7) -- I think I have removed this
 # applying the code to the other cases below throws errors
@@ -76,15 +76,9 @@ source("cHHMM_KD_methods.R")
 # NB with different seeds the AMR case sometimes throws an error too
 #Error in if (mm < k) stop("more cluster centers than distinct data points.") : 
 #  missing value where TRUE/FALSE needed
-AMR.data = read.csv("AMR_binary.csv", row.names=1)
+
 clustered.structure = cHHMM.cluster.features(AMR.data ,method="NbClust")
-### uncomment these for other test cases
-### either
-# other.data = t(read.csv("c4-curated.csv", header=FALSE))
-### or
-# other.data = t(read.csv("jallow_dataset_binary_with2s.csv"))
-# other.data[other.data==2] = 1
-# clustered.structure = cHHMM.cluster.features(other.data, n.boot = 10)
+clustered.structure = cHHMM.cluster.features(other.data ,method="NbClust")
 
 ## NbClust method plot
 
