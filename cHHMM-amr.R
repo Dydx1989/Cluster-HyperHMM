@@ -1,5 +1,5 @@
 #Gap method without Monte Carlo (“bootstrap”) samples (B)
-source("cHHMM_KD_methods.R")
+source("cHHMM.R")
 
 # we must have source data with observations as rows and features as columns
 # there was still specific code assuming 8 features (e.g. x+7) -- I think I have removed this
