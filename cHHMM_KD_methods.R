@@ -393,6 +393,77 @@ cHHMM.phylogenetic.estimation = function(cluster.structure) {
 }
 
 
+# produce comparison matrix for different approaches
+cHHMM.matrix.comparison = function(fitted.obj.1, fitted.obj.2) {
+  
+  r.list = list()
+  
+  A <- matrix(fitted.obj.1$stats$mean, 
+              nrow = max(fitted.obj.1$stats$feature), 
+              ncol = max(fitted.obj.1$stats$order), byrow = TRUE)
+  # Print the matrix
+  #print(matrix_cross)
+  
+  PAij = matrix(0,nrow =nrow(A),ncol =ncol(A))
+  for(i in 1:nrow(A)) {
+    for(j in 1:nrow(A)) {
+      for(ti in 1:nrow(A)) {
+        for(tj in 1:nrow(A)) {
+          elem = A[i,ti]*A[j,tj] #/(1-A[j,ti])
+          if(ti < tj & i != j & !is.na(elem)) {
+            #print(paste(c(i, "@", ti, "&", j, "@", tj, elem), collapse=" "))
+            PAij[i,j] = PAij[i,j] + elem
+          }
+        }
+      }
+    }
+  }
+  
+  num_rows <- nrow(PAij)
+  num_cols <- ncol(PAij)
+  rownames(PAij) <- as.character(1:num_rows)
+  colnames(PAij) <- as.character(1:num_cols)
+  #PAij
+  ### Phylogeny: Klebsiella pneumonia dataset (PKp)
+  
+  B <- matrix(fitted.obj.2$stats$mean, 
+              nrow = max(fitted.obj.2$stats$feature), 
+              ncol = max(fitted.obj.2$stats$order), byrow = TRUE)
+  # Print the matrix
+  #print(matrix_phylo)
+  
+  PBij =matrix(0,nrow =nrow(B),ncol =ncol(B))
+  for(i in 1:nrow(B)) {
+    for(j in 1:nrow(B)) {
+      for(ti in 1:nrow(B)) {
+        for(tj in 1:nrow(B)) {
+          elem = B[i,ti]*B[j,tj] #/(1-A[j,ti])
+          if(ti < tj & i != j & !is.na(elem)) {
+            #print(paste(c(i, "@", ti, "&", j, "@", tj, elem), collapse=" "))
+            PBij[i,j] = PBij[i,j] + elem
+          }
+        }
+      }
+    }
+  }
+  
+  num_rows <- nrow(PBij)
+  num_cols <- ncol(PBij)
+  rownames(PBij) <- as.character(1:num_rows)
+  colnames(PBij) <- as.character(1:num_cols)
+  #PBij
+  
+  
+  result_matrix=(PBij+PAij)/2
+  num_rows <- nrow(result_matrix)
+  num_cols <- ncol(result_matrix)
+  rownames(result_matrix) <- as.character(1:num_rows)
+  colnames(result_matrix) <- as.character(1:num_cols)
+  # Print the result_matrix
+  r.list[["results_matrix"]] = result_matrix
+  
+  return(r.list)
+}
 
 
 
