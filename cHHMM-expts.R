@@ -12,7 +12,7 @@ source("cHHMM.R")
 #Error in if (mm < k) stop("more cluster centers than distinct data points.") : 
 #  missing value where TRUE/FALSE needed
 
-expt = "malaria"
+expt = "AMR"
 sf = 2
 
 if(expt == "AMR") {
@@ -131,10 +131,11 @@ g.cs = as.ggplot(pheatmap(comp.cs$results_matrix, show_rownames = TRUE,cluster_c
 g.phy = as.ggplot(pheatmap(comp.phy$results_matrix, show_rownames = TRUE,cluster_cols=F,cluster_rows=F,
                                   cex=1,clustering_distance_rows = "manhattan", cex=1,
                                   clustering_distance_cols = "manhattan", clustering_method = "complete",border_color = TRUE,display_numbers = T))
-g.matrices = ggarrange(g.any.cs.phys,
+g.matrices = ggarrange(g.any.cs.phy,
                        g.cs,
                        g.phy,
-                       labels = c("A. Any cs v phy", "B. cs any vs maj", "C. phy any vs maj"))
+                       g.cids,
+                       labels = c("A. Any cs v phy", "B. cs any vs maj", "C. phy any vs maj", ""))
 
 png(paste0(expt, "-comparison-matrices.png"), width=1000*sf, height=600*sf, res=72*sf)
 print(g.matrices)
@@ -145,23 +146,11 @@ dev.off()
 
 # NbClust method without Monte Carlo (“bootstrap”) samples  Charrad et al., 2014
 
-# we must have source data with observations as rows and features as columns
-# there was still specific code assuming 8 features (e.g. x+7) -- I think I have removed this
-# applying the code to the other cases below throws errors
-# we must allow flexibility in cluster assignment e.g. a single member feature gives me a 1 vs a majority of member features vs ...?
-# with different seeds the clustering gives dramatically different results!
-
-# this AMR cade study should reproduce, but the other examples below throw errors
-# NB with different seeds the AMR case sometimes throws an error too
-#Error in if (mm < k) stop("more cluster centers than distinct data points.") : 
-#  missing value where TRUE/FALSE needed
-
-clustered.structure = cHHMM.cluster.features(AMR.data ,method="NbClust")
-clustered.structure = cHHMM.cluster.features(other.data ,method="NbClust")
+clustered.structure.alt = cHHMM.cluster.features(src.data ,method="NbClust")
 
 ## NbClust method plot
 
-sd_index <- data.frame((clustered.structure[["gap_stat"]])$All.index)
+sd_index <- data.frame((clustered.structure.alt[["gap_stat"]])$All.index)
 # Cluster numbers
 c_numbers <- 2:20
 # Create data frame
@@ -172,7 +161,7 @@ colnames(cluster_df )[1]="sd_index"
 # Find the index of the minimum cluster value
 min_index <- which.min(cluster_df$sd_index)
 # Plot
-ggplot(data = cluster_df, aes(x = c_numbers, y = sd_index)) +
+g.nbclust = ggplot(data = cluster_df, aes(x = c_numbers, y = sd_index)) +
   geom_point(size = 4) +  # Increase point size
   geom_line(size = 1.5) +  # Increase line size
   geom_point(data = cluster_df[min_index, ], aes(x = c_numbers, y = sd_index, color = "Optimal cluster"), size = 6) +  # Circle the minimum cluster value with blue color
@@ -183,38 +172,90 @@ ggplot(data = cluster_df, aes(x = c_numbers, y = sd_index)) +
   #scale_color_manual(values = c("Optimal cluster" = "blue")) +  # Manual legend for color
   theme_minimal() +
   theme(
-    plot.background = element_rect(fill = "lightblue"),  # Set plot background color
+    plot.background = element_rect(fill = "white"),  # Set plot background color
     panel.background = element_rect(fill = "white"),     # Set panel background color
     panel.grid.major = element_line(color = "gray"),      # Set major grid line color
     panel.grid.minor = element_blank()                    # Remove minor grid lines
   )
 
-
-
+png(paste0(expt, "-nbclust.png"), width=400*sf, height=300*sf, res=72*sf)
+print(g.nbclust)
+dev.off()
 
 ####
-fviz_cluster(clustered.structure[["km_res"]], data = clustered.structure[["data"]],
+png(paste0(expt, "-alt-clusters.png"), width=600*sf, height=400*sf, res=72*sf)
+print(
+fviz_cluster(clustered.structure.alt[["km_res"]], data = clustered.structure.alt[["data"]],
              ellipse.type = "convex",
              palette = "viridis",
              ggtheme = theme_minimal())
+)
+dev.off()
 
-cross.sectional.obs = cHHMM.cross.sectional(clustered.structure)
-phylogenetic.obs = cHHMM.phylogenetic.estimation(clustered.structure)
+ids = clustered.structure.alt$cluster_tab
+df.plot = data.frame()
+levels = rep(0, ncol(ids))
+for(i in 1:nrow(ids)) {
+  cid = which(ids[i,] == 1)
+  df.plot = rbind(df.plot, data.frame(cluster=cid, level=levels[cid], name=rownames(ids)[i]))
+  levels[cid] = levels[cid]+1
+}
+g.cids.alt = ggplot(df.plot, aes(x=cluster, y=level, label=name)) + geom_text() +
+  scale_x_continuous(breaks=1:ncol(ids)) + scale_y_continuous(breaks=NULL) +
+  labs(x = "Cluster ID", y = "") + theme_minimal()
+png(paste0(expt, "-alt-cluster-IDs.png"), width=600*sf, height=300*sf, res=72*sf)
+print(g.cids.alt)
+dev.off()
 
-fit.cross.sectional = HyperHMM(cross.sectional.obs$cross_sectional_data)
+cross.sectional.obs.alt = cHHMM.cross.sectional(clustered.structure.alt)
+phylogenetic.obs.alt = cHHMM.phylogenetic.estimation(clustered.structure.alt)
 
-fit.phylogenetic = HyperHMM(phylogenetic.obs$dests, initialstates = phylogenetic.obs$srcs)
+cross.sectional.obs.majority.alt = cHHMM.cross.sectional(clustered.structure.alt, occupancy="majority")
+phylogenetic.obs.majority.alt = cHHMM.phylogenetic.estimation(clustered.structure.alt, occupancy="majority")
 
-ggarrange( plot.standard(fit.cross.sectional),
-           plot.standard(fit.phylogenetic), nrow=2 )
+fit.cross.sectional.alt = HyperHMM(cross.sectional.obs.alt$cross_sectional_data, nboot = 2)
+fit.phylogenetic.alt = HyperHMM(phylogenetic.obs.alt$dests, initialstates = phylogenetic.obs.alt$srcs, nboot = 2)
+fit.cross.sectional.majority.alt = HyperHMM(cross.sectional.obs.majority.alt$cross_sectional_data, nboot = 2)
+fit.phylogenetic.majority.alt = HyperHMM(phylogenetic.obs.majority.alt$dests, initialstates = phylogenetic.obs.majority.alt$srcs, nboot = 2)
 
-matrix.comp = cHHMM.matrix.comparison(fit.cross.sectional, fit.phylogenetic)
+g.fluxes.alt =  ggarrange(
+  plot.hypercube.flux(fit.cross.sectional.alt, thresh = 0.02),
+  plot.hypercube.flux(fit.phylogenetic.alt, thresh=0.02),
+  labels=c("A. CS", "B. Phy"))
+png(paste0(expt, "-alt-out-fluxes.png"), width=600*sf, height=400*sf, res=72*sf)
+print(g.fluxes.alt)
+dev.off()
 
-pheatmap(matrix.comp$results_matrix, show_rownames = TRUE,cluster_cols=F,cluster_rows=F,
-         cex=1,clustering_distance_rows = "manhattan", cex=1,
-         clustering_distance_cols = "manhattan", clustering_method = "complete",border_color = TRUE,display_numbers = T)
+g.all.alt = ggarrange( plot.standard(fit.cross.sectional.alt),
+                   plot.standard(fit.phylogenetic.alt), 
+                   plot.standard(fit.cross.sectional.majority.alt),
+                   plot.standard(fit.phylogenetic.majority.alt),
+                   nrow=2, ncol=2,
+                   labels=c("A. CS any", "B. Phy any", "C. CS maj", "D. Phy maj"))
+png(paste0(expt, "-alt-out-all.png"), width=1600*sf, height=800*sf, res=72*sf)
+print(g.all.alt)
+dev.off()
 
+comp.any.cs.phy.alt = cHHMM.matrix.comparison(fit.cross.sectional.alt, fit.phylogenetic.alt)
+comp.cs.alt = cHHMM.matrix.comparison(fit.cross.sectional.alt, fit.cross.sectional.majority.alt)
+comp.phy.alt = cHHMM.matrix.comparison(fit.phylogenetic.alt, fit.phylogenetic.majority.alt)
 
+g.any.cs.phy.alt = as.ggplot(pheatmap(comp.any.cs.phy.alt$results_matrix, show_rownames = TRUE,cluster_cols=F,cluster_rows=F,
+                                  cex=1,clustering_distance_rows = "manhattan", cex=1,
+                                  clustering_distance_cols = "manhattan", clustering_method = "complete",border_color = TRUE,display_numbers = T))
+g.cs.alt = as.ggplot(pheatmap(comp.cs.alt$results_matrix, show_rownames = TRUE,cluster_cols=F,cluster_rows=F,
+                          cex=1,clustering_distance_rows = "manhattan", cex=1,
+                          clustering_distance_cols = "manhattan", clustering_method = "complete",border_color = TRUE,display_numbers = T))
+g.phy.alt = as.ggplot(pheatmap(comp.phy.alt$results_matrix, show_rownames = TRUE,cluster_cols=F,cluster_rows=F,
+                           cex=1,clustering_distance_rows = "manhattan", cex=1,
+                           clustering_distance_cols = "manhattan", clustering_method = "complete",border_color = TRUE,display_numbers = T))
+g.matrices.alt = ggarrange(g.any.cs.phy.alt,
+                       g.cs.alt,
+                       g.phy.alt,
+                       g.cids.alt,
+                       labels = c("A. Any cs v phy", "B. cs any vs maj", "C. phy any vs maj", ""))
 
-
+png(paste0(expt, "-alt-comparison-matrices.png"), width=1000*sf, height=600*sf, res=72*sf)
+print(g.matrices.alt)
+dev.off()
 
