@@ -138,7 +138,7 @@ cHHMM.cluster.features = function(binary_data,method="Gap",
 }
 
 # take clustering structure and return set of cross-sectional observations
-cHHMM.cross.sectional = function(cluster.structure) {
+cHHMM.cross.sectional = function(cluster.structure, occupancy="any") {
   r.list = list()
   ##  Binary Matrix (MM) generated from (AMR_binary_data=Isolate*gene) (N1) and ("Gene_cluster=Gene *Clustes) (N2)
   Final_data= cluster.structure[["data"]]   #read.csv("AMR_binary.csv", row.names=1)
@@ -157,9 +157,24 @@ cHHMM.cross.sectional = function(cluster.structure) {
   
   MM=matrix(NA,nrow =nrow(N1),ncol =ncol(N2))
   #dim(MM)
+  # loop through rows (isolates) in original data 
   for(i in 1:nrow(N1)) {
+    # loop through columns (clusters) in cluster mapping
     for(j in 1:ncol(N2)) {
-      MM[i,j]=ifelse(any(N1[i,]&N2[,j]==1),1,0)
+      # count number of members of this cluster
+      num.members = sum(N2[,j])
+      # impose occupancy requirements
+      if(occupancy == "any") { 
+        required = 1
+      } else {
+        required = num.members/2
+      }
+      # count number of members in this record
+      hits = length(which(N1[i,]==1 & N2[,j]==1))
+      # assign occupancy accordingly
+      MM[i,j] = ifelse(hits >= required, 1, 0)
+      # if this isolate's row shares any 1s with this cluster's column, assign a 1
+      #MM[i,j]=ifelse(any(N1[i,]&N2[,j]==1),1,0)
     }
   }
   
@@ -189,10 +204,10 @@ String_barcode <- function(x) {
 }
 
 # take clustered structure and return estimated phylogeny and transitions from ancestral reconstruction
-cHHMM.phylogenetic.estimation = function(cluster.structure) {
+cHHMM.phylogenetic.estimation = function(cluster.structure, occupancy="any") {
   
   r.list = list()
-  cross.sectional = cHHMM.cross.sectional(cluster.structure)
+  cross.sectional = cHHMM.cross.sectional(cluster.structure, occupancy)
   full_data = cross.sectional[["cross_sectional_data"]] # IGJ read.csv("Cross_sectional_data.csv",row.names = 1)
   #head(Realife_Kp)
   # Check if all values in the data frame are 0s or 1s
