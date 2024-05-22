@@ -12,11 +12,11 @@ source("cHHMM.R")
 #Error in if (mm < k) stop("more cluster centers than distinct data points.") : 
 #  missing value where TRUE/FALSE needed
 
-expt = "AMR"
+expt = "malaria"
+sf = 2
 
 if(expt == "AMR") {
-  AMR.data = read.csv("AMR_binary.csv", row.names=1)
-  clustered.structure = cHHMM.cluster.features(AMR.data,method="Gap")
+  src.data = read.csv("AMR_binary.csv", row.names=1)
 } else if(expt == "synthetic") {
   set.seed(1)
   nr = 180
@@ -31,35 +31,63 @@ if(expt == "AMR") {
       synth.data[i,] = c(rbinom(nc/3, 1, 0.5), rbinom(nc/3, 1, 0.9), rbinom(nc/3, 1, 0.1))
     }
   }
-   synth.data = as.data.frame(t(synth.data))
-   clustered.structure = cHHMM.cluster.features(synth.data,method="Gap")
-} else {
+  src.data = as.data.frame(t(synth.data))
+} else if(expt == "malaria") {
   other.data = t(read.csv("jallow_dataset_binary_with2s.csv"))
   other.data = other.data[2:nrow(other.data),1:200]
   
   class(other.data) = "numeric"
   other.data[other.data==2] = 1
-  other.data = as.data.frame(other.data)
-  
-  clustered.structure = cHHMM.cluster.features(other.data, method="Gap")
+  src.data = as.data.frame(other.data)
 }
 
 ## Use plot for Gap method without Monte Carlo (“bootstrap”) samples (B)
 #plot((clustered.structure[["gap_stat"]]))
 
+png(paste0(expt, "-data.png"), width=600*sf, height=400*sf, res=72*sf)
+print(pheatmap(src.data))
+dev.off()
+
+clustered.structure = cHHMM.cluster.features(src.data,method="Gap")
+
 first_max_index <- which(diff(sign(diff(clustered.structure[["gap_stat"]]$Gap))) == -2)[1]+1
 # Plot the gap statistic using ggplot
-ggplot(clustered.structure[["gap_stat"]], aes(x = 1:length(Gap), y = Gap)) +
-  geom_line(color = "blue") + 
-  geom_point(color = "blue") +
-  geom_vline(xintercept = first_max_index, color = "red", linetype = "dashed") +
-  labs(x = "Number of Clusters", y = "Gap Statistic", title = "Gap Statistic vs. Number of Clusters")
+png(paste0(expt, "-gap-stat.png"), width=400*sf, height=300*sf, res=72*sf)
+print(
+  ggplot(clustered.structure[["gap_stat"]], aes(x = 1:length(Gap), y = Gap)) +
+    geom_line(color = "blue") + 
+    geom_point(color = "blue") +
+    geom_vline(xintercept = first_max_index, color = "red", linetype = "dashed") +
+    labs(x = "Number of Clusters", y = "Gap Statistic", title = "Gap Statistic vs. Number of Clusters") 
+)
+dev.off()
+
+# plot cluster IDs
+
+ids = clustered.structure$cluster_tab
+df.plot = data.frame()
+levels = rep(0, ncol(ids))
+for(i in 1:nrow(ids)) {
+  cid = which(ids[i,] == 1)
+  df.plot = rbind(df.plot, data.frame(cluster=cid, level=levels[cid], name=rownames(ids)[i]))
+  levels[cid] = levels[cid]+1
+}
+g.cids = ggplot(df.plot, aes(x=cluster, y=level, label=name)) + geom_text() +
+  scale_x_continuous(breaks=1:ncol(ids)) + scale_y_continuous(breaks=NULL) +
+  labs(x = "Cluster ID", y = "") + theme_minimal()
+png(paste0(expt, "-cluster-IDs.png"), width=600*sf, height=300*sf, res=72*sf)
+print(g.cids)
+dev.off()
 
 ####
-fviz_cluster(clustered.structure[["km_res"]], data = clustered.structure[["data"]],
-             ellipse.type = "convex",
-             palette = "viridis",
-             ggtheme = theme_minimal())
+png(paste0(expt, "-clusters.png"), width=600*sf, height=400*sf, res=72*sf)
+print(
+  fviz_cluster(clustered.structure[["km_res"]], data = clustered.structure[["data"]],
+               ellipse.type = "convex",
+               palette = "viridis",
+               ggtheme = theme_minimal())
+)
+dev.off()
 
 cross.sectional.obs = cHHMM.cross.sectional(clustered.structure)
 phylogenetic.obs = cHHMM.phylogenetic.estimation(clustered.structure)
@@ -72,21 +100,33 @@ fit.phylogenetic = HyperHMM(phylogenetic.obs$dests, initialstates = phylogenetic
 fit.cross.sectional.majority = HyperHMM(cross.sectional.obs.majority$cross_sectional_data, nboot = 2)
 fit.phylogenetic.majority = HyperHMM(phylogenetic.obs.majority$dests, initialstates = phylogenetic.obs.majority$srcs, nboot = 2)
 
-plot.hypercube.flux(fit.cross.sectional, thresh = 0.02)
-plot.hypercube.flux(fit.phylogenetic, thresh=0.02)
+g.fluxes =  ggarrange(
+  plot.hypercube.flux(fit.cross.sectional, thresh = 0.02),
+  plot.hypercube.flux(fit.phylogenetic, thresh=0.02),
+  labels=c("A. CS", "B. Phy"))
+png(paste0(expt, "-out-fluxes.png"), width=600*sf, height=400*sf, res=72*sf)
+print(g.fluxes)
+dev.off()
 
-ggarrange( plot.standard(fit.cross.sectional),
-           plot.standard(fit.phylogenetic), nrow=2 )
-
-ggarrange( plot.standard(fit.cross.sectional.majority),
-           plot.standard(fit.phylogenetic.majority), nrow=2 )
+g.all = ggarrange( plot.standard(fit.cross.sectional),
+           plot.standard(fit.phylogenetic), 
+           plot.standard(fit.cross.sectional.majority),
+           plot.standard(fit.phylogenetic.majority),
+           nrow=2, ncol=2,
+           labels=c("A. CS any", "B. Phy any", "C. CS maj", "D. Phy maj"))
+png(paste0(expt, "-out-all.png"), width=1600*sf, height=800*sf, res=72*sf)
+print(g.all)
+dev.off()
 
 matrix.comp = cHHMM.matrix.comparison(fit.cross.sectional, fit.phylogenetic)
 
-pheatmap(matrix.comp$results_matrix, show_rownames = TRUE,cluster_cols=F,cluster_rows=F,
-         cex=1,clustering_distance_rows = "manhattan", cex=1,
-         clustering_distance_cols = "manhattan", clustering_method = "complete",border_color = TRUE,display_numbers = T)
-
+png(paste0(expt, "-comparison-matrix.png"), width=600*sf, height=400*sf, res=72*sf)
+print(
+  pheatmap(matrix.comp$results_matrix, show_rownames = TRUE,cluster_cols=F,cluster_rows=F,
+           cex=1,clustering_distance_rows = "manhattan", cex=1,
+           clustering_distance_cols = "manhattan", clustering_method = "complete",border_color = TRUE,display_numbers = T)
+)
+dev.off()
 
 
 ############## Optimal cluster: NbClust
