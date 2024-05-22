@@ -178,7 +178,7 @@ g.nbclust = ggplot(data = cluster_df, aes(x = c_numbers, y = sd_index)) +
     panel.grid.minor = element_blank()                    # Remove minor grid lines
   )
 
-png(paste0(expt, "-nbclust.png"), width=400*sf, height=300*sf, res=72*sf)
+png(paste0(expt, "-alt-nbclust.png"), width=400*sf, height=300*sf, res=72*sf)
 print(g.nbclust)
 dev.off()
 
