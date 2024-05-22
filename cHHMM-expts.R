@@ -12,7 +12,7 @@ source("cHHMM.R")
 #Error in if (mm < k) stop("more cluster centers than distinct data points.") : 
 #  missing value where TRUE/FALSE needed
 
-expt = "synthetic"
+expt = "AMR"
 
 if(expt == "AMR") {
   AMR.data = read.csv("AMR_binary.csv", row.names=1)
@@ -71,6 +71,9 @@ fit.cross.sectional = HyperHMM(cross.sectional.obs$cross_sectional_data, nboot =
 fit.phylogenetic = HyperHMM(phylogenetic.obs$dests, initialstates = phylogenetic.obs$srcs, nboot = 2)
 fit.cross.sectional.majority = HyperHMM(cross.sectional.obs.majority$cross_sectional_data, nboot = 2)
 fit.phylogenetic.majority = HyperHMM(phylogenetic.obs.majority$dests, initialstates = phylogenetic.obs.majority$srcs, nboot = 2)
+
+plot.hypercube.flux(fit.cross.sectional, thresh = 0.02)
+plot.hypercube.flux(fit.phylogenetic, thresh=0.02)
 
 ggarrange( plot.standard(fit.cross.sectional),
            plot.standard(fit.phylogenetic), nrow=2 )

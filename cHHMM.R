@@ -412,9 +412,11 @@ cHHMM.matrix.comparison = function(fitted.obj.1, fitted.obj.2) {
   
   r.list = list()
   
-  A <- matrix(fitted.obj.1$stats$mean, 
-              nrow = max(fitted.obj.1$stats$feature), 
-              ncol = max(fitted.obj.1$stats$order), byrow = TRUE)
+  stats.1 = fitted.obj.1$stats
+  stats.1 = stats.1[order(stats.1$feature, stats.1$order),]
+  A <- matrix(stats.1$mean, 
+              nrow = max(stats.1$feature), 
+              ncol = max(stats.1$order), byrow = TRUE)
   # Print the matrix
   #print(matrix_cross)
   
@@ -440,9 +442,11 @@ cHHMM.matrix.comparison = function(fitted.obj.1, fitted.obj.2) {
   #PAij
   ### Phylogeny: Klebsiella pneumonia dataset (PKp)
   
-  B <- matrix(fitted.obj.2$stats$mean, 
-              nrow = max(fitted.obj.2$stats$feature), 
-              ncol = max(fitted.obj.2$stats$order), byrow = TRUE)
+  stats.2 = fitted.obj.2$stats
+  stats.2 = stats.2[order(stats.2$feature, stats.2$order),]
+  B <- matrix(stats.2$mean, 
+              nrow = max(stats.2$feature), 
+              ncol = max(stats.2$order), byrow = TRUE)
   # Print the matrix
   #print(matrix_phylo)
   
