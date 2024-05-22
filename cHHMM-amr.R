@@ -11,21 +11,38 @@ source("cHHMM.R")
 # NB with different seeds the AMR case sometimes throws an error too
 #Error in if (mm < k) stop("more cluster centers than distinct data points.") : 
 #  missing value where TRUE/FALSE needed
-AMR.data = read.csv("AMR_binary.csv", row.names=1)
-clustered.structure = cHHMM.cluster.features(AMR.data,method="Gap")
 
-### uncomment these for other test cases
-other.data = t(read.csv("jallow_dataset_binary_with2s.csv"))
-# other.data = other.data[2:nrow(other.data),]
+expt = "synthetic"
 
-other.data = other.data[2:nrow(other.data),1:200]
- 
-class(other.data) = "numeric"
-other.data[other.data==2] = 1
-other.data = as.data.frame(other.data)
-
-clustered.structure = cHHMM.cluster.features(other.data, method="Gap")
-
+if(expt == "AMR") {
+  AMR.data = read.csv("AMR_binary.csv", row.names=1)
+  clustered.structure = cHHMM.cluster.features(AMR.data,method="Gap")
+} else if(expt == "synthetic") {
+  set.seed(1)
+  nr = 180
+  nc = 180
+  synth.data = matrix(0, nrow=nr, ncol=nc)
+  for(i in 1:nrow(synth.data)) {
+    if(i < nr/3) {
+      synth.data[i,] = c(rbinom(nc/3, 1, 0.9), rbinom(nc/3, 1, 0.1), rbinom(nc/3, 1, 0.5))
+    } else if(i < 2*nr/3) {
+      synth.data[i,] = c(rbinom(nc/3, 1, 0.1), rbinom(nc/3, 1, 0.5), rbinom(nc/3, 1, 0.9))
+    } else {
+      synth.data[i,] = c(rbinom(nc/3, 1, 0.5), rbinom(nc/3, 1, 0.9), rbinom(nc/3, 1, 0.1))
+    }
+  }
+   synth.data = as.data.frame(t(synth.data))
+   clustered.structure = cHHMM.cluster.features(synth.data,method="Gap")
+} else {
+  other.data = t(read.csv("jallow_dataset_binary_with2s.csv"))
+  other.data = other.data[2:nrow(other.data),1:200]
+  
+  class(other.data) = "numeric"
+  other.data[other.data==2] = 1
+  other.data = as.data.frame(other.data)
+  
+  clustered.structure = cHHMM.cluster.features(other.data, method="Gap")
+}
 
 ## Use plot for Gap method without Monte Carlo (“bootstrap”) samples (B)
 #plot((clustered.structure[["gap_stat"]]))
@@ -47,12 +64,19 @@ fviz_cluster(clustered.structure[["km_res"]], data = clustered.structure[["data"
 cross.sectional.obs = cHHMM.cross.sectional(clustered.structure)
 phylogenetic.obs = cHHMM.phylogenetic.estimation(clustered.structure)
 
-fit.cross.sectional = HyperHMM(cross.sectional.obs$cross_sectional_data, nboot = 2)
+cross.sectional.obs.majority = cHHMM.cross.sectional(clustered.structure, occupancy="majority")
+phylogenetic.obs.majority = cHHMM.phylogenetic.estimation(clustered.structure, occupancy="majority")
 
+fit.cross.sectional = HyperHMM(cross.sectional.obs$cross_sectional_data, nboot = 2)
 fit.phylogenetic = HyperHMM(phylogenetic.obs$dests, initialstates = phylogenetic.obs$srcs, nboot = 2)
+fit.cross.sectional.majority = HyperHMM(cross.sectional.obs.majority$cross_sectional_data, nboot = 2)
+fit.phylogenetic.majority = HyperHMM(phylogenetic.obs.majority$dests, initialstates = phylogenetic.obs.majority$srcs, nboot = 2)
 
 ggarrange( plot.standard(fit.cross.sectional),
            plot.standard(fit.phylogenetic), nrow=2 )
+
+ggarrange( plot.standard(fit.cross.sectional.majority),
+           plot.standard(fit.phylogenetic.majority), nrow=2 )
 
 matrix.comp = cHHMM.matrix.comparison(fit.cross.sectional, fit.phylogenetic)
 
