@@ -118,14 +118,26 @@ png(paste0(expt, "-out-all.png"), width=1600*sf, height=800*sf, res=72*sf)
 print(g.all)
 dev.off()
 
-matrix.comp = cHHMM.matrix.comparison(fit.cross.sectional, fit.phylogenetic)
+comp.any.cs.phy = cHHMM.matrix.comparison(fit.cross.sectional, fit.phylogenetic)
+comp.cs = cHHMM.matrix.comparison(fit.cross.sectional, fit.cross.sectional.majority)
+comp.phy = cHHMM.matrix.comparison(fit.phylogenetic, fit.phylogenetic.majority)
 
-png(paste0(expt, "-comparison-matrix.png"), width=600*sf, height=400*sf, res=72*sf)
-print(
-  pheatmap(matrix.comp$results_matrix, show_rownames = TRUE,cluster_cols=F,cluster_rows=F,
-           cex=1,clustering_distance_rows = "manhattan", cex=1,
-           clustering_distance_cols = "manhattan", clustering_method = "complete",border_color = TRUE,display_numbers = T)
-)
+g.any.cs.phy = as.ggplot(pheatmap(comp.any.cs.phy$results_matrix, show_rownames = TRUE,cluster_cols=F,cluster_rows=F,
+         cex=1,clustering_distance_rows = "manhattan", cex=1,
+         clustering_distance_cols = "manhattan", clustering_method = "complete",border_color = TRUE,display_numbers = T))
+g.cs = as.ggplot(pheatmap(comp.cs$results_matrix, show_rownames = TRUE,cluster_cols=F,cluster_rows=F,
+                                  cex=1,clustering_distance_rows = "manhattan", cex=1,
+                                  clustering_distance_cols = "manhattan", clustering_method = "complete",border_color = TRUE,display_numbers = T))
+g.phy = as.ggplot(pheatmap(comp.phy$results_matrix, show_rownames = TRUE,cluster_cols=F,cluster_rows=F,
+                                  cex=1,clustering_distance_rows = "manhattan", cex=1,
+                                  clustering_distance_cols = "manhattan", clustering_method = "complete",border_color = TRUE,display_numbers = T))
+g.matrices = ggarrange(g.any.cs.phys,
+                       g.cs,
+                       g.phy,
+                       labels = c("A. Any cs v phy", "B. cs any vs maj", "C. phy any vs maj"))
+
+png(paste0(expt, "-comparison-matrices.png"), width=1000*sf, height=600*sf, res=72*sf)
+print(g.matrices)
 dev.off()
 
 
