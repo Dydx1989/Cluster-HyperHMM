@@ -2,6 +2,11 @@
 
 Cluster large-scale data and perform evolutionary inference using HyperHMM https://academic.oup.com/bioinformatics/article/39/1/btac803/6895098 (code https://github.com/StochasticBiology/hypercube-hmm ).
 
+![image](https://github.com/user-attachments/assets/d14fadb2-9c8a-46bf-837f-1a12ed239f89)
+
+Overview
+---
+
 A pipeline will generally involve acquiring and pre-processing data, clustering, then HyperHMM inference. The latter two steps are case-general and are performed in `cHHMM-expts_Kleborate.R`. 
 
 Several case studies are included:
