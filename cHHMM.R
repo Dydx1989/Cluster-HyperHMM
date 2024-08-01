@@ -18,16 +18,22 @@ library(ape)
 ### New packages
 library(parameters)
 library(easystats)
-
-
 library(Rcpp)
 library(RcppArmadillo)
-sourceCpp("hyperhmm-r.cpp")
-
-# source code for plots
 library(ggpubr)
-source("hypercube-plots.R")
+library(git2r)
 
+# set to FALSE if you want to update HyperHMM from remote repo
+use.local.hyperHMM = TRUE
+if(use.local.hyperHMM == TRUE) {
+  sourceCpp("hyperhmm-r.cpp")
+  source("hypercube-plots.R")
+} else {
+  # pull and load most recent HyperHMM version
+  git2r::clone("https://github.com/StochasticBiology/hypercube-hmm", "./tmp/")
+  sourceCpp("tmp/hyperhmm-r.cpp")
+  source("tmp/hypercube-plots.R")
+}
 
 # take data, return named list with data and cluster assignments
 #method1: method="Gap"--Gap without Monte Carlo (Bootstrap) samples (Tibshirani et al.,2001)
