@@ -1,4 +1,16 @@
 # Cluster-HyperHMM
+
+Cluster large-scale data and perform evolutionary inference using HyperHMM https://academic.oup.com/bioinformatics/article/39/1/btac803/6895098 (code https://github.com/StochasticBiology/hypercube-hmm ).
+
+A pipeline will generally involve acquiring and pre-processing data, clustering, then HyperHMM inference. The latter two steps are case-general and are performed in `cHHMM-expts_Kleborate.R`. 
+
+Several case studies are included:
+
+* _Kleborate_. Data on *Klebsiella pneumoniae* genomes from around the world. `Download_and_curate-kleborate_data.R` downloads and curates these data. Run `cHHMM-expts_Kleborate.R` with `expt = "Kleborate"` (default) for this.
+* _Malaria_. Data on severe malaria progression in patients. Data is already included in `jallow_dataset_binary_with2s.csv`. Run `cHHMM-expts_Kleborate.R` with `expt = "malaria"` for this.
+
+The outputs will include illustrations of the cluster selection and identities, summaries of the inferred dynamics under different evolutionary assumptions, and comparisons across assumptions and clustering protocols.
+
 # Cluster-HyperHMM Steps
  ### Data preprocessing stage: See synthetic example and real-life data on K. Pneumania below. 
 1. Read in binary matrix (**AMR_binary.csv: isolate and genes matrix**)
