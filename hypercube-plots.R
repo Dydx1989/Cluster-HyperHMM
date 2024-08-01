@@ -388,9 +388,16 @@ plot.hypercube2 = function(translist,               # set of transitions
 }
 
 plot.standard = function(fitted) {
-  plot.bubs = plot.bubbles2(fitted[[1]], formatted=TRUE)
-  plot.cube = plot.hypercube2(fitted[[4]], use.width = T, node.labels=F, seg.labels = T, threshold=0, rotate.phi=F)
-  plot.diag = plot.pfg(fitted[[4]], pfg.layout="matrix")
+  if("stats" %in% names(fitted)) { 
+    bubble.src = fitted[["stats"]] 
+    cube.src = fitted[["viz"]]
+  } else {
+    bubble.src = fitted[[1]]
+    cube.src = fitted[[4]]
+  }
+  plot.bubs = plot.bubbles2(bubble.src, formatted=TRUE)
+  plot.cube = plot.hypercube2(cube.src, use.width = T, node.labels=F, seg.labels = T, threshold=0, rotate.phi=F)
+  plot.diag = plot.pfg(cube.src, pfg.layout="matrix")
   # and arrange plots together
   return(ggarrange(plot.bubs, plot.cube, plot.diag, nrow=1))
 }
@@ -417,11 +424,11 @@ plot.hypercube.flux = function(my.post, thresh = 0.05, node.labels = TRUE, use.p
   ### produce hypercube subgraph
   bigL = my.post$L
   if(use.probability == TRUE) {
-    trans.p = my.post$transitions[my.post$transitions$Probability > thresh,]
+    trans.p = my.post$transitions[my.post$transitions$Probability > thresh & my.post$transitions$Bootstrap == 0,]
   } else {
-    trans.p = my.post$transitions[my.post$transitions$Flux > thresh,]
+    trans.p = my.post$transitions[my.post$transitions$Flux > thresh & my.post$transitions$Bootstrap == 0,]
   }
-  trans.g = graph_from_data_frame(trans.p)
+  trans.g = graph_from_data_frame(trans.p[,2:ncol(trans.p)])
   bs = unlist(lapply(as.numeric(V(trans.g)$name), DecToBin, len=bigL))
   V(trans.g)$binname = V(trans.g)$name
   layers = str_count(bs, "1")
