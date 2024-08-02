@@ -409,8 +409,22 @@ cHHMM.phylogenetic.estimation = function(cluster.structure, occupancy="any") {
                 xlab = "Columns",
                 ylab = "Rows")
     # Check if df contains a mixture of 0s and 1s
-    if (!is_mixture_of_01(df)) {
-      stop("Data frame does not contain a mixture of 0s and 1s. Hence, genes are present/absent across the isolates")
+    if (!is_mixture_of_01(t(full_data))) {
+      message("**WARNING!** Data frame does not contain a mixture of 0s and 1s. Hence, genes are present/absent across the isolates")
+      message("Returning cross-sectional version to avoid breaking pipeline.")
+      finalpairs = data.frame()
+      df = cross.sectional$cross_sectional_data
+      for(i in 1:nrow(df)) {
+      finalpairs = rbind(finalpairs, data.frame(Anc=paste0(rep("0", ncol(df)), collapse=""), 
+                                                Desc=paste0(df[i,], collapse="")))
+      }
+      sorted_pairs <- finalpairs[order(finalpairs$Anc), ]
+      r.list[["sorted_pairs"]] = sorted_pairs
+      sp= sorted_pairs
+      r.list[["srcs"]] = matrix(as.numeric(unlist(strsplit(sp$Anc, ""))), ncol=str_length(sp$Anc[1]), byrow = TRUE)
+      r.list[["dests"]] = matrix(as.numeric(unlist(strsplit(sp$Desc, ""))), ncol=str_length(sp$Anc[1]), byrow= TRUE)
+      
+      return(r.list)
     } else {
       cat("Genes present across the isolates\n")
       # Continue with other functions here

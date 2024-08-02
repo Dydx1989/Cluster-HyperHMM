@@ -399,9 +399,13 @@ plot.cHHMM = function(data, fitted, label="") {
         plot.bubs = plot.bubbles2(bubble.src, formatted=TRUE)
         plot.flux = plot.hypercube.flux(fitted, thresh = 0.02) + 
           theme(legend.position = "none") 
+        if(all(data==data[1,1])) {
+          plot.data = ggplot() + geom_blank() + ggtitle(label) + theme(plot.title = element_text(hjust = 1))
+        } else {
         plot.data = as.ggplot(pheatmap(data, cluster_cols = FALSE, cluster_rows = FALSE, 
                                        color = c("white", "grey"), show_rownames = FALSE, legend=FALSE)) +
           ggtitle(label) + theme(plot.title = element_text(hjust = 1))
+        }
            plot.standard = ggarrange(plot.data, plot.bubs, plot.flux,  nrow=1) 
   return(plot.standard)
 }

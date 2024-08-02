@@ -13,7 +13,7 @@ source("cHHMM.R")
 #  missing value where TRUE/FALSE needed
 
 #expt = "Kleborate"
-expt = "malaria"
+expt = "synthetic"
 #expt = "PATHOGEN"
 sf = 2
 
@@ -176,7 +176,7 @@ print(g.fluxes)
 dev.off()
 
 plot.cHHMM(cross.sectional.obs$cross_sectional_data, fit.cross.sectional, label="Cross-sectional\nAny occupancy")
-pheatmap(cross.sectional.obs$cross_sectional_data, cluster_cols = FALSE, cluster_rows = FALSE, color = c("white", "grey"), legend=FALSE)
+#pheatmap(cross.sectional.obs$cross_sectional_data, cluster_cols = FALSE, cluster_rows = FALSE, legend=FALSE)
 
 #g.all = ggarrange( plot.standard(fit.cross.sectional, label="Cross-sectional\nAny occupancy"),
 #           plot.standard(fit.phylogenetic, label="Phylogenetic\nAny occupancy"), 
