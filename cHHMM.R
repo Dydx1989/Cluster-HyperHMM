@@ -78,7 +78,7 @@ cHHMM.cluster.features = function(binary_data,method="Gap",
     #+####################################
     # assign features to GENE SUBSET
     type2kclu = data.frame(
-      my_data =substr(colnames(t(binary_data)),1,KK),
+      my_data = colnames(t(binary_data)),#substr(colnames(t(binary_data)),1,KK),
       cluster=km.res$cluster)
     
     Cluster_Tab=table(type2kclu)
@@ -121,7 +121,7 @@ cHHMM.cluster.features = function(binary_data,method="Gap",
   #+####################################
   # assign features to GENE SUBSET
   type2kclu = data.frame(
-    my_data =substr(colnames(t(binary_data)),1,KK),
+    my_data =colnames(t(binary_data)), #substr(colnames(t(binary_data)),1,KK),
     cluster=km.res$cluster)
   
   Cluster_Tab=table(type2kclu)

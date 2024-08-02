@@ -13,7 +13,7 @@ source("cHHMM.R")
 #  missing value where TRUE/FALSE needed
 
 #expt = "Kleborate"
-expt = "mtDNA"
+expt = "malaria"
 #expt = "PATHOGEN"
 sf = 2
 given.tree = FALSE
@@ -112,6 +112,7 @@ if(expt == "AMR") {
   src.data = 1-t(df[2:ncol(df)])
   class(src.data) = "numeric"
   src.data = as.data.frame(src.data)
+  #colnames(src.data) = NULL
   ind.labels = df[,1]
   given.tree = TRUE
 }
