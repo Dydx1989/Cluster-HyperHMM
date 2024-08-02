@@ -1,0 +1,7235 @@
+(
+'Paulinella micropora':4,
+'Triparma laevis':4,
+'Chromera velia':4,
+'Chromerida sp. RM11':4,
+'Vaucheria litorea':4,
+(
+(
+'Durinskia baltica':4,
+'Kryptoperidinium foliaceum':4
+)Kryptoperidiniaceae:4,
+'Lepidodinium chlorophorum':4
+)Dinophyceae:4,
+(
+'Partenskyella glossopodia':4,
+'Bigelowiella natans':4,
+'Lotharella vacuolata':4,
+'Gymnochlora stellata':4
+)Chlorarachniophyceae:4,
+(
+'Synura uvella':4,
+'Mallomonas splendens':4
+)Mallomonadaceae:4,
+(
+'Aureoumbra lagunensis':4,
+'Aureococcus anophagefferens':4
+)Pelagomonadales:4,
+(
+'Eustigmatophyceae sp. Ndem 8/9T-3m6.8':4,
+'Eustigmatophyceae sp. Mont 10/10-1w':4,
+'Eustigmatophyceae sp. Bat 8/9-7w':4,
+'Eustigmatophyceae sp. Chic 10/23 P-6w':4,
+'Trachydiscus minutus':4,
+(
+(
+'Vischeria sp. ACOI 3415':4,
+'Characiopsis acuta':4
+)Eustigmataceae:4,
+'Pseudellipsoidion edaphicum':4,
+(
+'Microchloropsis salina':4,
+(
+'Nannochloropsis oceanica':4,
+'Nannochloropsis limnetica':4,
+'Nannochloropsis gaditana':4,
+'Nannochloropsis granulata':4,
+'Nannochloropsis oculata':4
+)Nannochloropsis:4
+)Monodopsidaceae:4
+)Eustigmatales:4
+)Eustigmatophyceae:4,
+(
+'Rhizochromulina marina':4,
+'Florenciella parvula':4,
+'Dictyocha speculum':4,
+'Pseudopedinella elastica':4
+)Dictyochophyceae:4,
+(
+(
+'Toxoplasma gondii RH':4,
+(
+'Eimeria tenella strain Penn State':4,
+'Cyclospora cayetanensis':4
+)Eimeriidae:4
+)Eucoccidiorida:4,
+(
+(
+'Theileria parva strain Muguga':4,
+(
+'Babesia microti strain RI':4,
+'Babesia orientalis':4
+)Babesia:4
+)Piroplasmida:4,
+(
+'Leucocytozoon caulleryi':4,
+(
+'Plasmodium relictum':4,
+'Plasmodium chabaudi chabaudi':4,
+'Plasmodium malariae':4,
+'Plasmodium gallinaceum':4
+)Plasmodium:4
+)Haemosporida:4
+)Aconoidasida:4
+)Apicomplexa:4,
+(
+'Eutreptiella gymnastica':4,
+(
+'Discoplastis spathirhyncha':4,
+(
+(
+'Monomorphina parapyrum':4,
+'Monomorphina aenigmatica':4
+)Monomorphina:4,
+'Euglenaformis proxima':4,
+'Cryptoglena skujai':4,
+'Trachelomonas volvocina':4,
+'Euglenaria anabaena':4,
+(
+'Euglena archaeoplastidiata':4,
+'Euglena hiemalis':4,
+'Euglena clara':4,
+'Euglena viridis':4,
+'Euglena gracilis':4,
+'Euglena longa':4
+)Euglena:4
+)Euglenaceae:4
+)Euglenales:4
+)Euglenida:4,
+(
+'Diacronema lutheri':4,
+'Chrysochromulina parva':4,
+(
+'Phaeocystis globosa':4,
+'Phaeocystis antarctica':4
+)Phaeocystis:4,
+(
+'Tisochrysis lutea':4,
+'Emiliania huxleyi':4
+)Isochrysidales:4
+)Haptophyta:4,
+(
+(
+'Chroomonas placoidea':4,
+(
+'Teleaulax amphioxeia':4,
+'Guillardia theta':4
+)Geminigeraceae:4,
+'Rhodomonas salina':4
+)Pyrenomonadales:4,
+(
+'Cryptomonas curvata':4,
+'Cryptomonas paramecium':4
+)Cryptomonas:4
+)Cryptophyceae:4,
+(
+'Dictyopteris divaricata':4,
+(
+(
+'Coccophora langsdorfii':4,
+(
+'Sargassum thunbergii':4,
+'Sargassum horneri':4
+)Sargassum:4
+)Sargassaceae:4,
+'Fucus vesiculosus':4
+)Fucales:4,
+(
+(
+'Hapterophycus canaliculatus':4,
+'Scytosiphon promiscuus':4,
+'Endarachne binghamiae':4
+)Scytosiphonaceae:4,
+'Cladosiphon okamuranus':4,
+'Ectocarpus siliculosus':4
+)Ectocarpales:4,
+(
+'Lessonia spicata':4,
+(
+'Saccharina japonica':4,
+(
+'Laminaria solidungula':4,
+'Laminaria digitata':4
+)Laminaria:4
+)Laminariaceae:4,
+'Undaria pinnatifida':4,
+'Costaria costata':4
+)Laminariales:4
+)Phaeophyceae:4,
+(
+(
+'Pseudictyota dubia':4,
+'Cerataulina daemon':4,
+'Plagiogrammopsis vanheurckii':4,
+(
+'Trieres chinensis':4,
+(
+'Psammoneis obaidii':4,
+'Plagiogramma staurophorum':4
+)Plagiogrammaceae:4
+)Triceratiales:4,
+(
+'Biddulphia biddulphiana':4,
+'Biddulphia tridens':4
+)Biddulphia:4,
+'Toxarium undulatum':4,
+'Lithodesmium undulatum':4
+)Mediophyceae:4,
+(
+'Ulnaria acus':4,
+'Astrosyne radiata':4,
+(
+'Asterionella formosa':4,
+'Asterionellopsis glacialis':4
+)Fragilariaceae:4
+)Fragilariophyceae:4,
+(
+'Leptocylindrus danicus':4,
+(
+'Acanthoceras zachariasii':4,
+'Attheya longicornis':4,
+'Chaetoceros simplex':4
+)Chaetocerotales:4,
+(
+'Cyclotella pseudostelligera':4,
+(
+'Conticribra weissflogii':4,
+'Roundia cardiophora':4,
+(
+'Thalassiosira oceanica CCMP1005':4,
+'Thalassiosira pseudonana':4
+)Thalassiosira:4
+)Thalassiosiraceae:4
+)Thalassiosirales:4,
+(
+'Actinocyclus subtilis':4,
+'Coscinodiscus radiatus':4
+)Coscinodiscales:4,
+(
+'Guinardia striata':4,
+(
+'Rhizosolenia fallax':4,
+'Rhizosolenia imbricata':4,
+'Rhizosolenia setigera':4
+)Rhizosolenia:4
+)Rhizosoleniaceae:4
+)Coscinodiscophyceae:4,
+(
+'Eunotia naegelii':4,
+'Didymosphenia geminata':4,
+'Entomoneis sp.':4,
+(
+'Fragilariopsis cylindrus':4,
+'Pseudo-nitzschia multiseries':4,
+'Nitzschia alba':4,
+'Cylindrotheca closterium':4
+)Bacillariaceae:4,
+(
+(
+'Haslea nusantara':4,
+'Fistulifera solaris':4
+)Naviculaceae:4,
+(
+'Halamphora americana':4,
+'Halamphora calidilacuna':4,
+'Halamphora coffeaeformis':4
+)Halamphora:4,
+'Phaeodactylum tricornutum':4
+)Naviculales:4
+)Bacillariophyceae:4
+)Bacillariophyta:4,
+'Heterosigma akashiwo':4,
+(
+'Bulboplastis apyrenoidosa':4,
+'Bangiopsis subsimplex':4,
+(
+'Rhodochaete parvula':4,
+'Erythrotrichia carnea':4,
+(
+'Boldia erythrosiphon':4,
+'Compsopogon caeruleus':4
+)Compsopogonales:4
+)Compsopogonophyceae:4,
+(
+(
+'Porphyridium purpureum':4,
+'Porphyridium sordidum':4
+)Porphyridium:4,
+(
+'Wildemania schizophylla':4,
+(
+'Neoporphyra haitanensis':4,
+'Neoporphyra perforata':4
+)Neoporphyra:4,
+'Pyropia pulchra':4,
+'Neopyropia yezoensis':4,
+(
+'Porphyra purpurea':4,
+'Porphyra umbilicalis':4
+)Porphyra:4
+)Bangiaceae:4,
+(
+'Cyanidioschyzon merolae strain 10D':4,
+'Galdieria sulphuraria':4,
+'Cyanidium caldarium':4
+)Cyanidiaceae:4
+)Bangiophyceae:4,
+(
+'Synarthrophyton chejuense':4,
+(
+'Kumanoa americana':4,
+'Sheathia arcuata':4
+)Batrachospermaceae:4,
+'Asparagopsis taxiformis':4,
+(
+'Scinaia undulata':4,
+(
+'Galaxaura rugosa':4,
+'Dichotomaria marginata':4
+)Galaxauraceae:4,
+(
+'Helminthora furcellata':4,
+'Liagoropsis maxima':4,
+'Izziella formosana':4,
+'Trichogloeopsis pedicellata':4,
+'Dermonema virens':4,
+'Neoizziella asiatica':4,
+'Titanophycus setchellii':4,
+(
+'Liagora brachyclada':4,
+'Liagora harveyana':4
+)Liagora:4,
+'Hommersandiophycus borowitzkae':4,
+'Helminthocladia australis':4,
+'Yamadaella caenomyce':4
+)Liagoraceae:4
+)Nemaliales:4,
+'Acrochaetium secundatum':4,
+'Thorea hispida':4,
+'Schimmelmannia schousboei':4,
+'Balbiania investiens':4,
+'Sporolithon durum':4,
+(
+'Porolithon onkodes':4,
+(
+(
+'Corallina chilensis':4,
+'Corallina ferreyrae':4
+)Corallina:4,
+'Neogoniolithon spectabile':4,
+'Calliarthron tuberculosum':4
+)Corallinaceae:4
+)Corallinales:4,
+'Sebdenia flabellata':4,
+'Schizymenia dubyi':4,
+(
+(
+'Ceramium sungminbooi':4,
+'Ceramium japonicum':4
+)Ceramium:4,
+'Spyridia filamentosa':4,
+(
+'Dipterocladia arabiensis':4,
+(
+'Dasya naccarioides':4,
+'Dasya binghamiae':4
+)Dasya:4,
+'Thuretia quercifolia':4
+)Dasyaceae:4,
+(
+'Platysiphonia delicata':4,
+'Acrosorium ciliolatum':4,
+'Taenioma perpusillum':4,
+(
+'Membranoptera platyphylla':4,
+'Membranoptera weeksiae':4,
+'Membranoptera tenuis':4
+)Membranoptera:4,
+(
+'Caloglossa beccarii':4,
+'Caloglossa intermedia':4,
+'Caloglossa monosticha':4
+)Caloglossa:4
+)Delesseriaceae:4,
+(
+'Leptosiphonia brodiei':4,
+'Dasyclonium flaccidum':4,
+'Gredgaria maugeana':4,
+'Dipterosiphonia australica':4,
+'Cliftonaea pectinata':4,
+'Bryothamnion seaforthii':4,
+'Dictyomenia sonderi':4,
+'Herposiphonia versicolor':4,
+'Periphykon beckeri':4,
+'Symphyocladia dendroidea':4,
+'Thaumatella adunca':4,
+'Laurenciella marilzae':4,
+(
+'Vertebrata thuyoides':4,
+'Vertebrata isogona':4,
+'Vertebrata australis':4,
+'Vertebrata lanosa':4
+)Vertebrata:4,
+'Ophidocladus simpliciusculus':4,
+'Digenea simplex':4,
+'Tolypiocladia glomerulata':4,
+'Kapraunia schneideri':4,
+'Lophocladia kuetzingii':4,
+'Melanothamnus harveyi':4,
+'Osmundaria fimbriata':4,
+'Kuetzingia canaliculata':4,
+(
+'Polysiphonia infestans':4,
+'Polysiphonia sertularioides':4,
+'Polysiphonia scopulorum':4,
+'Polysiphonia stricta':4,
+'Polysiphonia elongata':4
+)Polysiphonia:4,
+'Pleurostichidium falkenbergii':4,
+'Sonderella linearis':4,
+(
+'Bostrychia tenella':4,
+'Bostrychia simpliciuscula':4,
+'Bostrychia moritziana':4
+)Bostrychia:4,
+'Rhodomela confervoides':4
+)Rhodomelaceae:4
+)Ceramiales:4,
+(
+'Coeloseira compressa':4,
+'Rhodymenia pseudopalmata':4
+)Rhodymeniales:4,
+(
+'Apophlaea sinclairii':4,
+(
+'Hildenbrandia rivularis':4,
+'Hildenbrandia rubra':4
+)Hildenbrandia:4
+)Hildenbrandiaceae:4,
+(
+'Halymenia maculata':4,
+(
+'Grateloupia taiwanensis':4,
+'Grateloupia filicina':4
+)Grateloupia:4
+)Halymeniaceae:4,
+'Plocamium cartilagineum':4,
+(
+'Gelidium kathyanniae':4,
+'Gelidium gabrielsonii':4,
+'Gelidium sinicola':4,
+'Gelidium galapagense':4,
+'Gelidium elegans':4,
+'Gelidium vagum':4,
+'Gelidium coulteri':4
+)Gelidium:4,
+'Ahnfeltia plicata':4,
+(
+'Palmaria decipiens':4,
+'Palmaria palmata':4
+)Palmaria:4,
+(
+(
+'Crassa caudata':4,
+'Crassa firma':4
+)Crassa:4,
+'Hydropuntia rangiferina':4,
+(
+'Agarophyton vermiculophyllum':4,
+'Agarophyton chilense':4,
+'Agarophyton tenuistipitatum var. liui':4
+)Agarophyton:4,
+'Melanthalia intermedia':4,
+(
+'Gracilariopsis mclachlanii':4,
+'Gracilariopsis chorda':4,
+'Gracilariopsis heteroclada':4,
+'Gracilariopsis longissima':4,
+'Gracilariopsis lemaneiformis':4
+)Gracilariopsis:4,
+(
+'Gracilaria ferox':4,
+'Gracilaria spinulosa':4,
+'Gracilaria changii':4,
+'Gracilaria salicornia':4,
+'Gracilaria edulis':4,
+'Gracilaria textorii':4,
+'Gracilaria gracilis':4
+)Gracilaria:4
+)Gracilariaceae:4,
+(
+'Choreocolax polysiphoniae':4,
+'Caulacanthus okamurae':4,
+'Kappaphycus alvarezii':4,
+'Mastocarpus papillatus':4,
+'Chondrus crispus':4
+)Gigartinales:4
+)Florideophyceae:4
+)Rhodophyta:4,
+(
+'Glaucocystis incrassata':4,
+'Gloeochaete wittrockiana':4,
+(
+'Cyanophora sudae':4,
+'Cyanophora biloba':4,
+'Cyanophora paradoxa':4
+)Cyanophora:4
+)Glaucocystophyceae:4,
+(
+'Prasinoderma coloniale':4,
+(
+(
+'Palmophyllum crassum':4,
+'Verdigellas peltata':4
+)Palmophyllaceae:4,
+(
+(
+'Chloroparvula pacifica':4,
+'Chloroparvula japonica':4
+)Chloroparvula:4,
+(
+'Chloropicon sieburthii':4,
+'Chloropicon mariensis':4,
+'Chloropicon roscoffensis':4,
+'Chloropicon maureeniae':4,
+'Chloropicon laureae':4
+)Chloropicon:4
+)Chloropicaceae:4,
+'Picocystis salinarum':4,
+'Pycnococcus provasolii':4,
+(
+'Microrhizoidea pickettheapsiorum':4,
+'Monomastix sp. OKE-1':4,
+(
+'Ostreococcus tauri':4,
+'Bathycoccus prasinos':4
+)Bathycoccaceae:4
+)Mamiellophyceae:4,
+(
+'Pyramimonas parkeae':4,
+'Cymbomonas tetramitiformis':4
+)Pyramimonadaceae:4,
+(
+'Nephroselmis astigmatica':4,
+'Nephroselmis olivacea':4
+)Nephroselmis:4,
+'Scherffelia dubia':4,
+(
+'Pedinomonas tuberculata':4,
+'Pedinomonas minor':4
+)Pedinomonas:4,
+(
+'Trentepohlia odorata':4,
+(
+'Pseudocharacium americanum':4,
+'Ignatius tetrasporus':4
+)Ignatiaceae:4,
+'Neodangemannia microcystis':4,
+(
+'Hazenia capsulata':4,
+'Tupiella akineta':4,
+(
+'Capsosiphon fulvescens':4,
+'Gloeotilopsis sterilis':4
+)Ulotrichaceae:4,
+'Sarcinofilum mucosum':4
+)Ulotrichales:4,
+'Oltmannsiellopsis viridis':4,
+(
+(
+'Pedobesia claviformis':4,
+'Derbesia sp. WEST4838':4
+)Derbesiaceae:4,
+(
+'Codium arenicola':4,
+'Codium simulans':4,
+'Codium arabicum':4
+)Codium:4,
+(
+'Rhipiliopsis peltata':4,
+'Callipsygma wilsonis':4,
+'Rhipilia penicilloides':4,
+'Pseudocodium devriesii':4,
+(
+'Boodleopsis sp. H.0758':4,
+'Boodleopsis pusilla':4
+)Boodleopsis:4,
+'Tydemania expeditionis':4,
+'Chlorodesmis fastigiata':4,
+(
+'Udotea argentea':4,
+'Udotea flabellum':4
+)Udotea:4
+)Halimedaceae:4,
+'Ostreobium quekettii':4,
+(
+'Caulerpa cliftonii':4,
+'Caulerpa manorensis':4,
+'Caulerpa verticillata':4,
+'Caulerpa ashmeadii':4,
+'Caulerpa lentillifera':4,
+'Caulerpa racemosa':4
+)Caulerpa:4,
+(
+'Lambia antarctica':4,
+(
+'Bryopsis sp. HV04063':4,
+'Bryopsis hypnoides':4,
+'Bryopsis plumosa':4
+)Bryopsis:4
+)Bryopsidaceae:4
+)Bryopsidales:4,
+(
+'Pseudoneochloris marina':4,
+(
+'Ulva mutabilis':4,
+'Ulva fasciata':4,
+'Ulva flexuosa':4,
+'Ulva lactuca':4,
+'Ulva linza':4,
+'Ulva prolifera':4
+)Ulva:4
+)Ulvaceae:4
+)Ulvophyceae:4,
+(
+'Trebouxiophyceae sp. MX-AZ01':4,
+'Coccomyxa subellipsoidea C-169':4,
+'Xylochloris irregularis':4,
+'Elliptochloris bilobata':4,
+'Paradoxia multiseta':4,
+'Watanabea reniformis':4,
+'Choricystis parasitica':4,
+'Botryococcus braunii':4,
+(
+'Fusochloris perforata':4,
+'Microthamnion kuetzingianum':4
+)Microthamniaceae:4,
+(
+'Symbiochloris handae':4,
+'Trebouxia sp. TR9':4,
+'Lobosphaera incisa':4,
+'Myrmecia israeliensis':4,
+'Parietochloris pseudoalveolaris':4
+)Trebouxiaceae:4,
+(
+(
+'Koliella corcontica':4,
+'Koliella longiseta':4
+)Koliella:4,
+(
+'Stichococcus bacillaris':4,
+'Edaphochlorella mirabilis':4
+)Prasiolaceae:4
+)Prasiolales:4,
+(
+'Planctonema lauterbornii':4,
+(
+'Pseudochloris wilhelmii':4,
+'Micractinium conductrix':4,
+(
+'Prototheca bovis':4,
+'Prototheca ciferrii':4,
+'Prototheca cutis':4,
+'Prototheca stagnorum':4
+)Prototheca:4,
+'Pseudochlorella signiensis':4,
+'Geminella minor':4,
+'Helicosporidium sp. ex Simulium jonesi':4,
+'Marvania geminata':4,
+'Dicloster acuatus':4,
+(
+'Chlorella heliozoae':4,
+'Chlorella variabilis':4,
+'Chlorella vulgaris':4,
+'Chlorella sorokiniana':4
+)Chlorella:4,
+'Auxenochlorella protothecoides':4,
+'Parachlorella kessleri':4
+)Chlorellaceae:4
+)Chlorellales:4
+)Trebouxiophyceae:4,
+(
+'Treubaria triappendiculata':4,
+(
+'Jenufa minuta':4,
+'Jenufa perforata':4
+)Jenufa:4,
+'Chlorosarcinopsis eremi':4,
+(
+'Uronema confervicola':4,
+(
+'Aphanochaete elegans':4,
+'Aphanochaete confervicola':4
+)Aphanochaete:4,
+'Schizomeris leibleinii':4,
+(
+'Chaetophoropsis polyrhiza':4,
+'Stigeoclonium helveticum':4
+)Chaetophoraceae:4
+)Chaetophorales:4,
+(
+'Oedogonium cardiacum':4,
+'Oedocladium carolinianum':4
+)Oedogoniaceae:4,
+'Floydiella terrestris':4,
+(
+'Neocystis brevis':4,
+'Pseudomuriella schumacherensis':4,
+'Kirchneriella aperta':4,
+(
+'Parallela transversalis':4,
+'Ankyra judayi':4
+)Sphaeropleaceae:4,
+(
+'Bracteacoccus aerius':4,
+'Bracteacoccus giganteus':4,
+'Bracteacoccus minor':4
+)Bracteacoccus:4,
+'Chromochloris zofingiensis':4,
+(
+'Mychonastes jurisii':4,
+'Mychonastes homosphaera':4
+)Mychonastes:4,
+(
+'Lacunastrum gracillimum':4,
+'Stauridium tetras':4,
+(
+'Pseudopediastrum sp. CL0201VA':4,
+'Pseudopediastrum integrum':4,
+'Pseudopediastrum boryanum':4
+)Pseudopediastrum:4,
+'Hydrodictyon reticulatum':4,
+(
+'Pediastrum angulosum':4,
+'Pediastrum duplex':4
+)Pediastrum:4
+)Hydrodictyaceae:4,
+(
+'Chlorotetraedron incus':4,
+'Neochloris aquatica':4
+)Neochloridaceae:4,
+(
+'Coelastrella saipanensis':4,
+'Pectinodesmus pectinatus':4,
+'Tetradesmus obliquus':4
+)Scenedesmaceae:4
+)Sphaeropleales:4,
+(
+'Chlorococcum tatrense':4,
+'Characiochloris acuminata':4,
+'Phacotus lenticularis':4,
+'Haematococcus lacustris':4,
+'Pleurastrum terricola':4,
+(
+'Colemanosphaera angeleri':4,
+'Pleodorina starrii':4,
+'Volvox africanus':4,
+'Yamagishiella unicocca':4,
+'Gonium pectorale':4
+)Volvocaceae:4,
+(
+'Oogamochlamys gigantea':4,
+'Carteria cerasiformis':4,
+(
+'Chlamydomonas leiostraca':4,
+'Chlamydomonas reinhardtii':4
+)Chlamydomonas:4
+)Chlamydomonadaceae:4,
+(
+'Hafniomonas laevis':4,
+'Spermatozopsis similis':4,
+'Dunaliella salina':4
+)Dunaliellaceae:4
+)Chlamydomonadales:4
+)Chlorophyceae:4
+)Chlorophyta:4,
+(
+'Leiosporoceros dussii':4,
+'Haplomitrium blumei':4,
+'Chara vulgaris':4,
+'Anthoceros angustus':4,
+'Mesostigma viride':4,
+(
+'Ptilidium ciliare var. pulcherrimum':4,
+'Apopellia endiviifolia':4,
+(
+'Schistochila macrodonta':4,
+'Plagiochila chinensis':4,
+'Bazzania praerupta':4,
+'Scapania ciliata':4,
+'Calypogeia fissa':4,
+'Heteroscyphus argutus':4,
+'Gymnomitrion concinnatum':4
+)Jungermanniales:4,
+(
+'Radula japonica':4,
+'Frullania nodulosa':4,
+'Porella perrottetiana':4,
+(
+'Cololejeunea lanciloba':4,
+'Cheilolejeunea xanthocarpa':4
+)Lejeuneaceae:4,
+'Jubula hutchinsiae':4
+)Porellales:4,
+(
+'Aneura mirabilis':4,
+'Aneura pinguis':4
+)Aneura:4
+)Jungermanniopsida:4,
+'Takakia lepidozioides':4,
+'Tetraphis pellucida':4,
+'Sphagnum palustre':4,
+(
+(
+'Macrozamia mountperriensis':4,
+'Encephalartos lehmannii':4,
+'Ceratozamia hildae':4,
+'Lepidozamia peroffskyana':4,
+'Dioon spinulosum':4,
+'Zamia furfuracea':4,
+'Stangeria eriopus':4
+)Zamiaceae:4,
+(
+'Bowenia serrulata':4,
+(
+'Cycas szechuanensis':4,
+'Cycas panzhihuaensis':4,
+'Cycas taitungensis':4,
+'Cycas revoluta':4
+)Cycas:4
+)Cycadaceae:4
+)Cycadales:4,
+(
+(
+'Ephedra equisetina':4,
+'Ephedra intermedia':4,
+'Ephedra foeminea':4,
+'Ephedra sinica':4
+)Ephedra:4,
+(
+'Gnetum parvifolium':4,
+'Gnetum ula':4,
+'Gnetum gnemon':4,
+'Gnetum montanum':4
+)Gnetum:4,
+'Welwitschia mirabilis':4
+)Gnetopsida:4,
+(
+(
+'Retrophyllum piresii':4,
+'Dacrydium elatum':4,
+'Manoao colensoi':4,
+(
+'Podocarpus lambertii':4,
+'Podocarpus latifolius':4,
+'Podocarpus totara':4
+)Podocarpus:4,
+'Parasitaxus usta':4,
+'Dacrycarpus imbricatus':4,
+'Nageia nagi':4
+)Podocarpaceae:4,
+(
+'Agathis dammara':4,
+'Wollemia nobilis':4,
+(
+'Araucaria bidwillii':4,
+'Araucaria angustifolia':4,
+'Araucaria araucana':4,
+'Araucaria heterophylla':4
+)Araucaria:4
+)Araucariaceae:4,
+'Sciadopitys verticillata':4,
+(
+'Pseudotaxus chienii':4,
+(
+'Torreya parvifolia':4,
+'Torreya fargesii':4,
+'Torreya grandis':4
+)Torreya:4,
+(
+'Cephalotaxus hainanensis':4,
+'Cephalotaxus oliveri':4,
+'Cephalotaxus sinensis':4,
+'Cephalotaxus wilsoniana':4
+)Cephalotaxus:4,
+(
+'Taxus calcicola':4,
+'Taxus phytonii':4,
+'Taxus florinii':4,
+'Taxus contorta':4,
+'Taxus fuana':4,
+'Taxus globosa':4,
+'Taxus floridana':4,
+'Taxus wallichiana':4,
+'Taxus mairei':4,
+'Taxus cuspidata':4,
+'Taxus canadensis':4,
+'Taxus brevifolia':4,
+'Taxus chinensis':4,
+'Taxus baccata':4
+)Taxus:4,
+(
+'Amentotaxus formosana':4,
+'Amentotaxus argotaenia':4
+)Amentotaxus:4
+)Taxaceae:4,
+(
+'Nothotsuga longibracteata':4,
+(
+'Tsuga sieboldii':4,
+'Tsuga chinensis':4,
+'Tsuga diversifolia':4
+)Tsuga:4,
+'Pseudotsuga sinensis var. wilsoniana':4,
+'Cathaya argyrophylla':4,
+(
+'Abies fanjingshanensis':4,
+'Abies religiosa':4,
+'Abies chensiensis':4,
+'Abies kawakamii':4,
+'Abies beshanzuensis':4,
+'Abies concolor':4,
+'Abies koreana':4,
+'Abies sibirica':4,
+'Abies fargesii':4,
+'Abies balsamea':4,
+'Abies alba':4
+)Abies:4,
+'Pseudolarix amabilis':4,
+(
+'Pinus crassicorticea':4,
+'Pinus jaliscana':4,
+'Pinus greggii':4,
+'Pinus taiwanensis':4,
+'Pinus wangii':4,
+'Pinus squamata':4,
+'Pinus oocarpa':4,
+'Pinus monophylla':4,
+'Pinus morrisonicola':4,
+'Pinus armandii':4,
+'Pinus yunnanensis':4,
+'Pinus tabuliformis':4,
+'Pinus massoniana':4,
+'Pinus koraiensis':4,
+'Pinus densiflora':4,
+'Pinus teocote':4,
+'Pinus pumila':4,
+'Pinus pinceana':4,
+'Pinus parviflora':4,
+'Pinus nelsonii':4,
+'Pinus gerardiana':4,
+'Pinus bungeana':4,
+'Pinus aristata':4,
+'Pinus sibirica':4,
+'Pinus elliottii':4,
+'Pinus taeda':4,
+'Pinus thunbergii':4,
+'Pinus sylvestris':4,
+'Pinus strobus':4,
+'Pinus pinea':4,
+'Pinus lambertiana':4,
+'Pinus krempfii':4,
+'Pinus contorta':4
+)Pinus:4,
+(
+'Picea neoveitchii':4,
+'Picea crassifolia':4,
+'Picea asperata':4,
+'Picea chihuahuana':4,
+'Picea morrisonicola':4,
+'Picea jezoensis':4,
+'Picea engelmannii':4,
+'Picea sitchensis':4,
+'Picea glauca':4,
+'Picea abies':4
+)Picea:4,
+(
+'Larix cajanderi':4,
+'Larix gmelinii':4,
+'Larix decidua':4,
+'Larix sibirica':4,
+'Larix occidentalis':4
+)Larix:4,
+'Keteleeria davidiana':4,
+'Cedrus deodara':4
+)Pinaceae:4,
+(
+(
+'Chamaecyparis formosensis':4,
+'Chamaecyparis hodginsii':4
+)Chamaecyparis:4,
+(
+'Callitropsis vietnamensis':4,
+'Callitropsis nootkatensis':4
+)Callitropsis:4,
+(
+'Taiwania flousiana':4,
+'Taiwania cryptomerioides':4
+)Taiwania:4,
+(
+'Hesperocyparis lindleyi':4,
+'Hesperocyparis benthamii':4,
+'Hesperocyparis lusitanica':4,
+'Hesperocyparis arizonica':4,
+'Hesperocyparis glabra':4
+)Hesperocyparis:4,
+(
+'Juniperus bermudiana':4,
+'Juniperus cedrus':4,
+'Juniperus microsperma':4,
+'Juniperus recurva':4,
+'Juniperus monosperma':4,
+'Juniperus scopulorum':4,
+'Juniperus squamata':4,
+'Juniperus tibetica':4,
+'Juniperus sabina':4,
+'Juniperus communis':4,
+'Juniperus virginiana':4
+)Juniperus:4,
+(
+'Taxodium mucronatum':4,
+'Taxodium distichum':4
+)Taxodium:4,
+'Sequoia sempervirens':4,
+'Glyptostrobus pensilis':4,
+'Cunninghamia lanceolata':4,
+(
+'Cupressus torulosa':4,
+'Cupressus tonkinensis':4,
+'Cupressus jiangeensis':4,
+'Cupressus gigantea':4,
+'Cupressus chengiana':4,
+'Cupressus sempervirens':4
+)Cupressus:4,
+(
+'Calocedrus rupestris':4,
+'Calocedrus formosana':4,
+'Calocedrus decurrens':4
+)Calocedrus:4,
+'Callitris rhomboidea':4,
+'Metasequoia glyptostroboides':4,
+'Cryptomeria japonica':4,
+(
+'Thuja sutchuenensis':4,
+'Thuja occidentalis':4,
+'Thuja plicata':4
+)Thuja:4
+)Cupressaceae:4
+)Pinopsida:4,
+'Ginkgo biloba':4,
+(
+(
+'Selaginella hainanensis':4,
+'Selaginella pennata':4,
+'Selaginella bisulcata':4,
+'Selaginella sanguinolenta':4,
+'Selaginella uncinata':4,
+'Selaginella vardei':4,
+'Selaginella indica':4,
+'Selaginella doederleinii':4,
+'Selaginella tamariscina':4,
+'Selaginella remotifolia':4,
+'Selaginella lyallii':4,
+'Selaginella moellendorffii':4,
+'Selaginella kraussiana':4,
+'Selaginella lepidophylla':4
+)Selaginella:4,
+(
+'Isoetes graniticola':4,
+'Isoetes piedmontana':4,
+'Isoetes serracarajensis':4,
+'Isoetes cangae':4,
+'Isoetes nuttallii':4,
+'Isoetes yunguiensis':4,
+'Isoetes valida':4,
+'Isoetes melanospora':4,
+'Isoetes mattaponica':4,
+'Isoetes butleri':4,
+'Isoetes malinverniana':4,
+'Isoetes flaccida':4,
+'Isoetes engelmannii':4
+)Isoetes:4,
+(
+'Dendrolycopodium obscurum':4,
+(
+'Huperzia serrata':4,
+'Huperzia lucidula':4
+)Huperzia:4,
+'Diphasiastrum digitatum':4,
+'Lycopodium clavatum':4
+)Lycopodiaceae:4
+)Lycopodiopsida:4,
+(
+(
+'Ophioglossum californicum':4,
+'Mankyua chejuensis':4
+)Ophioglossaceae:4,
+'Diplopterygium glaucum':4,
+'Marsilea crenata':4,
+(
+'Hymenophyllum holochilum':4,
+'Trichomanes trollii':4,
+'Vandenboschia speciosa':4
+)Hymenophyllaceae:4,
+(
+'Plagiogyria euphlebia':4,
+(
+'Alsophila costularis':4,
+'Alsophila gigantea':4,
+'Alsophila spinulosa':4,
+'Alsophila podophylla':4
+)Alsophila:4,
+'Cibotium barometz':4
+)Cyatheales:4,
+(
+'Christensenia aesculifolia':4,
+(
+'Angiopteris angustifolia':4,
+'Angiopteris evecta':4
+)Angiopteris:4
+)Marattiaceae:4,
+(
+(
+'Schizaea elegans':4,
+'Schizaea pectinata':4
+)Schizaea:4,
+(
+'Lygodium microphyllum':4,
+'Lygodium japonicum':4
+)Lygodium:4
+)Schizaeales:4,
+'Osmundastrum cinnamomeum':4,
+(
+'Cystopteris chinensis':4,
+'Tectaria panamensis':4,
+'Lindsaea linearis':4,
+'Oleandra articulata':4,
+'Nephrolepis biserrata':4,
+'Lomariopsis japurensis':4,
+'Davallia solida var. fejeensis':4,
+'Saccoloma inaequale':4,
+'Rhachidosorus consimilis':4,
+(
+'Christella appendiculata':4,
+'Stegnogramma sagittifolia':4,
+'Mesopteris tonkinensis':4,
+'Ampelopteris prolifera':4,
+'Pseudophegopteris aurita':4,
+'Macrothelypteris torresiana':4
+)Thelypteridaceae:4,
+(
+'Leptochilus hemionitideus':4,
+(
+'Pyrrosia bonii':4,
+'Pyrrosia subfurfuracea':4
+)Pyrrosia:4,
+'Pecluma dulcis':4,
+'Neocheiropteris palmatopedata':4,
+'Lepisorus clathratus':4,
+'Goniophlebium niponicum':4
+)Polypodiaceae:4,
+(
+'Austroblechnum melanocaulon':4,
+'Woodwardia unigemmata':4
+)Blechnaceae:4,
+(
+(
+'Diplaziopsis javanica':4,
+'Diplaziopsis cavaleriana':4
+)Diplaziopsis:4,
+'Homalosorus pycnocarpos':4
+)Diplaziopsidaceae:4,
+(
+'Dryopteris decipiens':4,
+(
+'Cyrtomium devexiscapulae':4,
+'Cyrtomium fortunei':4,
+'Cyrtomium falcatum':4
+)Cyrtomium:4
+)Dryopteridaceae:4,
+'Hypodematium crenatum':4,
+(
+(
+'Diplazium dushanense':4,
+'Diplazium unilobum':4,
+'Diplazium striatum':4,
+'Diplazium bellum':4,
+'Diplazium dilatatum':4
+)Diplazium:4,
+(
+'Deparia lancea':4,
+'Deparia viridifrons':4,
+'Deparia pycnosora':4
+)Deparia:4,
+(
+'Athyrium anisopterum':4,
+'Athyrium opacum':4,
+'Athyrium sinense':4,
+'Athyrium sheareri':4
+)Athyrium:4
+)Athyriaceae:4,
+(
+'Woodsia macrochlaena':4,
+'Woodsia polystichoides':4
+)Woodsia:4,
+(
+'Pteridium aquilinum subsp. aquilinum':4,
+'Histiopteris incisa':4
+)Dennstaedtiaceae:4,
+(
+'Hymenasplenium unilaterale':4,
+(
+'Asplenium pekinense':4,
+'Asplenium prolongatum':4,
+'Asplenium nidus':4
+)Asplenium:4
+)Aspleniaceae:4,
+(
+'Hemionitis subcordata':4,
+'Antrophyum semicostatum':4,
+'Vaginularia trichoidea':4,
+'Cheilanthes micropteris':4,
+'Pentagramma triangularis':4,
+'Haplopteris elongata':4,
+'Pellaea truncata':4,
+'Notholaena standleyi':4,
+'Cryptogramma acrostichoides':4,
+'Bommeria hispida':4,
+'Calciphilopteris ludens':4,
+'Ceratopteris cornuta':4,
+'Anogramma chaerophylla':4,
+'Tryonia myriophylla':4,
+'Pityrogramma trifoliata':4,
+'Llavea cordifolia':4,
+(
+'Myriopteris lindheimeri':4,
+'Myriopteris covillei':4,
+'Myriopteris scabra':4
+)Myriopteris:4,
+(
+'Vittaria appalachiana':4,
+'Vittaria graminifolia':4
+)Vittaria:4,
+'Scoliosorus ensiformis':4,
+'Onychium japonicum':4,
+'Pteris vittata':4,
+(
+'Adiantum shastense':4,
+'Adiantum tricholepis':4,
+'Adiantum aleuticum':4,
+'Adiantum capillus-veneris':4
+)Adiantum:4
+)Pteridaceae:4,
+(
+'Onoclea sensibilis':4,
+'Matteuccia struthiopteris':4
+)Onocleaceae:4
+)Polypodiales:4,
+(
+'Equisetum hyemale':4,
+'Equisetum arvense':4
+)Equisetum:4,
+'Psilotum nudum':4
+)Polypodiopsida:4,
+(
+'Fissidens nobilis':4,
+'Pohlia nutans':4,
+'Sanionia uncinata':4,
+'Diphyscium foliosum':4,
+'Buxbaumia aphylla':4,
+(
+'Lewinskya incana':4,
+'Stoneobryum bunyaense':4,
+'Ulota bruchii':4,
+(
+'Orthotrichum rogeri':4,
+'Orthotrichum obtusifolium':4
+)Orthotrichum:4
+)Orthotrichaceae:4,
+'Syntrichia ruralis':4,
+'Physcomitrium patens':4
+)Bryopsida:4,
+(
+'Dumortiera hirsuta':4,
+'Riccia fluitans':4,
+'Reboulia hemisphaerica':4,
+(
+'Marchantia paleacea':4,
+'Marchantia polymorpha subsp. ruderalis':4
+)Marchantia:4
+)Marchantiales:4,
+(
+(
+'Closterium baillyanum':4,
+(
+'Staurastrum punctulatum':4,
+'Cosmarium botrytis':4
+)Desmidiaceae:4
+)Desmidiales:4,
+(
+(
+'Mesotaenium endlicherianum':4,
+'Cylindrocystis brebissonii':4,
+(
+'Roya obtusa':4,
+'Roya anglica':4
+)Roya:4
+)Mesotaeniaceae:4,
+(
+'Entransia fimbriata':4,
+'Netrium digitus':4,
+'Zygnema circumcarinatum':4,
+'Spirogyra maxima':4
+)Zygnemataceae:4
+)Zygnematales:4
+)Zygnemophyceae:4,
+(
+'Interfilum terricola':4,
+'Klebsormidium flaccidum':4
+)Klebsormidiaceae:4,
+'Chlorokybus atmophyticus':4,
+(
+'Chaetosphaeridium globosum':4,
+'Coleochaete scutata':4
+)Coleochaetales:4,
+(
+'Iodes cirrhosa':4,
+'Drimys granadensis':4,
+'Tapiscia sinensis':4,
+(
+'Petrosavia stellaris':4,
+'Japonolirion osense':4
+)Petrosaviaceae:4,
+'Berberidopsis corallina':4,
+(
+'Buxus microphylla':4,
+'Pachysandra terminalis':4
+)Buxaceae:4,
+(
+(
+'Krameria bicolor':4,
+'Krameria lanceolata':4
+)Krameria:4,
+(
+'Guaiacum angustifolium':4,
+'Tribulus terrestris':4,
+'Tetraena mongolica':4,
+'Larrea tridentata':4
+)Zygophyllaceae:4
+)Zygophyllales:4,
+(
+'Gonocaryum lobbianum':4,
+'Helwingia himalaica':4,
+(
+'Ilex paraguariensis':4,
+'Ilex asprella':4,
+'Ilex cornuta':4,
+'Ilex latifolia':4,
+'Ilex integra':4
+)Ilex:4
+)Aquifoliales:4,
+(
+'Malania oleifera':4,
+'Erythropalum scandens':4,
+(
+'Elytranthe albida':4,
+'Tolypanthus maclurei':4,
+(
+'Taxillus vestitus':4,
+'Taxillus sutchuenensis':4,
+'Taxillus chinensis':4
+)Taxillus:4,
+(
+'Scurrula parasitica':4,
+'Scurrula notothixoides':4
+)Scurrula:4,
+'Macrosolen cochinchinensis':4,
+'Helixanthera parasitica':4,
+'Dendrophthoe pentandra':4
+)Loranthaceae:4,
+'Schoepfia jasminodora':4,
+'Pyrularia edulis':4,
+(
+'Viscum minimum':4,
+'Viscum coloratum':4
+)Viscum:4,
+(
+(
+'Phacellaria glomerata':4,
+'Phacellaria compressa':4
+)Phacellaria:4,
+'Dendrotrophe varians':4
+)Amphorogynaceae:4,
+'Champereia manillana':4
+)Santalales:4,
+'Quintinia verdonii':4,
+(
+'Hanguana malayana':4,
+'Anigozanthos flavidus':4,
+'Philydrum lanuginosum':4,
+(
+'Pontederia cordata':4,
+'Pontederia crassipes':4
+)Pontederia:4
+)Commelinales:4,
+(
+'Maytenus guangxiensis':4,
+'Salacia amplifolia':4,
+(
+'Euonymus szechuanensis':4,
+'Euonymus schensianus':4,
+'Euonymus hamiltonianus':4,
+'Euonymus japonicus':4
+)Euonymus:4,
+(
+'Parnassia trinervis':4,
+'Parnassia palustris':4
+)Parnassia:4
+)Celastraceae:4,
+(
+(
+'Metanarthecium luteoviride':4,
+(
+'Aletris fauriei':4,
+'Aletris spicata':4
+)Aletris:4
+)Nartheciaceae:4,
+'Tacca leontopetaloides':4,
+(
+'Burmannia cryptopetala':4,
+'Burmannia championii':4,
+'Burmannia nepalensis':4,
+'Burmannia oblonga':4,
+'Burmannia coelestis':4,
+'Burmannia disticha':4
+)Burmannia:4,
+(
+'Trichopus zeylanicus subsp. travancoricus':4,
+(
+'Dioscorea sagittifolia':4,
+'Dioscorea quartiniana':4,
+'Dioscorea baya':4,
+'Dioscorea hirtiflora':4,
+'Dioscorea aspersa':4,
+'Dioscorea futschauensis':4,
+'Dioscorea collettii':4,
+'Dioscorea villosa':4,
+'Dioscorea preussii':4,
+'Dioscorea zingiberensis':4,
+'Dioscorea schimperiana':4,
+'Dioscorea dumetorum':4,
+'Dioscorea elephantipes':4,
+'Dioscorea togoensis':4,
+'Dioscorea sansibarensis':4,
+'Dioscorea praehensilis':4,
+'Dioscorea polystachya':4,
+'Dioscorea burkilliana':4,
+'Dioscorea alata':4,
+'Dioscorea abyssinica':4,
+'Dioscorea bulbifera':4,
+'Dioscorea cayenensis subsp. rotundata':4
+)Dioscorea:4
+)Dioscoreaceae:4
+)Dioscoreales:4,
+(
+(
+'Lennoa madreporoides':4,
+'Pholisma arenarium':4
+)Lennoaceae:4,
+'Borago officinalis':4
+)Boraginales:4,
+'Amborella trichopoda':4,
+(
+(
+'Kadsura longipedunculata':4,
+'Kadsura coccinea':4
+)Kadsura:4,
+(
+'Schisandra chinensis':4,
+'Schisandra sphenanthera':4
+)Schisandra:4,
+(
+'Illicium oligandrum':4,
+'Illicium anisatum':4,
+'Illicium verum':4,
+'Illicium henryi':4,
+'Illicium floridanum':4
+)Illicium:4
+)Schisandraceae:4,
+(
+'Sarcandra glabra':4,
+(
+'Chloranthus erectus':4,
+'Chloranthus japonicus':4,
+'Chloranthus spicatus':4
+)Chloranthus:4
+)Chloranthaceae:4,
+(
+'Houttuynia cordata':4,
+(
+'Piper laetispicum':4,
+'Piper cenocladum':4,
+'Piper auritum':4,
+'Piper kadsura':4,
+'Piper longum':4,
+'Piper nigrum':4
+)Piper:4,
+(
+'Hydnora visseri':4,
+(
+'Asarum minus':4,
+'Asarum sieboldii':4
+)Asarum:4,
+'Saruma henryi':4,
+(
+'Aristolochia kunmingensis':4,
+'Aristolochia tubiflora':4,
+'Aristolochia contorta':4,
+'Aristolochia tagala':4,
+'Aristolochia moupinensis':4,
+'Aristolochia mollissima':4,
+'Aristolochia manshuriensis':4,
+'Aristolochia kaempferi':4,
+'Aristolochia debilis':4,
+'Aristolochia macrophylla':4
+)Aristolochia:4
+)Aristolochiaceae:4
+)Piperales:4,
+(
+'Sciaphila densiflora':4,
+'Carludovica palmata':4,
+'Xerophyta viscosa':4,
+(
+(
+'Stemona mairei':4,
+'Stemona japonica':4
+)Stemona:4,
+(
+'Croomia japonica':4,
+'Croomia pauciflora':4,
+'Croomia heterosepala':4
+)Croomia:4
+)Stemonaceae:4,
+'Pandanus tectorius':4
+)Pandanales:4,
+(
+(
+'Baxteria australis':4,
+'Dasypogon bromeliifolius':4
+)Dasypogonaceae:4,
+(
+'Corypha lecomtei':4,
+'Pritchardia thurstonii':4,
+'Colpothrinax cookii':4,
+'Syagrus coronata':4,
+(
+'Brahea sarukhanii':4,
+'Brahea edulis':4,
+'Brahea armata':4,
+'Brahea aculeata':4,
+'Brahea brandegeei':4
+)Brahea:4,
+'Wallichia densiflora':4,
+'Tahina spectabilis':4,
+(
+'Astrocaryum aculeatum':4,
+'Astrocaryum murumuru':4
+)Astrocaryum:4,
+'Metroxylon warburgii':4,
+'Trithrinax brasiliensis':4,
+'Leucothrinax morrisii':4,
+'Acoelorraphe wrightii':4,
+'Bismarckia nobilis':4,
+'Calamus caryotoides':4,
+'Archontophoenix alexandrae':4,
+'Acrocomia aculeata':4,
+'Sabal domingensis':4,
+'Areca vestiaria':4,
+'Veitchia arecina':4,
+'Pseudophoenix vinifera':4,
+'Borassodendron machadonis':4,
+(
+'Arenga pinnata':4,
+'Arenga caudata':4
+)Arenga:4,
+'Phytelephas aequatorialis':4,
+'Lodoicea maldivica':4,
+'Eremospatha macrocarpa':4,
+'Chuniophoenix nana':4,
+'Podococcus barteri':4,
+'Salacca ramosiana':4,
+'Pigafetta elata':4,
+'Mauritia flexuosa':4,
+'Eugeissona tristis':4,
+'Chamaerops humilis':4,
+'Elaeis guineensis':4,
+'Washingtonia robusta':4,
+'Phoenix dactylifera':4,
+'Cocos nucifera':4,
+'Serenoa repens':4,
+'Nypa fruticans':4,
+'Caryota mitis':4
+)Arecaceae:4
+)Arecales:4,
+(
+(
+'Bomarea edulis':4,
+'Alstroemeria hybrid cultivar':4,
+'Luzuriaga radicans':4
+)Alstroemeriaceae:4,
+'Campynema lineare':4,
+(
+'Heloniopsis tubiflora':4,
+(
+'Veratrum patulum':4,
+'Veratrum taliense':4,
+'Veratrum mengtzeanum':4,
+'Veratrum japonicum':4
+)Veratrum:4,
+(
+'Ypsilandra yunnanensis':4,
+'Ypsilandra thibetica':4
+)Ypsilandra:4,
+'Xerophyllum tenax':4,
+(
+'Trillium tschonoskii':4,
+'Trillium maculatum':4,
+'Trillium govanianum':4,
+'Trillium decumbens':4,
+'Trillium cuneatum':4,
+'Trillium camschatcense':4
+)Trillium:4,
+(
+'Paris yanchii':4,
+'Paris xichouensis':4,
+'Paris tengchongensis':4,
+'Paris qiliangiana':4,
+'Paris birmanica':4,
+'Paris caobangensis':4,
+'Paris vietnamensis':4,
+'Paris vaniotii':4,
+'Paris rugosa':4,
+'Paris mairei':4,
+'Paris forrestii':4,
+'Paris dunniana':4,
+'Paris dulongensis':4,
+'Paris delavayi':4,
+'Paris bashanensis':4,
+'Paris quadrifolia':4,
+'Paris axialis':4,
+'Paris marmorata':4,
+'Paris luquanensis':4,
+'Paris undulata':4,
+'Paris daliensis':4,
+'Paris cronquistii':4,
+'Paris incompleta':4,
+'Paris thibetica':4,
+'Paris fargesii':4,
+'Paris verticillata':4,
+'Paris tetraphylla':4,
+'Paris japonica':4,
+(
+'Paris polyphylla var. yunnanensis':4,
+'Paris polyphylla var. chinensis':4
+)'Paris polyphylla':4
+)Paris:4
+)Melanthiaceae:4,
+(
+'Colchicum autumnale':4,
+'Gloriosa superba':4,
+'Disporum sessile':4
+)Colchicaceae:4,
+(
+'Tulipa altaica':4,
+'Tricyrtis macropoda':4,
+'Erythronium sibiricum':4,
+(
+'Fritillaria yuzhongensis':4,
+'Fritillaria sichuanica':4,
+'Fritillaria eduardii':4,
+'Fritillaria sinica':4,
+'Fritillaria crassicaulis':4,
+'Fritillaria verticillata':4,
+'Fritillaria walujewii':4,
+'Fritillaria meleagroides':4,
+'Fritillaria yuminensis':4,
+'Fritillaria dajinensis':4,
+'Fritillaria maximowiczii':4,
+'Fritillaria karelinii':4,
+'Fritillaria davidii':4,
+'Fritillaria persica':4,
+'Fritillaria usuriensis':4,
+'Fritillaria unibracteata':4,
+'Fritillaria tortifolia':4,
+'Fritillaria taipaiensis':4,
+'Fritillaria przewalskii':4,
+'Fritillaria pallidiflora':4,
+'Fritillaria monantha':4,
+'Fritillaria hupehensis':4,
+'Fritillaria delavayi':4,
+'Fritillaria thunbergii':4,
+'Fritillaria cirrhosa':4,
+'Fritillaria anhuiensis':4
+)Fritillaria:4,
+(
+'Amana kuocangshanica':4,
+'Amana wanzhensis':4,
+'Amana anhuiensis':4,
+'Amana erythronioides':4,
+'Amana edulis':4
+)Amana:4,
+(
+'Cardiocrinum cathayanum':4,
+'Cardiocrinum cordatum':4,
+'Cardiocrinum giganteum':4
+)Cardiocrinum:4,
+'Notholirion bulbuliferum':4,
+(
+'Lilium sp. KHK-2014':4,
+'Lilium martagon var. pilosiusculum':4,
+'Lilium distichum':4,
+'Lilium fargesii':4,
+'Lilium bakerianum':4,
+'Lilium taliense':4,
+'Lilium leucanthum':4,
+'Lilium washingtonianum':4,
+'Lilium philadelphicum':4,
+'Lilium bulbiferum':4,
+'Lilium candidum':4,
+'Lilium tsingtauense':4,
+'Lilium henricii':4,
+'Lilium hansonii':4,
+'Lilium duchartrei':4,
+'Lilium cernuum':4,
+'Lilium brownii':4,
+'Lilium amabile':4,
+'Lilium lancifolium':4,
+'Lilium pensylvanicum':4,
+'Lilium callosum':4,
+'Lilium formosanum':4,
+'Lilium pardanthinum':4,
+'Lilium superbum':4,
+'Lilium henryi':4
+)Lilium:4
+)Liliaceae:4
+)Liliales:4,
+(
+'Astelia australiana':4,
+(
+'Geosiris australiensis':4,
+(
+'Iris gatesii':4,
+'Iris missouriensis':4,
+'Iris sanguinea':4
+)Iris:4,
+(
+'Crocus cartwrightianus':4,
+'Crocus sativus':4
+)Crocus:4
+)Iridaceae:4,
+(
+'Barnardia japonica':4,
+'Albuca kirkii':4,
+'Hyacinthoides non-scripta':4,
+'Oziroe biflora':4
+)Hyacinthaceae:4,
+(
+'Eremurus robustus':4,
+'Xanthorrhoea preissii':4,
+'Aloidendron pillansii':4,
+(
+'Aloe maculata':4,
+'Aloe vera':4
+)Aloe:4,
+'Hemerocallis fulva':4
+)Asphodelaceae:4,
+(
+'Aspidogyne longicornu':4,
+'Corybas taliensis':4,
+'Dipodium roseum':4,
+'Calypso bulbosa var. occidentalis':4,
+'Cyclopogon longibracteatus':4,
+'Palmorchis pabstii':4,
+'Anoectochilus emeiensis':4,
+(
+'Sobralia aff. bouchei HTK-2015':4,
+'Sobralia callosa':4
+)Sobralia:4,
+'Evelyna sodiroi':4,
+'Thrixspermum japonicum':4,
+(
+'Tainia cordifolia':4,
+'Tainia dunnii':4
+)Tainia:4,
+'Oberonia japonica':4,
+'Bulbophyllum inconspicuum':4,
+'Pendulorchis himalaica':4,
+'Chamaegastrodia shikokiana':4,
+'Anathallis obovata':4,
+(
+'Lecanorchis kiusiana':4,
+'Lecanorchis japonica':4
+)Lecanorchis:4,
+'Lankesterella ceracifolia':4,
+'Aphyllorchis montana':4,
+'Changnienia amoena':4,
+(
+'Vanda subconcolor':4,
+'Vanda brunnea':4
+)Vanda:4,
+(
+'Holcoglossum nagalandense':4,
+'Holcoglossum quasipinifolium':4,
+'Holcoglossum weixiense':4,
+'Holcoglossum wangii':4,
+'Holcoglossum sinicum':4,
+'Holcoglossum rupestre':4,
+'Holcoglossum nujiangense':4,
+'Holcoglossum lingulatum':4,
+'Holcoglossum flavescens':4,
+'Holcoglossum amesianum':4,
+'Holcoglossum subulifolium':4
+)Holcoglossum:4,
+'Oreorchis patens':4,
+(
+'Cremastra unguiculata':4,
+'Cremastra appendiculata':4
+)Cremastra:4,
+(
+'Epipogium roseum':4,
+'Epipogium aphyllum':4
+)Epipogium:4,
+'Eulophia zollingeri':4,
+'Ponerorchis gracilis':4,
+'Sauroglossum elatum':4,
+'Eurystyles cotyledon':4,
+'Prescottia stachyodes':4,
+'Galearis cyclochila':4,
+(
+'Habenaria flagellifera':4,
+'Habenaria chejuensis':4,
+'Habenaria pantlingiana':4,
+'Habenaria radiata':4
+)Habenaria:4,
+'Pelatantheria scolopendrifolia':4,
+(
+'Liparis pingtaoi':4,
+'Liparis bootanensis':4,
+'Liparis makinoana':4,
+'Liparis auriculata':4,
+'Liparis nervosa':4
+)Liparis:4,
+(
+'Apostasia shenzhenica':4,
+'Apostasia odorata':4,
+'Apostasia wallichii':4
+)Apostasia:4,
+(
+'Calanthe bicolor':4,
+'Calanthe delavayi':4,
+'Calanthe sylvatica':4,
+'Calanthe davidii':4,
+'Calanthe aristulifera':4,
+'Calanthe triplicata':4
+)Calanthe:4,
+'Dactylorhiza majalis':4,
+(
+'Gastrochilus fuscopunctatus':4,
+'Gastrochilus calceolaris':4,
+'Gastrochilus japonicus':4
+)Gastrochilus:4,
+(
+'Goodyera fumata':4,
+'Goodyera procera':4,
+'Goodyera rosulacea':4,
+'Goodyera velutina':4,
+'Goodyera schlechtendaliana':4
+)Goodyera:4,
+'Erycina pusilla':4,
+(
+'Cattleya liliputana':4,
+'Cattleya crispata':4
+)Cattleya:4,
+(
+'Pleione formosana':4,
+'Pleione bulbocodioides':4
+)Pleione:4,
+(
+'Masdevallia picturata':4,
+'Masdevallia coccinea':4
+)Masdevallia:4,
+'Rhizanthella gardneri':4,
+(
+'Dendrobium xichouense':4,
+'Dendrobium wattii':4,
+'Dendrobium spatella':4,
+'Dendrobium pseudotenellum':4,
+'Dendrobium fanjingshanense':4,
+'Dendrobium shixingense':4,
+'Dendrobium chrysocrepis':4,
+'Dendrobium catenatum':4,
+'Dendrobium scoriarum':4,
+'Dendrobium parishii':4,
+'Dendrobium henryi':4,
+'Dendrobium parciflorum':4,
+'Dendrobium candidum':4,
+'Dendrobium wilsonii':4,
+'Dendrobium strongylanthum':4,
+'Dendrobium bellatulum':4,
+'Dendrobium tosaense':4,
+'Dendrobium denneanum':4,
+'Dendrobium salaccense':4,
+'Dendrobium exile':4,
+'Dendrobium ellipsophyllum':4,
+'Dendrobium brymerianum':4,
+'Dendrobium wardianum':4,
+'Dendrobium falconeri':4,
+'Dendrobium primulinum':4,
+'Dendrobium pendulum':4,
+'Dendrobium lohohense':4,
+'Dendrobium jenkinsii':4,
+'Dendrobium hercoglossum':4,
+'Dendrobium chrysotoxum':4,
+'Dendrobium huoshanense':4,
+'Dendrobium flexicaule':4,
+'Dendrobium chrysanthum':4,
+'Dendrobium aphyllum':4,
+'Dendrobium crepidatum':4,
+'Dendrobium officinale':4,
+'Dendrobium moniliforme':4,
+'Dendrobium gratiosissimum':4,
+'Dendrobium devonianum':4,
+'Dendrobium aduncum':4,
+'Dendrobium thyrsiflorum':4,
+'Dendrobium loddigesii':4,
+'Dendrobium fimbriatum':4,
+'Dendrobium nobile':4
+)Dendrobium:4,
+'Gastrodia elata':4,
+(
+'Pogonia minor':4,
+'Pogonia japonica':4
+)Pogonia:4,
+(
+'Phalaenopsis aphrodite subsp. formosana':4,
+'Phalaenopsis hybrid cultivar':4,
+'Phalaenopsis japonica':4,
+'Phalaenopsis equestris':4
+)Phalaenopsis:4,
+(
+'Neofinetia xichangensis':4,
+'Neofinetia richardsiana':4,
+'Neofinetia falcata':4
+)Neofinetia:4,
+(
+'Cymbidium sinense x Cymbidium goeringii':4,
+'Cymbidium mannii':4,
+'Cymbidium macrorhizon':4,
+'Cymbidium tortisepalum':4,
+'Cymbidium tracyanum':4,
+'Cymbidium sinense':4,
+'Cymbidium lancifolium':4,
+'Cymbidium kanran':4,
+'Cymbidium goeringii':4,
+'Cymbidium faberi':4,
+'Cymbidium aloifolium':4,
+'Cymbidium ensifolium':4
+)Cymbidium:4,
+(
+'Cephalanthera humilis':4,
+'Cephalanthera longibracteata':4,
+'Cephalanthera longifolia':4,
+'Cephalanthera rubra':4,
+'Cephalanthera damasonium':4
+)Cephalanthera:4,
+(
+'Bletilla ochracea':4,
+'Bletilla formosana':4,
+'Bletilla striata':4
+)Bletilla:4,
+'Ludisia discolor':4,
+(
+'Platanthera japonica':4,
+'Platanthera mandarinorum':4,
+'Platanthera chlorantha':4
+)Platanthera:4,
+'Gymnadenia conopsea':4,
+'Phragmipedium longifolium':4,
+(
+'Paphiopedilum delenatii':4,
+'Paphiopedilum purpuratum':4,
+'Paphiopedilum niveum':4,
+'Paphiopedilum micranthum':4,
+'Paphiopedilum dianthum':4,
+'Paphiopedilum armeniacum':4
+)Paphiopedilum:4,
+(
+'Cypripedium japonicum':4,
+'Cypripedium macranthos':4,
+'Cypripedium formosanum':4,
+'Cypripedium calceolus':4
+)Cypripedium:4,
+(
+'Vanilla madagascariensis':4,
+'Vanilla pompona':4,
+'Vanilla aphylla':4,
+'Vanilla planifolia':4
+)Vanilla:4,
+(
+'Corallorhiza cf. striata ''CA''':4,
+'Corallorhiza macrantha':4,
+'Corallorhiza wisteriana':4,
+(
+'Corallorhiza striata var. striata':4,
+'Corallorhiza striata var. involuta':4
+)'Corallorhiza striata':4,
+'Corallorhiza odontorhiza':4,
+'Corallorhiza mertensiana':4,
+'Corallorhiza bulbosa':4,
+'Corallorhiza bentleyi':4,
+'Corallorhiza trifida':4,
+'Corallorhiza maculata':4
+)Corallorhiza:4,
+(
+'Oncidium hybrid cultivar':4,
+'Oncidium sphacelatum':4
+)Oncidium:4,
+(
+'Neottia suzukii':4,
+'Neottia fugongensis':4,
+'Neottia japonica':4,
+'Neottia camtschatea':4,
+'Neottia pinetorum':4,
+'Neottia listeroides':4,
+'Neottia acuminata':4,
+'Neottia cordata':4,
+'Neottia nidus-avis':4,
+'Neottia ovata':4
+)Neottia:4,
+(
+'Epipactis gigantea':4,
+'Epipactis mairei':4,
+'Epipactis veratrifolia':4,
+'Epipactis thunbergii':4,
+'Epipactis purpurata':4,
+'Epipactis atrorubens':4,
+'Epipactis microphylla':4,
+'Epipactis albensis':4,
+'Epipactis palustris':4,
+'Epipactis helleborine':4
+)Epipactis:4
+)Orchidaceae:4,
+(
+'Cordyline indivisa':4,
+'Beschorneria septentrionalis':4,
+'Schoenolirion croceum':4,
+'Nolina atopocarpa':4,
+(
+'Dracaena cochinchinensis':4,
+'Dracaena cambodiana':4
+)Dracaena:4,
+'Hesperocallis undulata':4,
+(
+'Polygonatum verticillatum':4,
+'Polygonatum stenophyllum':4,
+'Polygonatum sibiricum':4,
+'Polygonatum kingianum':4,
+'Polygonatum cyrtonema':4
+)Polygonatum:4,
+'Convallaria keiskei':4,
+'Eustrephus latifolius':4,
+'Anthericum ramosum':4,
+'Aphyllanthes monspeliensis':4,
+'Anemarrhena asphodeloides':4,
+(
+'Yucca queretaroensis':4,
+'Yucca schidigera':4,
+'Yucca brevifolia':4,
+'Yucca filamentosa':4
+)Yucca:4,
+'Milla biflora':4,
+'Chlorogalum pomeridianum':4,
+'Hesperoyucca whipplei':4,
+(
+'Hesperaloe campanulata':4,
+'Hesperaloe parviflora':4
+)Hesperaloe:4,
+(
+'Liriope spicata':4,
+'Liriope muscari':4
+)Liriope:4,
+(
+'Hosta clausa':4,
+'Hosta jonesii':4,
+'Hosta venusta':4,
+'Hosta yingeri':4,
+'Hosta minor':4,
+'Hosta capitata':4,
+'Hosta ventricosa':4
+)Hosta:4,
+'Camassia scilloides':4,
+(
+'Agave hybrid cultivar':4,
+'Agave virginica':4,
+'Agave attenuata':4,
+'Agave americana':4
+)Agave:4,
+(
+'Maianthemum bicolor':4,
+'Maianthemum dilatatum':4
+)Maianthemum:4,
+(
+'Asparagus setaceus':4,
+'Asparagus schoberioides':4,
+'Asparagus racemosus':4,
+'Asparagus filicinus':4,
+'Asparagus officinalis':4
+)Asparagus:4
+)Asparagaceae:4,
+(
+'Agapanthus coddii':4,
+(
+'Lycoris sprengeri':4,
+'Lycoris longituba':4,
+'Lycoris chinensis':4,
+'Lycoris radiata':4,
+'Lycoris aurea':4,
+'Lycoris squamigera':4,
+'Lycoris sanguinea':4
+)Lycoris:4,
+'Narcissus poeticus':4,
+(
+'Allium herderianum':4,
+'Allium trifurcatum':4,
+'Allium nanodes':4,
+'Allium chrysocephalum':4,
+'Allium xichuanense':4,
+'Allium rude':4,
+'Allium prattii':4,
+'Allium maowenense':4,
+'Allium fasciculatum':4,
+'Allium chrysanthum':4,
+'Allium paradoxum':4,
+'Allium obliquum':4,
+'Allium przewalskianum':4,
+'Allium praemixtum':4,
+'Allium monanthum':4,
+'Allium chinense':4,
+'Allium pskemense':4,
+'Allium spicatum':4,
+'Allium mairei':4,
+'Allium kingdonii':4,
+'Allium cyathophorum var. farreri':4,
+'Allium victorialis':4,
+'Allium oschaninii':4,
+'Allium altaicum':4,
+'Allium fistulosum':4,
+'Allium tuberosum':4,
+'Allium ampeloprasum':4,
+'Allium cepa':4
+)Allium:4
+)Amaryllidaceae:4
+)Asparagales:4,
+(
+'Heliconia collinsiana':4,
+(
+'Amomum krervanh':4,
+(
+'Wurfbainia longiligularis':4,
+'Wurfbainia compacta':4,
+'Wurfbainia villosa var. xanthioides':4
+)Wurfbainia:4,
+(
+'Curcuma wenyujin':4,
+'Curcuma roscoeana':4,
+'Curcuma phaeocaulis':4,
+'Curcuma longa':4,
+'Curcuma kwangsiensis':4,
+'Curcuma flaviflora':4,
+'Curcuma aromatica':4
+)Curcuma:4,
+'Alpinia oxyphylla':4,
+(
+'Roscoea tibetica':4,
+'Roscoea humeana':4
+)Roscoea:4,
+(
+'Kaempferia galanga':4,
+'Kaempferia elegans':4
+)Kaempferia:4,
+'Cautleya gracilis':4,
+(
+'Zingiber spectabile':4,
+'Zingiber officinale':4
+)Zingiber:4,
+(
+'Hedychium spicatum':4,
+'Hedychium coronarium':4
+)Hedychium:4
+)Zingiberaceae:4,
+(
+'Musella lasiocarpa':4,
+(
+'Musa itinerans':4,
+'Musa textilis':4,
+'Musa ornata':4,
+'Musa balbisiana var. balbisiana':4
+)Musa:4
+)Musaceae:4,
+'Ravenala madagascariensis':4
+)Zingiberales:4,
+(
+(
+'Eriocaulon decemflorum':4,
+'Eriocaulon buergerianum':4
+)Eriocaulon:4,
+(
+(
+'Carex neurocarpa':4,
+'Carex siderosticta':4
+)Carex:4,
+(
+'Eleocharis dulcis':4,
+'Eleocharis cellulosa':4
+)Eleocharis:4,
+'Hypolytrum nemorum':4
+)Cyperaceae:4,
+'Joinvillea ascendens':4,
+(
+'Sparganium stoloniferum':4,
+'Typha latifolia':4
+)Typhaceae:4,
+(
+'Puya mirabilis':4,
+(
+'Ochagavia elegans':4,
+'Ochagavia carnea':4
+)Ochagavia:4,
+'Ananas comosus':4
+)Bromeliaceae:4,
+(
+'Hierochloe odorata':4,
+'Koeleria nitidula':4,
+'Rehia nervata':4,
+'Froesiochloa boutelouoides':4,
+'Shibataea chiangshanensis':4,
+'Phaenanthoecium koestlinii':4,
+'Nematopoa longipes':4,
+'Limnopoa meeboldii':4,
+'Dichaetaria wightii':4,
+(
+'Crinipes longifolius':4,
+'Crinipes abyssinicus':4
+)Crinipes:4,
+(
+'Alloeochaete uluguruensis':4,
+'Alloeochaete oreogena':4,
+'Alloeochaete namuliensis':4
+)Alloeochaete:4,
+'Parahyparrhenia siamensis':4,
+'Mnesithea helferi':4,
+'Phyllorachis sagittata':4,
+'Oropetium aristatum':4,
+'Ehrharta bulbosa':4,
+(
+'Enneapogon caerulescens':4,
+'Enneapogon oblongus':4
+)Enneapogon:4,
+'Loudetiopsis kerstingii':4,
+(
+'Chasechloa madagascariensis':4,
+'Chasechloa egregia':4
+)Chasechloa:4,
+'Humbertochloa bambusiuscula':4,
+'Entolasia imbricata':4,
+'Hildaea pallens':4,
+'Eustachys glauca':4,
+(
+'Himalayacalamus gyirongensis':4,
+'Himalayacalamus collaris':4
+)Himalayacalamus:4,
+'Merxmuellera tsaratananensis':4,
+'Bromus vulgaris':4,
+'Pseudolasiacis leptolomoides':4,
+(
+'Eriochrysis cf. cayennensis 365-2':4,
+'Eriochrysis laxa':4,
+'Eriochrysis pallida':4
+)Eriochrysis:4,
+'Hitchcockella baronii':4,
+'Neohouzeaua sp. Clark & Attigala 1712':4,
+'Greslania sp. McPherson 19217':4,
+'Diandrolyra sp. Clark 1301':4,
+'Kuruna debilis':4,
+'Halopyrum mucronatum':4,
+'Coelachne africana':4,
+(
+'Leptaspis banksii':4,
+'Leptaspis zeylanica':4
+)Leptaspis:4,
+'Lecomtella madagascariensis':4,
+(
+'Sartidia isaloensis':4,
+'Sartidia dewinteri':4,
+'Sartidia perrieri':4
+)Sartidia:4,
+'Thyridolepis xerophila':4,
+'Nephelochloa orientalis':4,
+'Puccinellia nuttalliana':4,
+'Whiteochloa capillipes':4,
+'Iseilema macratherum':4,
+'Paraneurachne muelleri':4,
+'Amphicarpum muhlenbergianum':4,
+'Digitaria exilis':4,
+(
+'Melica subulata':4,
+'Melica mutica':4
+)Melica:4,
+'Tripogonella loliiformis':4,
+(
+'Eremochloa eriopoda':4,
+'Eremochloa ciliaris':4,
+'Eremochloa ophiuroides':4
+)Eremochloa:4,
+(
+'Yushania violascens':4,
+'Yushania glandulosa':4,
+'Yushania levigata':4,
+'Yushania confusa':4,
+'Yushania brevipaniculata':4
+)Yushania:4,
+'Oligostachyum shiuyingianum':4,
+'Gelidocalamus tessellatus':4,
+'Chimonocalamus longiusculus':4,
+'Eulalia siamensis':4,
+'Polytoca digitata':4,
+(
+'Garnotia thailandica':4,
+'Garnotia tenella':4
+)Garnotia:4,
+'Dimeria ornithopoda':4,
+'Germainia capitata':4,
+'Pseudosorghum fasciculare':4,
+'Pseudopogonatherum contortum':4,
+'Kerriochloa siamensis':4,
+'Oryzopsis asperifolia':4,
+'Triraphis mollis':4,
+(
+'Leptochloa virgata':4,
+'Leptochloa pluriflora':4
+)Leptochloa:4,
+'Tragus australianus':4,
+'Enteropogon ramosus':4,
+'Urochondra setulosa':4,
+'Orinus kokonoricus':4,
+'Eriochloa meyeriana':4,
+'Eulaliopsis binata':4,
+'Phleum alpinum':4,
+'Tricholaena monachne':4,
+'Sinosasa longiligulata':4,
+'Ferrocalamus rimosivaginus':4,
+(
+'Indocalamus wilsonii':4,
+'Indocalamus sinicus':4,
+'Indocalamus longiauritus':4
+)Indocalamus:4,
+'Sarocalamus faberi':4,
+(
+'Littledalea przevalskyi':4,
+'Littledalea racemosa':4,
+'Littledalea alaica':4
+)Littledalea:4,
+'Neololeba atra':4,
+'Schismus arabicus':4,
+'Polypogon fugax':4,
+'Amelichloa brachychaeta':4,
+'Dichelachne crinita':4,
+'Olmeca reflexa':4,
+'Brachyelytrum aristosum':4,
+'Arundinella deppeana':4,
+(
+'Alloteropsis paniculata':4,
+'Alloteropsis cimicina':4,
+'Alloteropsis angusta':4,
+'Alloteropsis semialata':4
+)Alloteropsis:4,
+(
+'Hilaria rigida':4,
+'Hilaria cenchroides':4
+)Hilaria:4,
+'Lasiacis nigra':4,
+'Neyraudia reynaudiana':4,
+(
+'Pleioblastus maculatus':4,
+'Pleioblastus amarus':4
+)Pleioblastus:4,
+'Piptochaetium avenaceum':4,
+'Nassella hyalina':4,
+'Torreyochloa pallida':4,
+'Desmazeria sicula':4,
+'Ammochloa palaestina':4,
+'Chimonobambusa tumidissinoda':4,
+(
+'Indosasa sinica':4,
+'Indosasa shibataeoides':4,
+'Indosasa gigantea':4
+)Indosasa:4,
+'Trisetum cernuum':4,
+'Gaudinopsis macra':4,
+'Scolochloa festucacea':4,
+'Triplachne nitens':4,
+'Gastridium ventricosum':4,
+'Stipagrostis hirtigluma':4,
+'Capillipedium venustum':4,
+(
+'Bothriochloa decipiens':4,
+'Bothriochloa alta':4
+)Bothriochloa:4,
+(
+'Arthraxon microphyllus':4,
+'Arthraxon prionodes':4,
+'Arthraxon lanceolatus':4,
+'Arthraxon hispidus':4
+)Arthraxon:4,
+(
+'Guadua weberbaueri':4,
+'Guadua chacoensis':4,
+'Guadua angustifolia':4
+)Guadua:4,
+'Helictochloa hookeri':4,
+'Loudetia simplex':4,
+'Rottboellia cochinchinensis':4,
+'Connorochloa tenuis':4,
+'Aeluropus lagopoides':4,
+'Ammophila breviligulata':4,
+'Raddia brasiliensis':4,
+(
+'Dendrocalamus sinicus':4,
+'Dendrocalamus latiflorus':4
+)Dendrocalamus:4,
+(
+'Brachiaria fragrans':4,
+'Brachiaria humidicola':4
+)Brachiaria:4,
+(
+'Tristachya humbertii':4,
+'Tristachya leucothrix':4
+)Tristachya:4,
+(
+'Isachne albens':4,
+'Isachne distichophylla':4
+)Isachne:4,
+'Pheidochloa gracilis':4,
+'Dichanthelium acuminatum':4,
+'Cynosurus cristatus':4,
+(
+'Catapodium marinum':4,
+'Catapodium rigidum':4
+)Catapodium:4,
+'Castellia tuberculosa':4,
+'Prosphytochloa prehensilis':4,
+(
+'Chikusichloa mutica':4,
+'Chikusichloa aquatica':4
+)Chikusichloa:4,
+'Drepanostachyum falcatum':4,
+(
+'Oldeania itremoensis':4,
+'Oldeania ibityensis':4,
+'Oldeania humbertii':4,
+'Oldeania cf. madagascariensis PFM-2018':4,
+'Oldeania alpina':4
+)Oldeania:4,
+'Tribolium hispidum':4,
+(
+'Urochloa ruziziensis':4,
+'Urochloa decumbens':4,
+'Urochloa brizantha':4,
+'Urochloa reptans':4
+)Urochloa:4,
+'Pogonatherum paniceum':4,
+'Melanocenchris abyssinica':4,
+'Vaseyochloa multinervosa':4,
+'Oxychloris scariosa':4,
+(
+'Dactyloctenium aegyptium':4,
+'Dactyloctenium radulans':4
+)Dactyloctenium:4,
+'Oncorachis ramosa':4,
+'Streptostachys asperifolia':4,
+(
+'Stenotaphrum subulatum':4,
+'Stenotaphrum secundatum':4
+)Stenotaphrum:4,
+'Sacciolepis indica':4,
+'Plagiantha tenella':4,
+'Coleataenia prionitis':4,
+'Steinchisma laxum':4,
+'Otachyrium versicolor':4,
+'Oplismenus hirtellus':4,
+(
+'Homolepis aturensis':4,
+'Homolepis isocalycia':4
+)Homolepis:4,
+'Chaetium bromoides':4,
+(
+'Axonopus ramosus':4,
+'Axonopus compressus':4,
+'Axonopus fissifolius':4
+)Axonopus:4,
+(
+'Paspalum pubiflorum':4,
+'Paspalum virgatum':4,
+'Paspalum inaequivalve':4,
+'Paspalum minus':4,
+'Paspalum juergensii':4,
+'Paspalum ionanthum':4,
+'Paspalum dilatatum':4,
+'Paspalum fimbriatum':4,
+'Paspalum glaziovii':4,
+'Paspalum vaginatum':4,
+'Paspalum paniculatum':4,
+'Paspalum simplex':4
+)Paspalum:4,
+'Bergbambos tessellata':4,
+(
+'Ampelocalamus saxatilis':4,
+'Ampelocalamus melicoideus':4,
+'Ampelocalamus naibunensis':4,
+'Ampelocalamus calcareus':4,
+'Ampelocalamus actinotrichus':4
+)Ampelocalamus:4,
+'Zingeria biebersteiniana':4,
+'Thamnocalamus spathiflorus':4,
+'Gaoligongshania megalothyrsa':4,
+'Acidosasa purpurea':4,
+'Kengyilia melanthera':4,
+(
+'Zoysia sinica':4,
+'Zoysia japonica':4,
+'Zoysia tenuifolia':4,
+'Zoysia macrantha':4,
+'Zoysia macrostachya':4
+)Zoysia:4,
+'Streptochaeta spicata':4,
+(
+'Alopecurus arundinaceus':4,
+'Alopecurus japonicus':4,
+'Alopecurus aequalis':4
+)Alopecurus:4,
+(
+'Fargesia stenoclada':4,
+'Fargesia grossa':4,
+'Fargesia funiushanensis':4,
+'Fargesia daminiu':4,
+'Fargesia canaliculata':4,
+'Fargesia denudata':4,
+'Fargesia qinlingensis':4,
+'Fargesia decurvata':4,
+'Fargesia albocerea':4,
+'Fargesia spathacea':4,
+'Fargesia setosa':4,
+'Fargesia nitida':4,
+'Fargesia hygrophila':4,
+'Fargesia fungosa':4,
+'Fargesia edulis':4,
+'Fargesia communis':4,
+'Fargesia yunnanensis':4
+)Fargesia:4,
+'Uniola paniculata':4,
+'Trichoneura grandiglumis':4,
+(
+'Triodia chichesterensis':4,
+'Triodia mallota':4,
+'Triodia scintillans':4,
+'Triodia vanleeuwenii':4,
+'Triodia glabra':4,
+'Triodia plurinervata':4,
+'Triodia concinna':4,
+'Triodia wiseana':4,
+'Triodia tomentosa':4,
+'Triodia schinzii':4,
+'Triodia longiceps':4,
+'Triodia lanigera':4,
+'Triodia rigidissima':4,
+'Triodia basedowii':4,
+'Triodia stipoides':4
+)Triodia:4,
+(
+'Eragrostis tenellula':4,
+'Eragrostis setifolia':4,
+'Eragrostis walteri':4,
+'Eragrostis minor':4,
+'Eragrostis tef':4
+)Eragrostis:4,
+'Rhynchoryza subulata':4,
+(
+'Hyparrhenia subplumosa':4,
+'Hyparrhenia diplandra':4,
+'Hyparrhenia rufa':4,
+'Hyparrhenia variabilis':4
+)Hyparrhenia:4,
+(
+'Dichanthium sericeum':4,
+'Dichanthium annulatum':4
+)Dichanthium:4,
+(
+'Themeda arguens':4,
+'Themeda villosa':4,
+'Themeda arundinacea':4,
+'Themeda quadrivalvis':4,
+'Themeda triandra':4
+)Themeda:4,
+'Hickelia madagascariensis':4,
+'Phalaris arundinacea':4,
+'Puelia olyriformis':4,
+'Buergersiochloa bambusoides':4,
+'Ischaemum afrum':4,
+'Apluda mutica':4,
+(
+'Echinochloa ugandensis':4,
+'Echinochloa stagnina':4,
+'Echinochloa oryzicola':4,
+'Echinochloa frumentacea':4,
+'Echinochloa esculenta':4,
+'Echinochloa crus-galli':4,
+'Echinochloa colona':4
+)Echinochloa:4,
+'Imperata cylindrica':4,
+'Sorghastrum nutans':4,
+(
+'Schizachyrium spicatum':4,
+'Schizachyrium imberbe':4,
+'Schizachyrium exile':4,
+'Schizachyrium brevifolium':4,
+'Schizachyrium tenerum':4,
+'Schizachyrium sanguineum':4,
+'Schizachyrium cirratum':4,
+'Schizachyrium scoparium':4
+)Schizachyrium:4,
+(
+'Heteropogon triticeus':4,
+'Heteropogon contortus':4
+)Heteropogon:4,
+'Danthoniopsis dinteri':4,
+(
+'Chrysopogon orientalis':4,
+'Chrysopogon aciculatus':4,
+'Chrysopogon serrulatus':4,
+'Chrysopogon zizanioides':4,
+'Chrysopogon gryllus':4
+)Chrysopogon:4,
+(
+'Andropogon burmanicus':4,
+'Andropogon abyssinicus':4,
+'Andropogon gayanus':4,
+'Andropogon chinensis':4,
+'Andropogon greenwayi':4,
+'Andropogon ascinodis':4,
+'Andropogon fastigiatus':4,
+'Andropogon distachyos':4,
+'Andropogon gerardi':4
+)Andropogon:4,
+(
+'Leersia japonica':4,
+'Leersia tisserantii':4,
+'Leersia perrieri':4
+)Leersia:4,
+(
+'Eriachne semiciliata':4,
+'Eriachne schultziana':4,
+'Eriachne pauciflora':4,
+'Eriachne major':4,
+'Eriachne compacta':4,
+'Eriachne axillaris':4,
+'Eriachne avenacea':4,
+'Eriachne agrostidea':4,
+'Eriachne tenuiculmis':4,
+'Eriachne armittii':4,
+'Eriachne sulcata':4,
+'Eriachne basedowii':4,
+'Eriachne obtusa':4,
+'Eriachne stipacea':4,
+'Eriachne melicacea':4,
+'Eriachne burkittii':4,
+'Eriachne glauca':4,
+'Eriachne ciliata':4,
+'Eriachne pallescens':4,
+'Eriachne aristidea':4,
+'Eriachne mucronata':4,
+'Eriachne triodioides':4,
+'Eriachne triseta':4
+)Eriachne:4,
+(
+'Cymbopogon flexuosus':4,
+'Cymbopogon citratus':4
+)Cymbopogon:4,
+(
+'Chloris virgata':4,
+'Chloris barbata':4,
+'Chloris truncata':4
+)Chloris:4,
+'Centotheca lappacea':4,
+(
+'Astrebla pectinata':4,
+'Astrebla lappacea':4
+)Astrebla:4,
+'Ampelodesmos mauritanicus':4,
+'Piptatherum songaricum':4,
+'Danthonia californica':4,
+(
+'Amphipogon turbinatus':4,
+'Amphipogon caricinus':4
+)Amphipogon:4,
+(
+'Agrostis gigantea':4,
+'Agrostis stolonifera':4
+)Agrostis:4,
+(
+'Miscanthus sacchariflorus':4,
+'Miscanthus x giganteus':4,
+'Miscanthus floridulus':4,
+'Miscanthus junceus':4,
+'Miscanthus transmorrisonensis':4,
+'Miscanthus sinensis':4
+)Miscanthus:4,
+'Megathyrsus maximus':4,
+'Tenaxia guillarmodiae':4,
+(
+'Rytidosperma semiannulare':4,
+'Rytidosperma pallidum':4
+)Rytidosperma:4,
+'Dregeochloa pumilla':4,
+(
+'Zizania aquatica':4,
+'Zizania latifolia':4
+)Zizania:4,
+'Cortaderia selloana':4,
+'Chionochloa macra':4,
+'Styppeiochloa gynoglossa':4,
+(
+'Elytrophorus spicatus':4,
+'Elytrophorus globularis':4
+)Elytrophorus:4,
+'Leymus chinensis':4,
+'Arrhenatherum elatius':4,
+(
+'Tripidium ravennae':4,
+'Tripidium arundinaceum':4
+)Tripidium:4,
+(
+'Sporobolus helvolus':4,
+'Sporobolus heterolepis':4,
+'Sporobolus michauxianus':4,
+'Sporobolus maritimus':4
+)Sporobolus:4,
+(
+'Bouteloua curtipendula':4,
+'Bouteloua gracilis':4
+)Bouteloua:4,
+(
+'Pariana campestris':4,
+'Pariana radiciflora':4
+)Pariana:4,
+(
+'Otatea glauca':4,
+'Otatea acuminata':4
+)Otatea:4,
+'Rhipidocladum pittieri':4,
+'Monachather paradoxus':4,
+'Gynerium sagittatum':4,
+'Centropodia glauca':4,
+(
+'Aristida glaziovii':4,
+'Aristida rufescens':4,
+'Aristida stipitata':4,
+'Aristida pruinosa':4,
+'Aristida diffusa':4,
+'Aristida behriana':4,
+'Aristida ternipes':4,
+'Aristida purpurea':4,
+'Aristida congesta':4
+)Aristida:4,
+'Chasmanthium laxum':4,
+'Lithachne pauciflora':4,
+'Thysanolaena latifolia':4,
+'Zeugites pittieri':4,
+'Olyra latifolia':4,
+'Streptogyna americana':4,
+(
+'Phyllostachys sulphurea':4,
+'Phyllostachys nigra var. henonis':4,
+'Phyllostachys propinqua':4,
+'Phyllostachys edulis':4
+)Phyllostachys:4,
+'Phaenosperma globosum':4,
+'Diarrhena obovata':4,
+'Molinia caerulea':4,
+(
+'Pharus lappulaceus':4,
+'Pharus latifolius':4
+)Pharus:4,
+'Anomochloa marantoidea':4,
+(
+'Distichlis bajaensis':4,
+'Distichlis spicata':4
+)Distichlis:4,
+(
+'Deschampsia antarctica':4,
+'Deschampsia cespitosa':4
+)Deschampsia:4,
+'Taeniatherum caput-medusae':4,
+(
+'Stipa heptapotamica':4,
+'Stipa x alaica':4,
+'Stipa ovczinnikovii':4,
+'Stipa hohenackeriana':4,
+'Stipa x brevicallosa':4,
+'Stipa narynica':4,
+'Stipa magnifica':4,
+'Stipa lipskyi':4,
+'Stipa zalesskii':4,
+'Stipa arabica':4,
+'Stipa richteriana subsp. jagnobica':4,
+'Stipa orientalis':4,
+'Stipa lessingiana':4,
+'Stipa caucasica':4,
+'Stipa capillata':4,
+'Stipa borysthenica':4,
+'Stipa purpurea':4,
+'Stipa hymenoides':4
+)Stipa:4,
+(
+'Chusquea culeou':4,
+'Chusquea spectabilis':4,
+'Chusquea liebmannii':4,
+'Chusquea circinata':4
+)Chusquea:4,
+(
+'Arundo plinii':4,
+'Arundo donax':4
+)Arundo:4,
+'Phragmites australis':4,
+'Nardus stricta':4,
+'Lygeum spartum':4,
+'Lamarckia aurea':4,
+'Holcus lanatus':4,
+'Hakonechloa macra':4,
+'Eleusine indica':4,
+'Briza maxima':4,
+(
+'Pseudosasa cantorii':4,
+'Pseudosasa japonica':4
+)Pseudosasa:4,
+'Anthoxanthum odoratum':4,
+(
+'Poa sp. PI 374046':4,
+'Poa palustris':4,
+'Poa annua':4,
+'Poa trivialis':4,
+'Poa nemoralis':4
+)Poa:4,
+'Cynodon dactylon':4,
+(
+'Brachypodium stacei':4,
+'Brachypodium hybridum':4,
+'Brachypodium distachyon':4
+)Brachypodium:4,
+(
+'Festuca altissima':4,
+'Festuca ovina':4,
+'Festuca pratensis':4
+)Festuca:4,
+'Australopyrum retrofractum':4,
+(
+'Arundinaria humbertii':4,
+'Arundinaria appalachiana':4,
+'Arundinaria fargesii':4,
+'Arundinaria tecta':4,
+'Arundinaria gigantea':4
+)Arundinaria:4,
+(
+'Thinopyrum bessarabicum':4,
+'Thinopyrum elongatum':4
+)Thinopyrum:4,
+(
+'Psathyrostachys huashanica':4,
+'Psathyrostachys juncea':4
+)Psathyrostachys:4,
+(
+'Bambusa arnhemica':4,
+'Bambusa ventricosa':4,
+'Bambusa emeiensis':4,
+'Bambusa bambos':4,
+'Bambusa multiplex':4
+)Bambusa:4,
+(
+'Zea luxurians':4,
+'Zea perennis':4,
+'Zea mays':4,
+'Zea diploperennis':4
+)Zea:4,
+(
+'Triticum zhukovskyi':4,
+'Triticum macha':4,
+'Triticum urartu':4,
+'Triticum turgidum':4,
+'Triticum timopheevii':4,
+'Triticum monococcum':4,
+'Triticum aestivum':4
+)Triticum:4,
+'Tripsacum dactyloides':4,
+(
+'Sorghum mekongense':4,
+'Sorghum propinquum':4,
+'Sorghum timorense':4,
+'Sorghum bicolor subsp. drummondii':4
+)Sorghum:4,
+(
+'Setaria geminata':4,
+'Setaria viridis':4,
+'Setaria italica':4
+)Setaria:4,
+'Secale cereale':4,
+(
+'Saccharum hildebrandtii':4,
+(
+'Saccharum hybrid cultivar NCo 310':4,
+'Saccharum hybrid cultivar SP80-3280':4
+)'Saccharum hybrid cultivar':4,
+'Saccharum spontaneum':4,
+'Saccharum officinarum':4
+)Saccharum:4,
+(
+'Cenchrus purpureus':4,
+'Cenchrus ciliaris':4,
+'Cenchrus americanus':4
+)Cenchrus:4,
+(
+'Panicum incomtum':4,
+'Panicum lycopodioides':4,
+'Panicum pygmaeum':4,
+'Panicum sumatrense':4,
+'Panicum virgatum':4,
+'Panicum capillare':4,
+'Panicum miliaceum':4
+)Panicum:4,
+(
+'Oryza longiglumis':4,
+'Oryza ridleyi':4,
+'Oryza meyeriana':4,
+'Oryza coarctata':4,
+'Oryza rhizomatis':4,
+'Oryza barthii':4,
+'Oryza minuta':4,
+'Oryza alta':4,
+'Oryza meridionalis':4,
+'Oryza glumipatula':4,
+'Oryza grandiglumis':4,
+'Oryza eichingeri':4,
+'Oryza glaberrima':4,
+'Oryza punctata':4,
+'Oryza nivara':4,
+'Oryza officinalis':4,
+'Oryza latifolia':4,
+'Oryza brachyantha':4,
+'Oryza australiensis':4,
+(
+'Oryza sativa Japonica Group':4,
+'Oryza sativa Indica Group':4
+)'Oryza sativa':4,
+'Oryza rufipogon':4,
+'Oryza longistaminata':4
+)Oryza:4,
+(
+'Lolium arundinaceum':4,
+'Lolium perenne':4,
+'Lolium multiflorum':4
+)Lolium:4,
+(
+(
+'Hordeum vulgare subsp. vulgare':4,
+'Hordeum vulgare subsp. spontaneum':4
+)'Hordeum vulgare':4,
+'Hordeum jubatum':4,
+'Hordeum bogdanii':4
+)Hordeum:4,
+'Dactylis glomerata':4,
+'Coix lacryma-jobi':4,
+(
+'Avena hybrida':4,
+'Avena lusitanica':4,
+'Avena hispanica':4,
+'Avena brevis':4,
+'Avena atlantica':4,
+'Avena occidentalis':4,
+'Avena damascena':4,
+'Avena wiestii':4,
+'Avena ventricosa':4,
+'Avena eriantha':4,
+'Avena canariensis':4,
+'Avena barbata':4,
+'Avena abyssinica':4,
+'Avena maroccana':4,
+'Avena clauda':4,
+'Avena agadiriana':4,
+'Avena sterilis':4,
+'Avena vaviloviana':4,
+'Avena strigosa':4,
+'Avena murphyi':4,
+'Avena longiglumis':4,
+'Avena fatua':4,
+'Avena sativa':4,
+'Avena nuda':4
+)Avena:4,
+(
+'Aegilops geniculata':4,
+'Aegilops kotschyi':4,
+'Aegilops cylindrica':4,
+'Aegilops sharonensis':4,
+'Aegilops tauschii':4,
+'Aegilops speltoides':4,
+'Aegilops umbellulata':4,
+'Aegilops searsii':4,
+'Aegilops longissima':4,
+'Aegilops comosa':4,
+'Aegilops bicornis':4
+)Aegilops:4
+)Poaceae:4
+)Poales:4,
+(
+'Acorus americanus':4,
+'Acorus tatarinowii':4,
+'Acorus gramineus':4,
+'Acorus calamus':4
+)Acorus:4,
+(
+'Tofieldia thibetica':4,
+'Potamogeton perfoliatus':4,
+'Zostera marina':4,
+(
+'Ottelia cordata':4,
+'Elodea canadensis':4,
+'Thalassia hemprichii':4,
+'Najas flexilis':4
+)Hydrocharitaceae:4,
+(
+(
+'Caldesia grandis':4,
+'Caldesia parnassifolia':4
+)Caldesia:4,
+(
+'Sagittaria lichuanensis':4,
+'Sagittaria trifolia':4
+)Sagittaria:4,
+'Alisma plantago-aquatica':4
+)Alismataceae:4,
+(
+(
+'Symplocarpus renifolius':4,
+'Symplocarpus nipponicus':4
+)Symplocarpus:4,
+'Stenospermation multiovulatum':4,
+(
+'Spathiphyllum patulinervum':4,
+'Spathiphyllum kochii':4,
+'Spathiphyllum cannifolium':4
+)Spathiphyllum:4,
+'Pinellia ternata':4,
+'Monstera adansonii':4,
+'Wolffiella lingulata':4,
+(
+'Wolffia brasiliensis':4,
+'Wolffia australiana':4
+)Wolffia:4,
+'Arisaema ringens':4,
+(
+'Epipremnum amplissimum':4,
+'Epipremnum aureum':4
+)Epipremnum:4,
+'Amorphophallus konjac':4,
+(
+'Zantedeschia hybrid cultivar':4,
+'Zantedeschia aethiopica':4
+)Zantedeschia:4,
+'Dieffenbachia seguine':4,
+'Spirodela polyrhiza':4,
+'Lemna minor':4,
+'Colocasia esculenta':4
+)Araceae:4
+)Alismatales:4,
+'Ceratophyllum demersum':4,
+(
+'Trithuria inconspicua':4,
+(
+(
+'Cabomba aquatica':4,
+'Cabomba furcata':4,
+'Cabomba caroliniana':4
+)Cabomba:4,
+'Brasenia schreberi':4
+)Cabombaceae:4,
+(
+(
+'Nuphar longifolia':4,
+'Nuphar advena':4,
+'Nuphar shimadae':4,
+'Nuphar japonica':4,
+'Nuphar pumila':4
+)Nuphar:4,
+(
+'Nymphaea jamesoniana':4,
+'Nymphaea ampla':4,
+'Nymphaea capensis':4,
+'Nymphaea lotus':4,
+'Nymphaea mexicana':4,
+'Nymphaea alba':4
+)Nymphaea:4,
+'Victoria cruziana':4,
+'Euryale ferox':4,
+(
+'Barclaya kunstleri':4,
+'Barclaya longifolia':4
+)Barclaya:4
+)Nymphaeaceae:4
+)Nymphaeales:4,
+(
+'Tetracentron sinense':4,
+'Trochodendron aralioides':4
+)Trochodendraceae:4,
+(
+'Itea chinensis':4,
+'Daphniphyllum oldhamii':4,
+'Myriophyllum spicatum':4,
+(
+'Rhodiola rosea':4,
+(
+'Sedum sarmentosum':4,
+'Sedum oryzifolium':4
+)Sedum:4,
+(
+'Phedimus takesimensis':4,
+'Phedimus kamtschaticus':4
+)Phedimus:4
+)Crassulaceae:4,
+'Penthorum chinense':4,
+(
+'Paeonia ostii':4,
+'Paeonia ludlowii':4,
+'Paeonia decomposita':4,
+'Paeonia rockii':4,
+'Paeonia suffruticosa':4,
+'Paeonia veitchii':4,
+'Paeonia obovata':4,
+'Paeonia delavayi':4,
+'Paeonia brownii':4,
+'Paeonia lactiflora':4
+)Paeonia:4,
+(
+'Chrysosplenium aureobracteatum':4,
+'Bergenia scopulosa':4,
+(
+'Heuchera villosa':4,
+'Heuchera richardsonii':4
+)Heuchera:4,
+'Saxifraga stolonifera':4,
+'Oresitrophe rupifraga':4,
+(
+'Mitella formosana':4,
+'Mitella diphylla':4
+)Mitella:4,
+(
+'Tiarella cordifolia':4,
+'Tiarella polyphylla':4,
+'Tiarella trifoliata':4
+)Tiarella:4,
+'Mukdenia rossii':4
+)Saxifragaceae:4,
+(
+'Cercidiphyllum magnificum':4,
+'Cercidiphyllum japonicum':4
+)Cercidiphyllum:4,
+(
+'Altingia chinensis':4,
+(
+'Liquidambar orientalis':4,
+'Liquidambar formosana':4,
+'Liquidambar acalycina':4,
+'Liquidambar styraciflua':4
+)Liquidambar:4
+)Altingiaceae:4,
+(
+'Corylopsis coreana':4,
+'Semiliquidambar cathayensis':4,
+'Chunia bucklandioides':4,
+'Loropetalum subcordatum':4,
+'Parrotia subaequalis':4,
+'Rhodoleia championii':4,
+'Sinowilsonia henryi':4,
+'Fortunearia sinensis':4,
+'Hamamelis mollis':4
+)Hamamelidaceae:4
+)Saxifragales:4,
+'Eucommia ulmoides':4,
+'Dillenia indica':4,
+(
+(
+'Sabia yunnanensis':4,
+'Meliosma aff. cuneifolia Moore 333':4
+)Sabiaceae:4,
+(
+'Nelumbo nucifera':4,
+'Nelumbo lutea':4
+)Nelumbo:4,
+'Platanus occidentalis':4,
+(
+'Helicia shweliensis':4,
+(
+'Macadamia integrifolia':4,
+'Macadamia ternifolia':4
+)Macadamia:4
+)Proteaceae:4
+)Proteales:4,
+(
+(
+'Hydrostachys goudotiana':4,
+'Hydrostachys polymorpha':4,
+'Hydrostachys imbricata':4
+)Hydrostachys:4,
+(
+'Grubbia rosmarinifolia':4,
+'Grubbia tomentosa':4
+)Grubbia:4,
+(
+'Eucnide grandiflora':4,
+(
+'Loasa nitida':4,
+'Loasa nana':4
+)Loasa:4,
+'Petalonyx linearis':4,
+(
+'Mentzelia aspera':4,
+'Mentzelia albicaulis':4
+)Mentzelia:4,
+'Kissenia capensis':4,
+(
+'Nasa urens':4,
+'Nasa triphylla':4
+)Nasa:4,
+(
+'Caiophora cirsiifolia':4,
+'Caiophora lateritia':4
+)Caiophora:4
+)Loasaceae:4,
+(
+'Philadelphus calvescens':4,
+'Deutzia compacta':4,
+'Jamesia americana':4,
+'Whipplea modesta':4,
+(
+'Hydrangea heteromalla':4,
+'Hydrangea caerulea':4,
+'Hydrangea serrata':4,
+'Hydrangea luteovenosa':4,
+'Hydrangea ampla':4,
+'Hydrangea petiolaris':4,
+'Hydrangea densifolia':4,
+'Hydrangea moellendorffii':4,
+'Hydrangea febrifuga':4,
+'Hydrangea platyarguta':4,
+'Hydrangea obtusifolia':4,
+'Hydrangea barbara':4,
+'Hydrangea hydrangeoides':4,
+'Hydrangea paniculata':4
+)Hydrangea:4,
+'Kirengeshoma palmata':4,
+'Carpenteria californica':4
+)Hydrangeaceae:4,
+(
+'Diplopanax stachyanthus':4,
+(
+'Nyssa yunnanensis':4,
+'Nyssa ogeche':4
+)Nyssa:4,
+'Davidia involucrata':4,
+'Camptotheca acuminata':4
+)Nyssaceae:4,
+'Curtisia dentata':4,
+(
+(
+'Alangium kurzii':4,
+'Alangium platanifolium':4,
+'Alangium chinense':4
+)Alangium:4,
+(
+'Cornus sanguinea':4,
+'Cornus peruviana':4,
+'Cornus eydeana':4,
+'Cornus disciflora':4,
+'Cornus volkensii':4,
+'Cornus suecica':4,
+'Cornus unalaschkensis':4,
+'Cornus sessilis':4,
+'Cornus nuttallii':4,
+'Cornus macrophylla':4,
+'Cornus controversa':4,
+'Cornus kousa':4,
+'Cornus officinalis':4,
+'Cornus oblonga':4,
+'Cornus chinensis':4,
+'Cornus alternifolia':4,
+'Cornus florida':4,
+'Cornus canadensis':4
+)Cornus:4
+)Cornaceae:4
+)Cornales:4,
+(
+'Carpodetus serratus':4,
+(
+(
+'Nymphoides coronata':4,
+'Nymphoides simulans':4,
+'Nymphoides coreana':4,
+'Nymphoides hydrophylla':4,
+'Nymphoides crenata':4
+)Nymphoides:4,
+'Menyanthes trifoliata':4
+)Menyanthaceae:4,
+'Scaevola taccada':4,
+(
+(
+'Monopsis flava':4,
+'Monopsis alba':4
+)Monopsis:4,
+(
+'Cyphia tortilis':4,
+'Cyphia schlechteri':4,
+'Cyphia phyteuma':4,
+'Cyphia glandulifera':4,
+'Cyphia dentariifolia':4,
+'Cyphia crenata':4,
+'Cyphia belfastica':4,
+'Cyphia banksiana':4,
+'Cyphia angustiloba':4
+)Cyphia:4,
+'Solenopsis bivonae':4,
+'Legenere valdiviana':4,
+'Isotoma hypocrateriformis':4,
+'Hypsela tridens':4,
+'Dialypetalum floribundum':4,
+'Wimmerella hederacea':4,
+'Lithotoma petraea':4,
+'Siphocampylus krauseanus':4,
+'Codonopsis minima':4,
+(
+'Centropogon nigricans':4,
+'Centropogon granulosus':4
+)Centropogon:4,
+'Hippobroma longiflora':4,
+'Diastatea micrantha':4,
+'Trematolobelia kauaiensis':4,
+(
+'Burmeistera fuscoapicata':4,
+'Burmeistera pirrensis':4,
+'Burmeistera loejtnantii':4,
+'Burmeistera parviflora':4,
+'Burmeistera sodiroana':4,
+'Burmeistera smaragdi':4,
+'Burmeistera rubrosepala':4,
+'Burmeistera resupinata':4,
+'Burmeistera oyacachensis':4,
+'Burmeistera lutosa':4,
+'Burmeistera cylindrocarpa':4,
+'Burmeistera ceratocarpa':4,
+'Burmeistera borjensis':4,
+'Burmeistera auriculata':4,
+'Burmeistera domingensis':4,
+'Burmeistera cyclostigmata':4,
+'Burmeistera crispiloba':4
+)Burmeistera:4,
+(
+'Sclerotheca viridiflora':4,
+'Sclerotheca longistigmata':4
+)Sclerotheca:4,
+(
+'Cyanea fissa':4,
+'Cyanea leptostegia':4
+)Cyanea:4,
+'Clermontia fauriei':4,
+'Grammatotheca bergiana':4,
+'Hanabusaya asiatica':4,
+'Porterella carnosula':4,
+(
+'Downingia elegans':4,
+'Downingia cuspidata':4
+)Downingia:4,
+'Platycodon grandiflorus':4,
+(
+'Pratia nummularia':4,
+'Pratia angulata':4
+)Pratia:4,
+(
+'Campanula takesimana':4,
+'Campanula punctata':4
+)Campanula:4,
+(
+'Adenophora erecta':4,
+'Adenophora triphylla':4,
+'Adenophora remotiflora':4,
+'Adenophora stricta':4,
+'Adenophora divaricata':4
+)Adenophora:4,
+'Delissea rhytidosperma':4,
+'Brighamia insignis':4,
+'Trachelium caeruleum':4,
+(
+'Lobelia thermalis':4,
+'Lobelia patula':4,
+'Lobelia malowensis':4,
+'Lobelia linearis':4,
+'Lobelia laxa':4,
+'Lobelia hartlaubii':4,
+'Lobelia galpinii':4,
+'Lobelia baumannii':4,
+'Lobelia wollastonii':4,
+'Lobelia udzungwensis':4,
+'Lobelia stuhlmannii':4,
+'Lobelia sancta':4,
+'Lobelia ritabeaniana':4,
+'Lobelia muscoides':4,
+'Lobelia mildbraedii':4,
+'Lobelia lukwangulensis':4,
+'Lobelia bequaertii':4,
+'Lobelia acrochila':4,
+'Lobelia thuliniana':4,
+'Lobelia morogoroensis':4,
+'Lobelia longisepala':4,
+'Lobelia thapsoidea':4,
+'Lobelia telekii':4,
+'Lobelia melliana':4,
+'Lobelia doniana':4,
+'Lobelia davidii':4,
+'Lobelia bambuseti':4,
+'Lobelia spicata':4,
+'Lobelia jasionoides':4,
+'Lobelia seguinii':4,
+'Lobelia urens':4,
+'Lobelia sessilifolia':4,
+'Lobelia sonderiana':4,
+'Lobelia rhynchopetalum':4,
+'Lobelia stricklandiae':4,
+'Lobelia chinensis':4,
+'Lobelia anceps':4,
+'Lobelia yuccoides':4,
+'Lobelia petiolata':4,
+'Lobelia organensis':4,
+'Lobelia niihauensis':4,
+'Lobelia kauaensis':4,
+'Lobelia gibberoa':4,
+'Lobelia columnaris':4,
+'Lobelia inflata':4,
+'Lobelia physaloides':4,
+'Lobelia polyphylla':4,
+'Lobelia laxiflora':4,
+'Lobelia holstii':4,
+'Lobelia puberula':4,
+'Lobelia aberdarica':4,
+'Lobelia cardinalis':4,
+'Lobelia boninensis':4,
+'Lobelia erinus':4
+)Lobelia:4
+)Campanulaceae:4,
+(
+'Lapsanastrum humile':4,
+'Llerasia caucana':4,
+'Lagenophora cuchumatanica':4,
+(
+'Baccharis aliena':4,
+'Baccharis tricuneata':4,
+'Baccharis genistelloides':4
+)Baccharis:4,
+'Leontopodium leiolepis':4,
+'Eschenbachia blinii':4,
+'Anaphalis sinica':4,
+'Sphagneticola calendulacea':4,
+'Pericallis hybrida':4,
+(
+'Linochilus rupestris':4,
+'Linochilus violaceus':4,
+'Linochilus tachirensis':4,
+'Linochilus rhododendroides':4,
+'Linochilus obtusus':4,
+'Linochilus oblongifolius':4,
+'Linochilus mutiscuanus':4,
+'Linochilus juajibioyi':4,
+'Linochilus jenesanus':4,
+'Linochilus huertasii':4,
+'Linochilus glutinosus':4,
+'Linochilus frontinensis':4,
+'Linochilus eriophorus':4,
+'Linochilus costaricensis':4,
+'Linochilus coriaceus':4,
+'Linochilus cinerascens':4,
+'Linochilus camargoanus':4,
+'Linochilus apiculatus':4,
+'Linochilus antioquensis':4,
+'Linochilus venezuelensis':4,
+'Linochilus tenuifolius':4,
+'Linochilus schultzii':4,
+'Linochilus rosmarinifolius':4,
+'Linochilus romeroi':4,
+'Linochilus rhomboidalis':4,
+'Linochilus revolutus':4,
+'Linochilus phylicoides':4,
+'Linochilus ochraceus':4,
+'Linochilus lacunosus':4,
+'Linochilus jaramilloi':4,
+'Linochilus inesianus':4,
+'Linochilus heterophyllus':4,
+'Linochilus floribundus':4,
+'Linochilus colombianus':4,
+'Linochilus cayambensis':4,
+'Linochilus alveolatus':4
+)Linochilus:4,
+'Xanthium sibiricum':4,
+'Ixeris polycephala':4,
+'Leucanthemella linearis':4,
+'Opisthopappus taihangensis':4,
+'Soliva sessilis':4,
+(
+'Aster hypoleucus':4,
+'Aster hersileoides':4,
+'Aster altaicus':4,
+'Aster spathulifolius':4,
+'Aster tataricus':4,
+'Aster indicus':4
+)Aster:4,
+'Westoniella kohkemperi':4,
+'Parastrephia quadrangularis':4,
+'Oritrophium peruvianum':4,
+'Laestadia muscicola':4,
+'Hinterhubera ericoides':4,
+'Floscaldasia hypsophila':4,
+(
+'Diplostephium spinulosum':4,
+'Diplostephium serratifolium':4,
+'Diplostephium sagasteguii':4,
+'Diplostephium pulchrum':4,
+'Diplostephium oxapampanum':4,
+'Diplostephium oblanceolatum':4,
+'Diplostephium meyenii':4,
+'Diplostephium lechleri':4,
+'Diplostephium juniperinum':4,
+'Diplostephium jelskii':4,
+'Diplostephium hippophae':4,
+'Diplostephium hartwegii':4,
+'Diplostephium gynoxyoides':4,
+'Diplostephium goodspeedii':4,
+'Diplostephium gnidioides':4,
+'Diplostephium empetrifolium':4,
+'Diplostephium crypteriophyllum':4,
+'Diplostephium callilepis':4,
+'Diplostephium cajamarquillense':4,
+'Diplostephium barclayanum':4,
+'Diplostephium cinereum':4,
+'Diplostephium haenkei':4,
+'Diplostephium glandulosum':4,
+'Diplostephium foliosissimum':4,
+'Diplostephium espinosae':4,
+'Diplostephium azureum':4,
+'Diplostephium ericoides':4
+)Diplostephium:4,
+'Blakiella bartsiifolia':4,
+'Aztecaster matudae':4,
+'Archibaccharis asperifolia':4,
+'Praxelis clematidea':4,
+'Helichrysum italicum':4,
+'Mikania micrantha':4,
+(
+'Ligularia mongolica':4,
+'Ligularia jaluensis':4,
+'Ligularia intermedia':4,
+'Ligularia veitchiana':4,
+'Ligularia hodgsonii':4,
+'Ligularia fischeri':4
+)Ligularia:4,
+'Ageratina adenophora':4,
+(
+'Galinsoga quadriradiata':4,
+'Galinsoga parviflora':4
+)Galinsoga:4,
+'Pluchea indica':4,
+'Achyrachaena mollis':4,
+(
+'Saussurea tsoongii':4,
+'Saussurea pseudoleucoma':4,
+'Saussurea lhozhagensis':4,
+'Saussurea durgae':4,
+'Saussurea polylepis':4,
+'Saussurea chabyoungsanica':4,
+'Saussurea tridactyla':4,
+'Saussurea leontodontoides':4,
+'Saussurea delavayi':4,
+'Saussurea salwinensis':4,
+'Saussurea pubifolia':4,
+'Saussurea japonica':4,
+'Saussurea obvallata':4,
+'Saussurea kingii':4,
+'Saussurea hookeri':4,
+'Saussurea involucrata':4,
+'Saussurea przewalskii':4
+)Saussurea:4,
+'Centaurea diffusa':4,
+(
+'Tanacetum coccineum':4,
+'Tanacetum cinerariifolium':4
+)Tanacetum:4,
+(
+'Dendrosenecio meruensis':4,
+'Dendrosenecio keniensis':4,
+'Dendrosenecio keniodendron':4,
+'Dendrosenecio brassiciformis':4,
+'Dendrosenecio battiscombei':4,
+'Dendrosenecio johnstonii':4,
+'Dendrosenecio kilimanjari':4,
+'Dendrosenecio cheranganiensis':4
+)Dendrosenecio:4,
+'Ismelia carinata':4,
+'Crossostephium chinense':4,
+'Jacobaea vulgaris':4,
+'Silybum marianum':4,
+'Conyza bonariensis':4,
+'Youngia japonica':4,
+(
+'Crepidiastrum denticulatum':4,
+'Crepidiastrum sonchifolium':4,
+'Crepidiastrum lanceolatum':4
+)Crepidiastrum:4,
+'Senecio vulgaris':4,
+'Exostigma notobellidiastrum':4,
+'Laennecia sophiifolia':4,
+(
+'Erigeron breviscapus':4,
+'Erigeron canadensis':4
+)Erigeron:4,
+'Hypochaeris radicata':4,
+(
+'Echinacea speciosa':4,
+'Echinacea sanguinea':4,
+'Echinacea laevigata':4,
+'Echinacea angustifolia':4,
+'Echinacea tennesseensis':4,
+'Echinacea purpurea':4,
+'Echinacea paradoxa':4,
+'Echinacea pallida':4,
+'Echinacea atrorubens':4
+)Echinacea:4,
+(
+'Eclipta alba':4,
+'Eclipta prostrata':4
+)Eclipta:4,
+'Cosmos bipinnatus':4,
+(
+'Taraxacum brevicorniculatum':4,
+'Taraxacum obtusifrons':4,
+'Taraxacum amplum':4,
+'Taraxacum kok-saghyz':4,
+'Taraxacum platycarpum':4,
+'Taraxacum mongolicum':4,
+'Taraxacum officinale':4
+)Taraxacum:4,
+(
+'Sonchus boulosii':4,
+'Sonchus canariensis':4,
+'Sonchus acaulis':4,
+'Sonchus webbii':4
+)Sonchus:4,
+(
+'Bidens menziesii subsp. filiformis x Bidens micrantha subsp. ctenophylla':4,
+'Bidens wiebkei':4,
+'Bidens valida':4,
+'Bidens torta':4,
+'Bidens molokaiensis':4,
+(
+'Bidens micrantha subsp. kalealaha':4,
+'Bidens micrantha subsp. ctenophylla':4
+)'Bidens micrantha':4,
+(
+'Bidens menziesii subsp. menziesii':4,
+'Bidens menziesii subsp. filiformis':4
+)'Bidens menziesii':4,
+'Bidens macrocarpa':4,
+'Bidens hawaiensis':4,
+(
+'Bidens forbesii subsp. kahiliensis':4,
+'Bidens forbesii subsp. forbesii':4
+)'Bidens forbesii':4,
+'Bidens cervicata':4,
+(
+'Bidens campylotheca subsp. pentamera':4,
+'Bidens campylotheca subsp. campylotheca':4
+)'Bidens campylotheca':4,
+'Bidens asymmetrica':4,
+'Bidens amplectens':4,
+'Bidens alba var. radiata':4,
+'Bidens schimperi':4,
+'Bidens pachyloma':4,
+'Bidens hillebrandiana subsp. polycephala':4,
+(
+'Bidens sandvicensis subsp. sandvicensis':4,
+'Bidens sandvicensis subsp. confusa':4
+)'Bidens sandvicensis':4,
+'Bidens mauiensis':4,
+'Bidens cosmoides':4,
+'Bidens conjuncta':4,
+'Bidens pilosa':4
+)Bidens:4,
+'Synurus deltoides':4,
+(
+'Marshallia ramosa':4,
+'Marshallia mohrii':4,
+'Marshallia legrandii':4,
+'Marshallia graminifolia':4,
+'Marshallia trinervia':4,
+'Marshallia grandiflora':4,
+'Marshallia obovata':4,
+'Marshallia caespitosa':4
+)Marshallia:4,
+(
+'Chrysanthemum lucidum':4,
+'Chrysanthemum boreale':4,
+'Chrysanthemum indicum':4,
+'Chrysanthemum x morifolium':4
+)Chrysanthemum:4,
+(
+'Cynara baetica':4,
+'Cynara cornigera':4,
+'Cynara humilis':4
+)Cynara:4,
+(
+'Cirsium rhinoceros':4,
+'Cirsium eriophorum':4,
+'Cirsium vulgare':4,
+'Cirsium arvense':4
+)Cirsium:4,
+(
+'Atractylodes macrocephala':4,
+'Atractylodes chinensis':4,
+'Atractylodes lancea':4
+)Atractylodes:4,
+'Parthenium argentatum':4,
+(
+'Artemisia ordosica':4,
+'Artemisia montana':4,
+'Artemisia maritima':4,
+'Artemisia selengensis':4,
+'Artemisia fukudo':4,
+'Artemisia gmelinii':4,
+'Artemisia frigida':4,
+'Artemisia capillaris':4,
+'Artemisia argyi':4,
+'Artemisia scoparia':4,
+'Artemisia annua':4
+)Artemisia:4,
+'Tagetes erecta':4,
+'Gerbera jamesonii':4,
+'Cichorium intybus':4,
+(
+'Leucanthemum virgatum':4,
+'Leucanthemum vulgare':4,
+'Leucanthemum maximum':4
+)Leucanthemum:4,
+'Lactuca sativa':4,
+(
+'Helianthus strumosus':4,
+'Helianthus maximiliani':4,
+'Helianthus hirsutus':4,
+'Helianthus grosseserratus':4,
+'Helianthus giganteus':4,
+'Helianthus divaricatus':4,
+'Helianthus decapetalus':4,
+'Helianthus debilis':4,
+'Helianthus argophyllus':4,
+'Helianthus tuberosus':4,
+'Helianthus annuus':4
+)Helianthus:4,
+'Guizotia abyssinica':4,
+'Carthamus tinctorius':4,
+'Arctium lappa':4,
+(
+'Ambrosia trifida':4,
+'Ambrosia artemisiifolia':4
+)Ambrosia:4
+)Asteraceae:4
+)Asterales:4,
+(
+(
+(
+'Dipsacus asper':4,
+'Dipsacus japonicus':4
+)Dipsacus:4,
+'Morina longifolia':4,
+'Pterocephalus hookeri':4,
+(
+'Patrinia scabiosifolia':4,
+'Patrinia saniculifolia':4,
+'Patrinia villosa':4,
+'Patrinia scabra':4,
+'Patrinia heterophylla':4
+)Patrinia:4,
+'Scabiosa tschiliensis':4,
+(
+'Dipelta yunnanensis':4,
+'Dipelta floribunda':4
+)Dipelta:4,
+'Acanthocalyx alba':4,
+'Heptacodium miconioides':4,
+(
+'Triosteum pinnatifidum':4,
+'Triosteum himalayanum':4
+)Triosteum:4,
+'Symphoricarpos orbiculatus':4,
+(
+'Abelia sanguinea':4,
+'Abelia chinensis':4,
+'Abelia x grandiflora':4
+)Abelia:4,
+'Kolkwitzia amabilis':4,
+(
+'Zabelia dielsii':4,
+'Zabelia biflora':4,
+'Zabelia triflora':4
+)Zabelia:4,
+(
+'Weigela japonica':4,
+'Weigela florida':4
+)Weigela:4,
+'Linnaea borealis':4,
+'Triplostegia glandulifera':4,
+(
+'Lonicera sachalinensis':4,
+'Lonicera stephanocarpa':4,
+'Lonicera praeflorens':4,
+'Lonicera insularis':4,
+'Lonicera macranthoides':4,
+'Lonicera vesicaria':4,
+'Lonicera tragophylla':4,
+'Lonicera calcarata':4,
+'Lonicera hispida':4,
+'Lonicera ferdinandi':4,
+'Lonicera confusa':4,
+'Lonicera nervosa':4,
+'Lonicera japonica':4,
+'Lonicera maackii':4
+)Lonicera:4,
+'Valeriana officinalis':4
+)Caprifoliaceae:4,
+(
+(
+'Viburnum amplificatum':4,
+'Viburnum brachybotryum':4,
+'Viburnum utile':4,
+'Viburnum odoratissimum':4,
+'Viburnum dilatatum':4,
+'Viburnum betulifolium':4
+)Viburnum:4,
+'Tetradoxa omeiensis':4,
+'Sinadoxa corydalifolia':4,
+'Adoxa moschatellina':4,
+(
+'Sambucus williamsii':4,
+'Sambucus nigra':4
+)Sambucus:4
+)Adoxaceae:4
+)Dipsacales:4,
+(
+(
+'Aloysia citrodora':4,
+'Lippia origanoides':4
+)Verbenaceae:4,
+'Silvianthus bracteatus':4,
+(
+'Torenia benthamiana':4,
+'Torenia concolor':4
+)Torenia:4,
+(
+'Phryma leptostachya subsp. asiatica':4,
+'Erythranthe lutea':4,
+(
+'Lancea hirsuta':4,
+'Lancea tibetica':4
+)Lancea:4
+)Phrymaceae:4,
+(
+'Wightia speciosissima':4,
+(
+'Scrophularia henryi':4,
+'Scrophularia dentata':4,
+'Scrophularia takesimensis':4,
+'Scrophularia buergeriana':4
+)Scrophularia:4,
+(
+'Buddleja sessilifolia':4,
+'Buddleja colvilei':4
+)Buddleja:4
+)Scrophulariaceae:4,
+(
+(
+'Adenocalymma trifoliatum':4,
+'Adenocalymma nodosum':4,
+'Adenocalymma divaricatum':4,
+'Adenocalymma acutissimum':4,
+'Adenocalymma subspicatum':4,
+'Adenocalymma peregrinum':4,
+'Adenocalymma pedunculatum':4,
+'Adenocalymma hatschbachii':4,
+'Adenocalymma cristicalyx':4,
+'Adenocalymma bracteatum':4,
+'Adenocalymma biternatum':4,
+'Adenocalymma aurantiacum':4,
+'Adenocalymma allamandiflorum':4,
+'Adenocalymma marginatum':4
+)Adenocalymma:4,
+'Pleonotoma albiflora':4,
+'Neojobertia candolleana':4,
+'Dolichandra cynanchoides':4,
+'Tanaecium tetragonolobum':4,
+(
+'Anemopaegma prostratum':4,
+'Anemopaegma album':4,
+'Anemopaegma acutifolium':4,
+'Anemopaegma arvense':4,
+'Anemopaegma chamberlaynii':4,
+'Anemopaegma glaucum':4,
+'Anemopaegma oligoneuron':4,
+'Anemopaegma foetidum':4
+)Anemopaegma:4,
+(
+'Amphilophium gnaphalanthum':4,
+'Amphilophium cuneifolium':4,
+'Amphilophium chocoense':4,
+'Amphilophium steyermarkii':4,
+'Amphilophium pilosum':4,
+'Amphilophium lactiflorum':4,
+'Amphilophium ecuadorense':4,
+'Amphilophium dusenianum':4,
+'Amphilophium dolichoides':4,
+'Amphilophium carolinae':4,
+'Amphilophium paniculatum':4
+)Amphilophium:4,
+'Incarvillea arguta':4,
+'Catalpa ovata':4,
+'Tecomaria capensis':4
+)Bignoniaceae:4,
+'Mazus pumilus':4,
+(
+'Aphelandra knappiae':4,
+'Blepharis ciliaris':4,
+(
+'Echinacanthus longzhouensis':4,
+'Echinacanthus lofouensis':4,
+'Echinacanthus longipes':4,
+'Echinacanthus attenuatus':4
+)Echinacanthus:4,
+'Clinacanthus nutans':4,
+'Strobilanthes cusia':4,
+'Andrographis paniculata':4,
+(
+'Justicia flava':4,
+'Justicia leptostachya':4,
+'Justicia adhatoda':4
+)Justicia:4,
+'Avicennia marina':4
+)Acanthaceae:4,
+(
+'Bacopa monnieri':4,
+(
+'Veronica nakaiana':4,
+'Veronica persica':4
+)Veronica:4,
+(
+'Plantago fengdouensis':4,
+'Plantago depressa':4,
+'Plantago maritima':4,
+'Plantago ovata':4,
+'Plantago lagopus':4,
+'Plantago media':4
+)Plantago:4,
+'Hemiphragma heterophyllum':4,
+'Veronicastrum sibiricum':4,
+'Digitalis lanata':4
+)Plantaginaceae:4,
+(
+'Petrocodon jingxiensis':4,
+'Dorcoceras hygrometricum':4,
+(
+'Primulina huaijiensis':4,
+'Primulina eburnea':4,
+'Primulina liboensis':4,
+'Primulina linearifolia':4
+)Primulina:4,
+'Haberlea rhodopensis':4,
+'Streptocarpus teitensis':4,
+'Lysionotus pauciflorus':4
+)Gesneriaceae:4,
+(
+'Paulownia catalpifolia':4,
+'Paulownia elongata':4,
+'Paulownia fargesii':4,
+'Paulownia taiwaniana':4,
+'Paulownia coreana':4,
+'Paulownia fortunei':4,
+'Paulownia kawakamii':4,
+'Paulownia tomentosa':4
+)Paulownia:4,
+(
+'Pinguicula ehlersiae':4,
+(
+'Genlisea tuberosa':4,
+'Genlisea filiformis':4,
+'Genlisea pygmaea':4,
+'Genlisea repens':4,
+'Genlisea margaretae':4,
+'Genlisea violacea':4,
+'Genlisea aurea':4
+)Genlisea:4,
+(
+'Utricularia reniformis':4,
+'Utricularia macrorhiza':4,
+'Utricularia gibba':4
+)Utricularia:4
+)Lentibulariaceae:4,
+'Sesamum indicum':4,
+(
+'Castilleja paramensis':4,
+'Brandisia swinglei':4,
+'Triaenophora shennongjiaensis':4,
+'Siphonostegia chinensis':4,
+'Lathraea squamaria':4,
+'Euphrasia regelii':4,
+(
+'Orobanche pancicii':4,
+'Orobanche latisquama':4,
+'Orobanche rapum-genistae':4,
+'Orobanche gracilis':4,
+'Orobanche densiflora':4,
+'Orobanche crenata':4,
+'Orobanche austrohispanica':4
+)Orobanche:4,
+'Diphelypaea coccinea':4,
+(
+'Rehmannia henryi':4,
+'Rehmannia piasezkii':4,
+'Rehmannia solanifolia':4,
+'Rehmannia chingii':4,
+'Rehmannia elata':4,
+'Rehmannia glutinosa':4
+)Rehmannia:4,
+(
+'Cistanche deserticola':4,
+'Cistanche phelypaea':4
+)Cistanche:4,
+'Lindenbergia philippensis':4,
+'Schwalbea americana':4,
+(
+'Pedicularis hallaisanensis':4,
+'Pedicularis ishidoyana':4,
+'Pedicularis muscicola':4,
+'Pedicularis oederi':4,
+'Pedicularis longiflora':4,
+'Pedicularis cheilanthifolia':4,
+'Pedicularis resupinata':4
+)Pedicularis:4,
+(
+'Aphyllon californicum':4,
+'Aphyllon fasciculatum':4
+)Aphyllon:4,
+(
+'Phelipanche purpurea':4,
+'Phelipanche ramosa':4
+)Phelipanche:4,
+'Conopholis americana':4,
+'Epifagus virginiana':4
+)Orobanchaceae:4,
+(
+(
+'Noronhia intermedia':4,
+'Noronhia clarinerva':4,
+'Noronhia lowryi':4,
+'Noronhia brevituba':4,
+'Noronhia peglerae':4
+)Noronhia:4,
+'Chengiodendron marginatum':4,
+'Myxopyrum hainanense':4,
+(
+'Schrebera orientalis':4,
+'Schrebera swietenioides':4,
+'Schrebera capuronii':4,
+'Schrebera arborea':4,
+'Schrebera trichoclada':4,
+'Schrebera alata':4
+)Schrebera:4,
+'Priogymnanthus hasslerianus':4,
+(
+'Picconia azorica':4,
+'Picconia excelsa':4
+)Picconia:4,
+(
+'Notelaea venosa':4,
+'Notelaea microcarpa':4,
+'Notelaea longifolia':4
+)Notelaea:4,
+(
+'Nestegis sandwicensis':4,
+'Nestegis lanceolata':4,
+'Nestegis cunninghamii':4,
+'Nestegis apetala':4
+)Nestegis:4,
+'Hesperelaea palmeri':4,
+'Haenianthus salicifolius':4,
+(
+'Forestiera phillyreoides':4,
+'Forestiera isabelae':4,
+'Forestiera ligustrina':4,
+'Forestiera angustifolia':4,
+'Forestiera segregata':4
+)Forestiera:4,
+'Comoranthus minor':4,
+(
+'Chionanthus pedunculatus':4,
+'Chionanthus pubescens':4,
+'Chionanthus polygamus':4,
+'Chionanthus maxwellii':4,
+'Chionanthus macrobotrys':4,
+'Chionanthus ligustrinus':4,
+'Chionanthus implicatus':4,
+'Chionanthus rupicola':4,
+'Chionanthus parkinsonii':4,
+'Chionanthus thorelii':4,
+'Chionanthus mala-elengi':4,
+'Chionanthus compactus':4,
+'Chionanthus axillaris':4,
+'Chionanthus quadristamineus':4,
+'Chionanthus panamensis':4,
+'Chionanthus brassii':4,
+'Chionanthus virginicus':4,
+'Chionanthus retusus':4,
+'Chionanthus ramiflorus':4,
+'Chionanthus filiformis':4
+)Chionanthus:4,
+'Abeliophyllum distichum':4,
+(
+'Phillyrea aff. angustifolia Moukhli 1':4,
+'Phillyrea latifolia':4,
+'Phillyrea angustifolia':4
+)Phillyrea:4,
+(
+'Osmanthus aff. armatus Besnard 02-2013':4,
+'Osmanthus yunnanensis':4,
+'Osmanthus delavayi':4,
+'Osmanthus insularis':4,
+'Osmanthus fragrans':4
+)Osmanthus:4,
+(
+'Jasminum tortuosum':4,
+'Jasminum sambac':4,
+'Jasminum nudiflorum':4,
+'Jasminum polyanthum':4,
+'Jasminum fluminense':4
+)Jasminum:4,
+(
+'Forsythia mira':4,
+'Forsythia suspensa':4,
+'Forsythia x intermedia':4
+)Forsythia:4,
+'Nyctanthes arbor-tristis':4,
+(
+'Fraxinus lanuginosa':4,
+'Fraxinus chiisanensis':4,
+'Fraxinus angustifolia':4,
+'Fraxinus xanthoxyloides':4,
+'Fraxinus latifolia':4,
+'Fraxinus pennsylvanica':4,
+'Fraxinus quadrangulata':4,
+'Fraxinus mandshurica':4,
+'Fraxinus excelsior':4,
+'Fraxinus americana':4
+)Fraxinus:4,
+(
+'Syringa persica':4,
+'Syringa pinnatifolia':4,
+'Syringa tomentella subsp. yunnanensis':4,
+'Syringa vulgaris':4
+)Syringa:4,
+(
+'Ligustrum gracile':4,
+'Ligustrum japonicum':4,
+'Ligustrum vulgare':4
+)Ligustrum:4,
+(
+'Olea perrieri':4,
+'Olea woodiana subsp. woodiana':4,
+'Olea exasperata':4,
+'Olea tsoongii':4,
+'Olea lancea':4,
+'Olea paniculata':4,
+(
+'Olea europaea subsp. maroccana':4,
+'Olea europaea subsp. europaea':4,
+'Olea europaea subsp. cuspidata':4
+)'Olea europaea':4
+)Olea:4
+)Oleaceae:4,
+(
+'Teucrium mascatense':4,
+'Dracocephalum palmatum':4,
+'Galeopsis tetrahit':4,
+(
+'Thymus japonicus':4,
+'Thymus mongolicus':4
+)Thymus:4,
+'Anisomeles indica':4,
+(
+'Stenogyne kanehoana':4,
+'Stenogyne haliakalae':4,
+'Stenogyne bifida':4
+)Stenogyne:4,
+'Phyllostegia velutina':4,
+'Haplostachys haplostachya':4,
+(
+'Scutellaria insignis':4,
+'Scutellaria lateriflora':4,
+'Scutellaria baicalensis':4
+)Scutellaria:4,
+'Premna microphylla':4,
+(
+'Stachys chamissonis':4,
+'Stachys byzantina':4,
+'Stachys coccinea':4,
+'Stachys sylvatica':4
+)Stachys:4,
+(
+'Lamium galeobdolon':4,
+'Lamium album':4
+)Lamium:4,
+(
+'Perilla setoyensis':4,
+'Perilla citriodora':4,
+'Perilla frutescens':4
+)Perilla:4,
+'Tectona grandis':4,
+'Holmskioldia sanguinea':4,
+(
+'Caryopteris mongholica':4,
+'Caryopteris incana':4
+)Caryopteris:4,
+'Prunella vulgaris':4,
+(
+'Ocimum tenuiflorum':4,
+'Ocimum basilicum':4
+)Ocimum:4,
+(
+'Lavandula dentata':4,
+'Lavandula angustifolia':4
+)Lavandula:4,
+(
+'Salvia chanryoenica':4,
+'Salvia bulleyana':4,
+'Salvia japonica':4,
+'Salvia przewalskii':4,
+'Salvia miltiorrhiza':4,
+'Salvia hispanica':4,
+'Salvia rosmarinus':4,
+'Salvia officinalis':4
+)Salvia:4,
+'Ajuga reptans':4,
+(
+'Mentha canadensis':4,
+'Mentha longifolia':4,
+'Mentha x piperita':4,
+'Mentha spicata':4
+)Mentha:4,
+(
+'Pogostemon yatabeanus':4,
+'Pogostemon stellatus':4,
+'Pogostemon cablin':4
+)Pogostemon:4,
+'Leonurus japonicus':4
+)Lamiaceae:4
+)Lamiales:4,
+(
+(
+'Cressa cretica':4,
+(
+'Cuscuta mexicana':4,
+'Cuscuta carnosa':4,
+'Cuscuta bonafortunae':4,
+'Cuscuta exaltata':4,
+'Cuscuta erosa':4,
+'Cuscuta boldinghii':4,
+'Cuscuta strobilacea':4,
+'Cuscuta obtusiflora':4,
+'Cuscuta costaricensis':4,
+'Cuscuta chapalana':4,
+'Cuscuta australis':4,
+'Cuscuta pentagona':4,
+'Cuscuta gronovii':4,
+'Cuscuta reflexa':4
+)Cuscuta:4,
+(
+'Ipomoea maurandioides':4,
+'Ipomoea goyazensis':4,
+'Ipomoea x leucantha':4,
+'Ipomoea setifera':4,
+'Ipomoea marabensis':4,
+'Ipomoea cavalcantei':4,
+'Ipomoea splendor-sylvae':4,
+'Ipomoea tabascana':4,
+'Ipomoea ramosissima':4,
+'Ipomoea cynanchifolia':4,
+'Ipomoea quamoclit':4,
+'Ipomoea lacunosa':4,
+'Ipomoea carnea':4,
+'Ipomoea asarifolia':4,
+'Ipomoea hederacea':4,
+'Ipomoea triloba':4,
+'Ipomoea trifida':4,
+'Ipomoea nil':4,
+'Ipomoea cordatotriloba':4,
+'Ipomoea purpurea':4,
+'Ipomoea batatas':4
+)Ipomoea:4
+)Convolvulaceae:4,
+(
+'Acnistus arborescens x Iochroma cyaneum':4,
+'Physochlaina orientalis':4,
+'Trompettia cardenasiana':4,
+(
+'Iochroma tingoanum':4,
+'Iochroma umbellatum':4,
+'Iochroma stenanthum':4,
+'Iochroma salpoanum':4,
+'Iochroma nitidum':4,
+'Iochroma loxense':4,
+'Iochroma lehmannii':4,
+'Iochroma ellipticum':4,
+'Iochroma cyaneum':4,
+'Iochroma australe':4
+)Iochroma:4,
+'Eriolarynx fasciculata':4,
+(
+'Dunalia solanacea':4,
+'Dunalia obovata':4,
+'Dunalia brachyacantha':4
+)Dunalia:4,
+'Acnistus arborescens':4,
+'Przewalskia tangutica':4,
+'Atropanthe sinensis':4,
+'Scopolia parviflora':4,
+(
+'Withania coagulans':4,
+'Withania somnifera':4
+)Withania:4,
+'Saracha punctata':4,
+(
+'Physalis pruinosa':4,
+'Physalis peruviana':4,
+'Physalis angulata':4
+)Physalis:4,
+(
+'Lycium chinense':4,
+'Lycium ruthenicum':4,
+'Lycium barbarum':4
+)Lycium:4,
+'Atropa belladonna':4,
+'Petunia x hybrida':4,
+(
+'Nicotiana undulata':4,
+'Nicotiana attenuata':4,
+'Nicotiana tomentosiformis':4,
+'Nicotiana tabacum':4,
+'Nicotiana sylvestris':4,
+'Nicotiana otophora':4
+)Nicotiana:4,
+(
+'Solanum umtuma':4,
+'Solanum abancayense':4,
+'Solanum canasense':4,
+'Solanum usambarense':4,
+'Solanum aureitomentosum':4,
+'Solanum lanzae':4,
+'Solanum hondelmannii':4,
+'Solanum polhillii':4,
+'Solanum agnewiorum':4,
+'Solanum paucissectum':4,
+'Solanum limbaniense':4,
+'Solanum hypacrarthrum':4,
+'Solanum cajamarquense':4,
+'Solanum x blanco-galdosii':4,
+'Solanum acroglossum':4,
+'Solanum medians':4,
+'Solanum cerasiferum':4,
+'Solanum glabratum':4,
+'Solanum venturii':4,
+'Solanum albornozii':4,
+'Solanum supinum':4,
+'Solanum lichtensteinii':4,
+'Solanum megistacrolobum':4,
+'Solanum trilobatum':4,
+'Solanum violaceum':4,
+'Solanum richardii':4,
+'Solanum incanum':4,
+'Solanum linnaeanum':4,
+'Solanum dasyphyllum':4,
+'Solanum campylacanthum':4,
+'Solanum anguivi':4,
+'Solanum pampasense':4,
+'Solanum multiinterruptum':4,
+'Solanum marinasense':4,
+'Solanum incamayoense':4,
+'Solanum chomatophilum':4,
+'Solanum ambosinum':4,
+'Solanum acroscopicum':4,
+'Solanum achacachense':4,
+'Solanum galapagense':4,
+'Solanum violaceimarmoratum':4,
+'Solanum verrucosum':4,
+'Solanum avilesii':4,
+'Solanum andreanum':4,
+'Solanum tarijense':4,
+'Solanum brevicaule':4,
+'Solanum stenophyllidium':4,
+'Solanum aethiopicum':4,
+'Solanum etuberosum':4,
+'Solanum kurtzianum':4,
+'Solanum stenotomum subsp. goniocalyx':4,
+'Solanum sparsipilum':4,
+'Solanum leptophyes':4,
+'Solanum jamesii':4,
+'Solanum gourlayi':4,
+'Solanum phureja':4,
+'Solanum bukasovii f. multidissectum':4,
+'Solanum vernei':4,
+'Solanum cardiophyllum':4,
+'Solanum bulbocastanum':4,
+'Solanum cheesmaniae':4,
+'Solanum macrocarpon':4,
+'Solanum acaule':4,
+'Solanum microdontum':4,
+'Solanum laxissimum':4,
+'Solanum polyadenium':4,
+'Solanum neorickii':4,
+'Solanum habrochaites':4,
+'Solanum sogarandinum':4,
+'Solanum demissum':4,
+'Solanum pinnatisectum':4,
+'Solanum berthaultii':4,
+'Solanum dulcamara':4,
+'Solanum spegazzinii':4,
+'Solanum pennellii':4,
+'Solanum palustre':4,
+'Solanum tuberosum':4,
+'Solanum nigrum':4,
+'Solanum melongena':4,
+'Solanum commersonii':4,
+'Solanum chacoense':4,
+'Solanum pimpinellifolium':4,
+'Solanum chilense':4,
+'Solanum peruvianum':4,
+'Solanum lycopersicum':4
+)Solanum:4,
+'Hyoscyamus niger':4,
+'Datura stramonium':4,
+(
+'Capsicum lycianthoides':4,
+'Capsicum tovarii':4,
+'Capsicum galapagoense':4,
+'Capsicum eximium':4,
+'Capsicum pubescens':4,
+'Capsicum chacoense':4,
+'Capsicum chinense':4,
+(
+'Capsicum baccatum var. praetermissum':4,
+'Capsicum baccatum var. baccatum':4,
+'Capsicum baccatum var. pendulum':4
+)'Capsicum baccatum':4,
+'Capsicum frutescens':4,
+'Capsicum annuum':4
+)Capsicum:4
+)Solanaceae:4
+)Solanales:4,
+(
+(
+'Halenia corniculata':4,
+(
+'Swertia leducii':4,
+'Swertia hispidicalyx':4,
+'Swertia mussotii':4
+)Swertia:4,
+(
+'Gentiana apiata':4,
+'Gentiana obconica':4,
+'Gentiana stipitata':4,
+'Gentiana tongolensis':4,
+'Gentiana caelestis':4,
+'Gentiana ornata':4,
+'Gentiana hexaphylla':4,
+'Gentiana tibetica':4,
+'Gentiana siphonantha':4,
+'Gentiana oreodoxa':4,
+'Gentiana officinalis':4,
+'Gentiana veitchiorum':4,
+'Gentiana crassicaulis':4,
+'Gentiana dahurica':4,
+'Gentiana straminea':4,
+'Gentiana macrophylla':4
+)Gentiana:4
+)Gentianaceae:4,
+(
+'Rubia cordifolia':4,
+'Antirhea chinensis':4,
+(
+'Gynochthodes nanlingensis':4,
+'Gynochthodes officinalis':4
+)Gynochthodes:4,
+'Mitragyna speciosa':4,
+'Neolamarckia cadamba':4,
+'Emmenopterys henryi':4,
+'Morinda citrifolia':4,
+(
+'Galium mollugo':4,
+'Galium aparine':4
+)Galium:4,
+(
+'Coffea canephora':4,
+'Coffea arabica':4
+)Coffea:4
+)Rubiaceae:4,
+(
+(
+'Vincetoxicum shaanxiense':4,
+'Vincetoxicum insigne':4
+)Vincetoxicum:4,
+'Carissa macrocarpa':4,
+'Rhazya stricta':4,
+'Oncinotis tenuiloba':4,
+(
+'Hoya liangii':4,
+'Hoya pottsii':4,
+'Hoya carnosa':4
+)Hoya:4,
+(
+'Cynanchum wilfordii':4,
+'Cynanchum auriculatum':4
+)Cynanchum:4,
+'Echites umbellatus':4,
+'Pentalinon luteum':4,
+'Nerium oleander':4,
+'Hemidesmus indicus':4,
+'Plumeria rubra':4,
+(
+'Asclepias nivea':4,
+'Asclepias syriaca':4
+)Asclepias:4,
+'Gymnema sylvestre':4,
+(
+'Calotropis procera':4,
+'Calotropis gigantea':4
+)Calotropis:4,
+(
+'Rauvolfia verticillata':4,
+'Rauvolfia serpentina':4
+)Rauvolfia:4,
+'Catharanthus roseus':4
+)Apocynaceae:4
+)Gentianales:4,
+(
+'Pittosporum kerrii':4,
+(
+'Torricellia angulata':4,
+'Torricellia tiliifolia':4
+)Torricellia:4,
+(
+(
+'Schefflera heptaphylla':4,
+'Schefflera delavayi':4
+)Schefflera:4,
+'Kalopanax septemlobus':4,
+'Metapanax delavayi':4,
+'Brassaiopsis hainla':4,
+(
+'Dendropanax dentiger':4,
+'Dendropanax morbifer':4
+)Dendropanax:4,
+'Eleutherococcus senticosus':4,
+'Fatsia japonica':4,
+(
+'Aralia continentalis':4,
+'Aralia undulata':4,
+'Aralia cordata':4
+)Aralia:4,
+(
+'Panax vietnamensis':4,
+'Panax japonicus var. bipinnatifidus':4,
+'Panax zingiberensis':4,
+'Panax trifolius':4,
+'Panax stipuleanatus':4,
+'Panax wangianus':4,
+'Panax quinquefolius':4,
+'Panax notoginseng':4,
+'Panax ginseng':4
+)Panax:4,
+(
+'Hydrocotyle verticillata':4,
+'Hydrocotyle sibthorpioides':4
+)Hydrocotyle:4
+)Araliaceae:4,
+(
+'Prangos trifida':4,
+'Tetrataenium yunnanense':4,
+'Ledebouriella seseloides':4,
+'Melanosciadium pimpinelloideum':4,
+(
+'Semenovia gyirongensis':4,
+'Semenovia transiliensis':4
+)Semenovia:4,
+'Pastinaca pimpinellifolia':4,
+'Pterygopleurum neurophyllum':4,
+'Arracacia xanthorrhiza':4,
+'Ostericum grosseserratum':4,
+(
+'Ligusticum chuanxiong':4,
+'Ligusticum tenuissimum':4
+)Ligusticum:4,
+(
+'Heracleum yungningense':4,
+'Heracleum moellendorffii':4,
+'Heracleum candicans':4
+)Heracleum:4,
+(
+'Hansenia oviformis':4,
+'Hansenia forrestii':4,
+'Hansenia forbesii':4,
+'Hansenia weberbaueriana':4
+)Hansenia:4,
+'Cnidium officinale':4,
+'Trachyspermum ammi':4,
+'Cuminum cyminum':4,
+'Pleurospermum camtschaticum':4,
+(
+'Peucedanum insolens':4,
+'Peucedanum japonicum':4
+)Peucedanum:4,
+'Glehnia littoralis':4,
+'Cryptotaenia japonica':4,
+'Cicuta virosa':4,
+(
+'Angelica laxifoliata':4,
+'Angelica sinensis':4,
+'Angelica gigas':4,
+'Angelica polymorpha':4,
+'Angelica acutiloba':4,
+'Angelica dahurica':4
+)Angelica:4,
+'Carum carvi':4,
+(
+'Bupleurum boissieuanum':4,
+'Bupleurum latissimum':4,
+'Bupleurum chinense':4,
+'Bupleurum falcatum':4
+)Bupleurum:4,
+'Seseli montanum':4,
+(
+'Anethum foeniculum':4,
+'Anethum graveolens':4
+)Anethum:4,
+'Crithmum maritimum':4,
+'Anthriscus cerefolium':4,
+'Coriandrum sativum':4,
+'Apium graveolens':4,
+'Petroselinum crispum':4,
+'Daucus carota':4
+)Apiaceae:4
+)Apiales:4,
+(
+(
+'Melianthus villosus':4,
+'Viviania marifolia':4,
+'Francoa sonchifolia':4
+)Francoaceae:4,
+(
+'Hypseocharis bilobata':4,
+(
+'Monsonia speciosa':4,
+'Monsonia marlothii':4,
+'Monsonia emarginata':4
+)Monsonia:4,
+(
+'Geranium incanum':4,
+'Geranium palmatum':4,
+'Geranium maderense':4
+)Geranium:4,
+(
+'Erodium trifolium':4,
+'Erodium rupestre':4,
+'Erodium reichardii':4,
+'Erodium manescavi':4,
+'Erodium gruinum':4,
+'Erodium crassifolium':4,
+'Erodium chrysanthum':4,
+'Erodium carvifolium':4,
+'Erodium absinthoides':4,
+'Erodium texanum':4
+)Erodium:4,
+(
+'Pelargonium quercifolium':4,
+'Pelargonium myrrhifolium':4,
+'Pelargonium incrassatum':4,
+'Pelargonium transvaalense':4,
+'Pelargonium endlicherianum':4,
+'Pelargonium dolomiticum':4,
+'Pelargonium quinquelobatum':4,
+'Pelargonium echinatum':4,
+'Pelargonium trifidum':4,
+'Pelargonium tetragonum':4,
+'Pelargonium spinosum':4,
+'Pelargonium exhibens':4,
+'Pelargonium fulgidum':4,
+'Pelargonium dichondrifolium':4,
+'Pelargonium cucullatum':4,
+'Pelargonium citronellum':4,
+'Pelargonium alternans':4,
+'Pelargonium nanum':4,
+'Pelargonium exstipulatum':4,
+'Pelargonium australe':4,
+'Pelargonium cotyledonis':4,
+'Pelargonium x hortorum':4
+)Pelargonium:4
+)Geraniaceae:4
+)Geraniales:4,
+(
+'Saltera sarcocolla':4,
+(
+'Vochysia acuminata':4,
+'Korupodendron songweanum':4,
+'Erisma bracteosum':4,
+'Callisthene erythroclada':4,
+'Ruizterania albiflora':4,
+'Salvertia convallariodora':4,
+'Qualea grandiflora':4
+)Vochysiaceae:4,
+(
+'Laguncularia racemosa':4,
+(
+'Terminalia guyanensis':4,
+'Terminalia chebula':4
+)Terminalia:4,
+(
+'Lumnitzera racemosa':4,
+'Lumnitzera littorea':4
+)Lumnitzera:4
+)Combretaceae:4,
+(
+'Microlicia cogniauxiana':4,
+'Bertolonia acuminata':4,
+'Barthea barthei':4,
+'Opisthocentra clidemioides':4,
+'Tigridiopalma magnifica':4,
+'Henriettea barkeri':4,
+'Blastus pauciflorus':4,
+'Merianthera pulchra':4,
+'Triolena amazonica':4,
+'Salpinga maranonensis':4,
+'Allomaieta villosa':4,
+'Rhynchanthera bracteata':4,
+'Memecylon pauciflorum':4,
+'Eriocnema fulva':4,
+'Pterogastra divaricata':4,
+'Miconia dodecandra':4,
+'Graffenrieda moritziana':4,
+'Blakea schlimii':4,
+(
+'Melastoma dodecandrum':4,
+'Melastoma candidum':4
+)Melastoma:4,
+'Chaetogastra longifolia':4,
+'Nepsera aquatica':4,
+'Pleroma urvilleanum':4,
+'Osbeckia stellata':4,
+'Rhexia virginica':4
+)Melastomataceae:4,
+(
+'Pimenta dioica':4,
+(
+'Plinia aureana':4,
+'Plinia trunciflora':4,
+'Plinia cauliflora':4
+)Plinia:4,
+(
+'Syzygium forrestii':4,
+'Syzygium aromaticum':4
+)Syzygium:4,
+'Psidium guajava':4,
+'Eugenia uniflora':4,
+'Rhodomyrtus tomentosa':4,
+'Stockwellia quadrifida':4,
+'Heteropyxis natalensis':4,
+(
+'Corymbia torelliana':4,
+'Corymbia henryi':4,
+'Corymbia gummifera':4,
+'Corymbia maculata':4,
+'Corymbia tessellaris':4,
+'Corymbia eximia':4
+)Corymbia:4,
+(
+'Eucalyptus polybractea':4,
+'Eucalyptus baxteri':4,
+'Eucalyptus smithii':4,
+'Eucalyptus verrucata':4,
+'Eucalyptus patens':4,
+'Eucalyptus cladocalyx':4,
+'Eucalyptus torquata':4,
+'Eucalyptus salmonophloia':4,
+'Eucalyptus melliodora':4,
+'Eucalyptus marginata':4,
+'Eucalyptus guilfoylei':4,
+'Eucalyptus diversicolor':4,
+'Eucalyptus deglupta':4,
+'Eucalyptus saligna':4,
+'Eucalyptus umbra':4,
+'Eucalyptus spathulata':4,
+'Eucalyptus sieberi':4,
+'Eucalyptus regnans':4,
+'Eucalyptus radiata':4,
+'Eucalyptus pauciflora':4,
+'Eucalyptus nitens':4,
+'Eucalyptus elata':4,
+'Eucalyptus diversifolia':4,
+'Eucalyptus delegatensis':4,
+'Eucalyptus aromaphloia':4,
+'Eucalyptus globulus subsp. globulus':4,
+'Eucalyptus grandis':4,
+'Eucalyptus obliqua':4,
+'Eucalyptus cloeziana':4,
+'Eucalyptus curtisii':4,
+'Eucalyptus camaldulensis':4,
+'Eucalyptus microcorys':4,
+'Eucalyptus erythrocorys':4
+)Eucalyptus:4,
+(
+'Angophora costata':4,
+'Angophora floribunda':4
+)Angophora:4,
+'Allosyncarpia ternata':4
+)Myrtaceae:4,
+(
+'Heimia apetala':4,
+'Cuphea hyssopifolia':4,
+'Rotala rotundifolia':4,
+'Lawsonia inermis':4,
+'Woodfordia fruticosa':4,
+'Pemphis acidula':4,
+'Sonneratia alba':4,
+(
+'Lagerstroemia venusta':4,
+'Lagerstroemia siamica':4,
+'Lagerstroemia calyculata':4,
+'Lagerstroemia excelsa':4,
+'Lagerstroemia intermedia':4,
+'Lagerstroemia guilinensis':4,
+'Lagerstroemia fauriei':4,
+'Lagerstroemia limii':4,
+'Lagerstroemia subcostata':4,
+'Lagerstroemia floribunda':4,
+'Lagerstroemia villosa':4,
+'Lagerstroemia tomentosa':4,
+'Lagerstroemia indica':4,
+'Lagerstroemia speciosa':4
+)Lagerstroemia:4,
+'Duabanga grandiflora':4,
+(
+'Trapa maximowiczii':4,
+'Trapa natans':4
+)Trapa:4,
+'Punica granatum':4,
+'Lythrum salicaria':4
+)Lythraceae:4,
+(
+'Epilobium ulleungensis':4,
+'Ludwigia octovalvis':4,
+(
+'Oenothera oakesiana':4,
+'Oenothera parviflora':4,
+'Oenothera glazioviana':4,
+'Oenothera elata subsp. hookeri':4,
+'Oenothera grandiflora':4,
+'Oenothera biennis':4,
+'Oenothera villaricae':4,
+'Oenothera argillicola':4
+)Oenothera:4
+)Onagraceae:4
+)Myrtales:4,
+(
+'Epirixanthes elongata':4,
+(
+'Suriana maritima':4,
+'Cadellia pentastylis':4
+)Surianaceae:4,
+'Quillaja saponaria':4,
+(
+'Zornia diphylla':4,
+'Tachigali costaricensis':4,
+'Storckiella pancheri':4,
+'Smithia erubescens':4,
+'Pterolobium punctatum':4,
+'Peltogyne chrysopis':4,
+'Goodia macrocarpa':4,
+'Guibourtia leonensis':4,
+'Crudia harmsiana':4,
+'Schnella trichosepala':4,
+'Tibetia liangshanensis':4,
+'Pithecellobium flexicaule':4,
+'Piptadenia communis':4,
+'Parkia javanica':4,
+'Neoapaloxylon tuberosum':4,
+'Macrolobium huberianum':4,
+(
+'Hedysarum taipeicum':4,
+'Hedysarum semenovii':4
+)Hedysarum:4,
+'Labichea lanceolata':4,
+'Ohwia caudata':4,
+'Moldenhawera blanchetiana':4,
+'Zapoteca portoricensis':4,
+'Mezoneuron cucullatum':4,
+'Micklethwaitia carvalhoi':4,
+'Cassia brewsteri':4,
+'Dialium schlechteri':4,
+'Cenostigma pyramidale':4,
+(
+'Albizia bracteata':4,
+'Albizia odoratissima':4
+)Albizia:4,
+'Coulteria platyloba':4,
+'Archidendron lucyi':4,
+'Vatairea guianensis':4,
+'Chamaecrista mimosoides':4,
+'Oxytropis bicolor':4,
+(
+'Dalbergia hainanensis':4,
+'Dalbergia cultrata':4
+)Dalbergia:4,
+'Adenanthera microsperma':4,
+'Huangtcia renifolia':4,
+'Piliostigma thonningii':4,
+(
+'Lespedeza maritima':4,
+'Lespedeza davurica':4,
+'Lespedeza floribunda':4,
+'Lespedeza bicolor':4
+)Lespedeza:4,
+'Vavilovia formosa':4,
+'Saraca indica':4,
+'Duparquetia orchidacea':4,
+(
+'Grona styracifolia':4,
+'Grona heterocarpos':4
+)Grona:4,
+'Sphinga acatlensis':4,
+'Falcataria moluccana':4,
+'Kummerowia striata':4,
+'Orbexilum onobrychis':4,
+'Ateleia glazioveana':4,
+'Cullen corylifolium':4,
+'Phyllodium pulchellum':4,
+'Stryphnodendron adstringens':4,
+'Adenolobus garipensis':4,
+'Copaifera officinalis':4,
+'Arapatiella psilophylla':4,
+'Parkinsonia africana':4,
+'Libidibia coriaria':4,
+'Julbernardia globiflora':4,
+'Euchresta japonica':4,
+'Lysiloma watsonii':4,
+'Campylotropis macrocarpa':4,
+'Tylosema fassoglense':4,
+'Dussia macroprophyllata':4,
+(
+'Caragana rosea var. rosea':4,
+'Caragana kozlowii':4,
+'Caragana microphylla':4,
+'Caragana korshinskii':4
+)Caragana:4,
+'Sesbania grandiflora':4,
+(
+'Bauhinia binata':4,
+'Bauhinia acuminata':4
+)Bauhinia:4,
+(
+'Sophora tonkinensis':4,
+'Sophora alopecuroides var. alopecuroides':4
+)Sophora:4,
+(
+'Inga leiocalycina':4,
+'Inga edulis':4
+)Inga:4,
+(
+'Indigofera linifolia':4,
+'Indigofera tinctoria':4
+)Indigofera:4,
+'Dichrostachys cinerea':4,
+'Moullava spicata':4,
+'Haematoxylum brasiletto':4,
+'Conzattia multiflora':4,
+'Colvillea racemosa':4,
+'Guilandina bonduc':4,
+'Balsamocarpon brevifolium':4,
+'Leucaena trichandra':4,
+'Apios americana':4,
+'Zenia insignis':4,
+'Umtiza listeriana':4,
+'Talbotiella gentii':4,
+'Pterogyne nitens':4,
+'Poeppigia procera':4,
+'Petalostylis labicheoides':4,
+'Peltophorum pterocarpum':4,
+'Maniltoa lenticellata':4,
+'Lysidice rhodostegia':4,
+'Intsia bijuga':4,
+'Goniorrhachis marginata':4,
+(
+'Erythrophleum fordii':4,
+'Erythrophleum suaveolens':4
+)Erythrophleum:4,
+(
+'Daniellia pilosa':4,
+'Daniellia ogea':4
+)Daniellia:4,
+(
+'Cynometra iripa':4,
+'Cynometra ramiflora':4
+)Cynometra:4,
+'Colophospermum mopane':4,
+(
+'Erythrostemon gilliesii':4,
+'Erythrostemon calycinus':4
+)Erythrostemon:4,
+(
+'Brownea macrophylla':4,
+'Brownea grandiceps':4
+)Brownea:4,
+'Brachystegia spiciformis':4,
+'Barklya syringifolia':4,
+'Lysiphyllum hookeri':4,
+'Barnebydendron riedelii':4,
+'Amherstia nobilis':4,
+'Afzelia quanzensis':4,
+'Acrocarpus fraxinifolius':4,
+'Diptychandra aurantiaca':4,
+'Zollernia splendens':4,
+'Dermatophyllum secundiflorum':4,
+'Baphia racemosa':4,
+'Templetonia retusa':4,
+'Mirbelia oxylobioides':4,
+'Pararchidendron pruinosum':4,
+'Faidherbia albida':4,
+(
+'Senegalia laeta':4,
+'Senegalia senegal':4
+)Senegalia:4,
+(
+'Vachellia flava':4,
+'Vachellia seyal':4,
+'Vachellia nilotica subsp. indica':4
+)Vachellia:4,
+(
+'Acacia podalyriifolia':4,
+'Acacia dealbata':4,
+'Acacia ligulata':4
+)Acacia:4,
+'Mucuna macrocarpa':4,
+(
+'Senna tora':4,
+'Senna obtusifolia':4,
+'Senna bicapsularis':4,
+'Senna occidentalis':4
+)Senna:4,
+(
+'Astragalus bhotanensis':4,
+'Astragalus gummifer':4,
+'Astragalus mongholicus var. nakaianus':4
+)Astragalus:4,
+'Thermopsis alpina':4,
+(
+'Ammopiptanthus mongolicus':4,
+'Ammopiptanthus nanus':4
+)Ammopiptanthus:4,
+'Pachyrhizus erosus':4,
+'Poecilanthe parviflora':4,
+'Prosopis glandulosa':4,
+'Carmichaelia australis':4,
+'Trigonella foenum-graecum':4,
+'Samanea saman':4,
+'Mimosa pudica':4,
+'Delonix regia':4,
+(
+'Gleditsia sinensis':4,
+'Gleditsia microphylla':4,
+'Gleditsia japonica':4
+)Gleditsia:4,
+'Tamarindus indica':4,
+'Pongamia pinnata':4,
+'Butea monosperma':4,
+'Tipuana tipu':4,
+(
+'Ormosia xylocarpa':4,
+'Ormosia hosiei':4,
+'Ormosia semicastrata':4,
+'Ormosia emarginata':4
+)Ormosia:4,
+'Maackia floribunda':4,
+'Genista tinctoria':4,
+(
+'Cercis glabra':4,
+'Cercis canadensis':4
+)Cercis:4,
+'Amorpha fruticosa':4,
+'Lessertia frutescens':4,
+'Melilotus albus':4,
+(
+'Glycyrrhiza glabra x Glycyrrrhiza uralensis':4,
+'Glycyrrhiza inflata':4,
+'Glycyrrhiza uralensis':4,
+'Glycyrrhiza glabra':4,
+'Glycyrrhiza lepidota':4
+)Glycyrrhiza:4,
+'Schizolobium parahyba':4,
+'Clitoria ternatea':4,
+(
+'Stylosanthes viscosa':4,
+'Stylosanthes scabra':4,
+'Stylosanthes hamata':4
+)Stylosanthes:4,
+'Robinia pseudoacacia':4,
+'Lotus japonicus':4,
+'Canavalia cathartica':4,
+'Platylobium obtusangulum':4,
+'Hymenaea verrucosa':4,
+(
+'Schotia afra':4,
+'Schotia brachypetala':4
+)Schotia:4,
+'Ceratonia siliqua':4,
+(
+'Wisteria sinensis':4,
+'Wisteria floribunda':4
+)Wisteria:4,
+(
+'Vigna radiata':4,
+'Vigna unguiculata':4,
+'Vigna angularis':4
+)Vigna:4,
+(
+'Vicia sepium':4,
+'Vicia sativa':4
+)Vicia:4,
+(
+'Trifolium meduseum':4,
+'Trifolium glanduliferum':4,
+'Trifolium aureum':4,
+'Trifolium strictum':4,
+'Trifolium grandiflorum':4,
+'Trifolium boissieri':4,
+'Trifolium pratense':4,
+'Trifolium subterraneum':4,
+'Trifolium repens':4
+)Trifolium:4,
+'Styphnolobium japonicum var. japonicum':4,
+(
+'Pisum abyssinicum':4,
+'Pisum fulvum':4,
+'Pisum sativum subsp. elatius':4
+)Pisum:4,
+'Phaseolus vulgaris':4,
+(
+'Medicago tetraprostrata':4,
+'Medicago radiata':4,
+'Medicago papillosa':4,
+'Medicago orbicularis':4,
+'Medicago monspeliaca':4,
+'Medicago minima':4,
+'Medicago laciniata':4,
+'Medicago intertexta':4,
+'Medicago blancheana':4,
+'Medicago biflora':4,
+'Medicago suffruticosa':4,
+'Medicago pironae':4,
+'Medicago marina':4,
+'Medicago hybrida':4,
+'Medicago cretacea':4,
+'Medicago arborea':4,
+'Medicago lupulina':4,
+'Medicago polymorpha':4,
+'Medicago truncatula':4,
+'Medicago sativa':4,
+'Medicago falcata':4
+)Medicago:4,
+(
+'Lupinus westianus':4,
+'Lupinus luteus':4,
+'Lupinus albus':4
+)Lupinus:4,
+'Lens culinaris':4,
+(
+'Lathyrus venosus':4,
+'Lathyrus inconspicuus':4,
+'Lathyrus ochroleucus':4,
+'Lathyrus graminifolius':4,
+'Lathyrus pubescens':4,
+'Lathyrus palustris':4,
+'Lathyrus littoralis':4,
+'Lathyrus davidii':4,
+'Lathyrus japonicus':4,
+'Lathyrus tingitanus':4,
+'Lathyrus sativus':4,
+'Lathyrus odoratus':4,
+'Lathyrus clymenum':4
+)Lathyrus:4,
+'Griffonia simplicifolia':4,
+(
+'Glycine gracilis':4,
+'Glycine syndetika':4,
+'Glycine stenophita':4,
+'Glycine dolichocarpa':4,
+'Glycine canescens':4,
+'Glycine falcata':4,
+'Glycine cyrtoloba':4,
+'Glycine tomentella':4,
+'Glycine soja':4,
+'Glycine max':4
+)Glycine:4,
+'Cyamopsis tetragonoloba':4,
+'Cicer arietinum':4,
+'Cajanus cajan':4,
+(
+'Arachis duranensis':4,
+'Arachis hypogaea':4
+)Arachis:4,
+'Abrus precatorius':4
+)Fabaceae:4
+)Fabales:4,
+(
+(
+'Oxalis drummondii':4,
+'Averrhoa carambola':4
+)Oxalidaceae:4,
+'Cephalotus follicularis':4
+)Oxalidales:4,
+(
+'Erythroxylum novogranatense':4,
+'Hydnocarpus hainanensis':4,
+(
+'Viola mirabilis':4,
+'Viola seoulensis':4,
+'Viola phalacrocarpa':4,
+'Viola raddeana':4,
+'Viola websteri':4
+)Viola:4,
+(
+'Glochidion chodoense':4,
+(
+'Phyllanthus emblica':4,
+'Phyllanthus amarus':4
+)Phyllanthus:4
+)Phyllanthaceae:4,
+'Klainedoxa gabonensis':4,
+(
+'Kandelia obovata':4,
+(
+'Rhizophora x lamarckii':4,
+'Rhizophora stylosa':4
+)Rhizophora:4
+)Rhizophoraceae:4,
+(
+'Garcinia gummi-gutta':4,
+'Garcinia mangostana':4
+)Garcinia:4,
+(
+'Parastemon urophyllus':4,
+'Gaulettia elata':4,
+(
+'Dactyladenia floretii':4,
+'Dactyladenia buchneri':4,
+'Dactyladenia bellayana':4
+)Dactyladenia:4,
+'Angelesia splendens':4,
+'Afrolicania elaeosperma':4,
+(
+'Parinari oblongifolia':4,
+'Parinari capensis':4,
+'Parinari campestris':4,
+'Parinari curatellifolia':4
+)Parinari:4,
+'Neocarya macrophylla':4,
+(
+'Maranthes gabunensis':4,
+'Maranthes kerstingii':4,
+'Maranthes glabra':4
+)Maranthes:4,
+'Kostermanthus robustus':4,
+'Hunga gerontogea':4,
+'Grangeria borbonica':4,
+'Exellodendron barbatum':4,
+(
+'Couepia subcordata':4,
+'Couepia sandwithii':4,
+'Couepia rankiniae':4,
+'Couepia polyandra':4,
+'Couepia paraensis':4,
+'Couepia ovalifolia':4,
+'Couepia grandiflora':4,
+'Couepia caryophylloides':4,
+'Couepia guianensis':4
+)Couepia:4,
+'Magnistipula butayei':4,
+(
+'Hirtella macrosepala':4,
+'Hirtella racemosa':4,
+'Hirtella physophora':4,
+'Hirtella suffulta':4,
+'Hirtella zanzibarica':4
+)Hirtella:4,
+'Atuna racemosa':4,
+'Acioa guianensis':4,
+(
+'Licania macrophylla':4,
+'Licania sprucei':4,
+'Licania ovalifolia':4,
+'Licania micrantha':4,
+'Licania glabriflora':4,
+'Licania minutiflora':4,
+'Licania membranacea':4,
+'Licania majuscula':4,
+'Licania canescens':4,
+'Licania alba':4,
+'Licania michauxii':4,
+'Licania heteromorpha':4,
+'Licania tomentosa':4
+)Licania:4,
+'Chrysobalanus icaco':4
+)Chrysobalanaceae:4,
+(
+'Bunchosia argentea':4,
+'Galphimia angustifolia':4,
+'Banisteriopsis caapi':4,
+(
+'Byrsonima coccolobifolia':4,
+'Byrsonima crassifolia':4
+)Byrsonima:4
+)Malpighiaceae:4,
+'Linum usitatissimum':4,
+(
+'Deutzianthus tonkinensis':4,
+'Croton tiglium':4,
+'Mallotus peltatus':4,
+'Jatropha curcas':4,
+'Vernicia fordii':4,
+(
+'Euphorbia tirucalli':4,
+'Euphorbia esula':4
+)Euphorbia:4,
+'Ricinus communis':4,
+'Manihot esculenta':4,
+'Hevea brasiliensis':4
+)Euphorbiaceae:4,
+(
+(
+'Homalium stenophyllum':4,
+'Homalium paniculiflorum':4,
+'Homalium ceylanicum':4,
+'Homalium cochinchinense':4
+)Homalium:4,
+'Olmediella betschleriana':4,
+'Carrierea calycina':4,
+'Itoa orientalis':4,
+(
+'Bennettiodendron brevipes':4,
+'Bennettiodendron leprosipes':4
+)Bennettiodendron:4,
+'Banara guianensis':4,
+'Poliothyrsis sinensis':4,
+(
+'Flacourtia rukam':4,
+'Flacourtia indica':4,
+'Flacourtia jangomas':4
+)Flacourtia:4,
+'Azara serrata':4,
+'Idesia polycarpa':4,
+(
+'Salix koriyanagi':4,
+'Salix taoensis':4,
+'Salix minjiangensis':4,
+'Salix hypoleuca':4,
+'Salix oreinoma':4,
+'Salix suchowensis':4,
+'Salix rehderiana':4,
+'Salix rorida':4,
+'Salix paraplesia':4,
+'Salix gracilistyla':4,
+'Salix magnifica':4,
+'Salix purpurea':4,
+'Salix tetrasperma':4,
+'Salix interior':4,
+'Salix chaenomeloides':4,
+'Salix babylonica':4,
+'Salix arbutifolia':4
+)Salix:4,
+(
+'Populus schneideri':4,
+'Populus pseudoglauca':4,
+'Populus kangdingensis':4,
+'Populus haoana':4,
+'Populus gonggaensis':4,
+'Populus trinervis':4,
+'Populus xiangchengensis':4,
+'Populus qiongdaoensis':4,
+'Populus ilicifolia':4,
+'Populus mexicana':4,
+'Populus davidiana x Populus alba var. pyramidalis':4,
+'Populus adenopoda':4,
+'Populus qamdoensis':4,
+'Populus afghanica':4,
+'Populus koreana':4,
+'Populus rotundifolia':4,
+'Populus cathayana':4,
+'Populus hopeiensis':4,
+'Populus pruinosa':4,
+'Populus angustifolia':4,
+'Populus simonii':4,
+'Populus fremontii':4,
+'Populus davidiana':4,
+'Populus yunnanensis':4,
+'Populus wilsonii':4,
+'Populus szechuanica':4,
+'Populus tomentosa':4,
+'Populus tremula':4,
+'Populus laurifolia':4,
+'Populus tremula x Populus alba':4,
+'Populus lasiocarpa':4,
+'Populus euphratica':4,
+'Populus balsamifera':4,
+'Populus alba':4,
+'Populus deltoides':4,
+'Populus trichocarpa':4,
+'Populus nigra':4,
+'Populus x canadensis':4
+)Populus:4
+)Salicaceae:4,
+(
+'Adenia mannii':4,
+(
+'Passiflora retipetala':4,
+'Passiflora jatunsachensis':4,
+'Passiflora contracta':4,
+'Passiflora obovata':4,
+'Passiflora affinis':4,
+'Passiflora lutea':4,
+'Passiflora tenuiloba':4,
+'Passiflora filipes':4,
+'Passiflora arbelaezii':4,
+'Passiflora tetrandra':4,
+'Passiflora nitida':4,
+'Passiflora ligularis':4,
+'Passiflora laurifolia':4,
+'Passiflora microstipula':4,
+'Passiflora serratodigitata':4,
+'Passiflora serratifolia':4,
+'Passiflora rufa':4,
+'Passiflora cincinnata':4,
+'Passiflora pittieri':4,
+'Passiflora vitifolia':4,
+'Passiflora oerstedii':4,
+'Passiflora menispermifolia':4,
+'Passiflora biflora':4,
+'Passiflora auriculata':4,
+'Passiflora misera':4,
+'Passiflora actinia':4,
+'Passiflora foetida':4,
+'Passiflora suberosa':4,
+'Passiflora edulis':4,
+'Passiflora quadrangularis':4
+)Passiflora:4
+)Passifloraceae:4
+)Malpighiales:4,
+(
+(
+'Pilostyles hamiltonii':4,
+'Pilostyles aethiopica':4
+)Pilostyles:4,
+(
+'Begonia pulchrifolia':4,
+'Begonia guangxiensis':4,
+'Begonia versicolor':4
+)Begonia:4,
+'Corynocarpus laevigatus':4,
+(
+'Bryonia marmorata':4,
+'Cyclantheropsis parviflora':4,
+'Coccinia grandis':4,
+'Ampelosycios humblotii':4,
+'Linnaeosicyos amara':4,
+'Nothoalsomitra suberosa':4,
+(
+'Hodgsonia macrocarpa':4,
+'Hodgsonia heteroclita':4
+)Hodgsonia:4,
+'Herpetospermum pedunculosum':4,
+'Gerrardanthus macrorhizus':4,
+'Corallocarpus boehmii':4,
+'Cionosicys macranthus':4,
+'Indofevillea khasiana':4,
+'Baijiania yunnanensis':4,
+'Dendrosicyos socotranus':4,
+'Hemsleya lijiangensis':4,
+'Thladiantha dubia':4,
+'Cyclanthera pedata':4,
+(
+'Siraitia siamensis':4,
+'Siraitia grosvenorii':4
+)Siraitia:4,
+(
+'Gynostemma pubescens':4,
+'Gynostemma laxiflorum':4,
+'Gynostemma cardiospermum':4,
+'Gynostemma caulopterum':4,
+'Gynostemma compressum':4,
+'Gynostemma burmanicum (nom. inval.)':4,
+'Gynostemma pentagynum':4,
+'Gynostemma longipes':4,
+'Gynostemma pentaphyllum':4
+)Gynostemma:4,
+(
+'Trichosanthes lobata':4,
+'Trichosanthes wallichiana':4,
+'Trichosanthes pilosa':4,
+'Trichosanthes nervifolia':4,
+'Trichosanthes homophylla':4,
+'Trichosanthes tubiflora':4,
+'Trichosanthes baviensis':4,
+'Trichosanthes truncata':4,
+'Trichosanthes tricuspidata':4,
+'Trichosanthes kirilowii':4
+)Trichosanthes:4,
+(
+'Momordica sessilifolia':4,
+'Momordica charantia':4
+)Momordica:4,
+'Lagenaria siceraria':4,
+(
+'Cucurbita pepo':4,
+'Cucurbita moschata':4,
+'Cucurbita maxima':4
+)Cucurbita:4,
+(
+'Cucumis x hytivus':4,
+'Cucumis melo subsp. melo':4,
+'Cucumis hystrix':4,
+'Cucumis sativus':4
+)Cucumis:4,
+(
+'Citrullus amarus':4,
+'Citrullus mucosospermus':4,
+'Citrullus rehmii':4,
+'Citrullus colocynthis':4,
+'Citrullus lanatus':4
+)Citrullus:4
+)Cucurbitaceae:4
+)Cucurbitales:4,
+(
+(
+'Capparis spinosa var. herbacea':4,
+'Capparis spinosa var. spinosa':4
+)'Capparis spinosa':4,
+'Pentadiplandra brazzeana':4,
+'Azima tetracantha':4,
+'Tarenaya hassleriana':4,
+'Bretschneidera sinensis':4,
+'Moringa oleifera':4,
+(
+'Sinalliaria limprichtiana var. grandifolia':4,
+(
+'Biscutella lyrata':4,
+'Biscutella baetica':4
+)Biscutella:4,
+(
+'Orychophragmus taibaiensis':4,
+'Orychophragmus hupehensis':4,
+'Orychophragmus diffusus':4
+)Orychophragmus:4,
+'Cakile arabica':4,
+(
+'Ricotia isatoides':4,
+'Ricotia davisiana':4,
+'Ricotia carnosula':4,
+'Ricotia aucheri':4,
+'Ricotia lunaria':4,
+'Ricotia cretica':4
+)Ricotia:4,
+'Megadenia pygmaea':4,
+(
+'Pugionium cornutum':4,
+'Pugionium dolabratum':4
+)Pugionium:4,
+'Alyssum desertorum':4,
+'Solms-laubachia eurycarpa':4,
+'Morettia canescens':4,
+(
+'Bunias erucago':4,
+'Bunias orientalis':4
+)Bunias:4,
+'Lunaria rediviva':4,
+'Megacarpaea delavayi':4,
+(
+'Hesperis sylvestris':4,
+'Hesperis matronalis':4
+)Hesperis:4,
+'Heldreichia bupleurifolia':4,
+'Neotorularia korolkowii':4,
+(
+'Lobularia libyca':4,
+'Lobularia maritima':4
+)Lobularia:4,
+(
+'Draba oreades':4,
+'Draba nemorosa':4
+)Draba:4,
+'Isatis tinctoria':4,
+(
+'Cochlearia tridactylites':4,
+'Cochlearia islandica':4,
+'Cochlearia borzaeana':4,
+'Cochlearia pyrenaica':4
+)Cochlearia:4,
+(
+'Pachycladon enysii':4,
+'Pachycladon cheesemanii':4
+)Pachycladon:4,
+'Ionopsidium acaule':4,
+'Schrenkiella parvula':4,
+'Braya humilis':4,
+'Camelina sativa':4,
+'Crucihimalaya wallichii':4,
+'Olimarabidopsis pumila':4,
+(
+'Eutrema botschantzevii':4,
+'Eutrema yunnanense':4,
+'Eutrema heterophyllum':4,
+'Eutrema halophilum':4,
+'Eutrema salsugineum':4
+)Eutrema:4,
+(
+'Aethionema cordifolium':4,
+'Aethionema arabicum':4,
+'Aethionema grandiflorum':4
+)Aethionema:4,
+'Nasturtium officinale':4,
+(
+'Cardamine oligosperma':4,
+'Cardamine parviflora':4,
+'Cardamine resedifolia':4,
+'Cardamine impatiens':4,
+'Cardamine amara':4
+)Cardamine:4,
+'Barbarea verna':4,
+(
+'Arabis hirsuta':4,
+'Arabis flagellosa':4,
+'Arabis alpina':4
+)Arabis:4,
+(
+'Lepidium meyenii':4,
+'Lepidium virginicum':4,
+'Lepidium sativum':4
+)Lepidium:4,
+'Thlaspi arvense':4,
+'Sisymbrium irio':4,
+(
+'Sinapis arvensis':4,
+'Sinapis alba':4
+)Sinapis:4,
+'Raphanus sativus':4,
+'Matthiola incana':4,
+(
+'Capsella grandiflora':4,
+'Capsella rubella':4,
+'Capsella bursa-pastoris':4
+)Capsella:4,
+(
+'Brassica oleracea':4,
+'Brassica rapa':4,
+'Brassica nigra':4,
+'Brassica napus':4,
+'Brassica juncea':4
+)Brassica:4,
+(
+'Arabidopsis umezawana':4,
+'Arabidopsis pedemontana':4,
+'Arabidopsis arenicola':4,
+'Arabidopsis petrogena':4,
+'Arabidopsis croatica':4,
+'Arabidopsis cebennensis':4,
+'Arabidopsis halleri':4,
+'Arabidopsis lyrata subsp. lyrata':4,
+'Arabidopsis neglecta':4,
+'Arabidopsis suecica':4,
+'Arabidopsis arenosa':4,
+'Arabidopsis thaliana':4
+)Arabidopsis:4
+)Brassicaceae:4,
+'Carica papaya':4
+)Brassicales:4,
+(
+'Cytinus hypocistis':4,
+(
+'Pimelea aquilonia':4,
+(
+'Wikstroemia chamaedaphne':4,
+'Wikstroemia indica':4
+)Wikstroemia:4,
+(
+'Daphne giraldii':4,
+'Daphne genkwa':4,
+'Daphne tangutica':4,
+'Daphne kiusiana':4
+)Daphne:4,
+(
+'Aquilaria yunnanensis':4,
+'Aquilaria malaccensis':4,
+'Aquilaria crassna':4,
+'Aquilaria sinensis':4
+)Aquilaria:4,
+'Stellera chamaejasme':4
+)Thymelaeaceae:4,
+'Bixa orellana':4,
+(
+(
+'Shorea pachyphylla':4,
+'Shorea zeylanica':4
+)Shorea:4,
+'Dipterocarpus turbinatus':4,
+'Parashorea chinensis':4,
+'Vatica mangachapoi':4,
+'Hopea hainanensis':4,
+'Balanocarpus heimii':4
+)Dipterocarpaceae:4,
+(
+'Pterospermum kingtungense':4,
+'Abelmoschus esculentus':4,
+'Talipariti hamabo':4,
+(
+'Tilia oliveri':4,
+'Tilia amurensis':4,
+'Tilia mandshurica':4,
+'Tilia paucicostata':4
+)Tilia:4,
+'Craigia yunnanensis':4,
+(
+'Firmiana pulcherrima':4,
+'Firmiana major':4,
+'Firmiana simplex':4
+)Firmiana:4,
+'Althaea officinalis':4,
+(
+'Hibiscus cannabinus':4,
+'Hibiscus rosa-sinensis':4,
+'Hibiscus syriacus':4
+)Hibiscus:4,
+(
+'Heritiera fomes':4,
+'Heritiera elata':4,
+'Heritiera parvifolia':4,
+'Heritiera angustata':4,
+'Heritiera littoralis':4
+)Heritiera:4,
+(
+'Corchorus capsularis':4,
+'Corchorus olitorius':4
+)Corchorus:4,
+'Reevesia thyrsoidea':4,
+'Durio zibethinus':4,
+'Bombax ceiba':4,
+'Theobroma cacao':4,
+(
+'Gossypium nandewarense':4,
+'Gossypium incanum':4,
+'Gossypium areysianum':4,
+'Gossypium somalense':4,
+'Gossypium capitis-viridis':4,
+'Gossypium populifolium':4,
+'Gossypium nelsonii':4,
+'Gossypium bickii':4,
+'Gossypium australe':4,
+'Gossypium stocksii':4,
+'Gossypium anomalum':4,
+'Gossypium schwendimanii':4,
+'Gossypium aridum':4,
+'Gossypium lobatum':4,
+'Gossypium davidsonii':4,
+'Gossypium klotzschianum':4,
+'Gossypium harknessii':4,
+'Gossypium turneri':4,
+'Gossypium armourianum':4,
+'Gossypium gossypioides':4,
+'Gossypium trilobum':4,
+'Gossypium longicalyx':4,
+'Gossypium sturtianum':4,
+'Gossypium tomentosum':4,
+'Gossypium darwinii':4,
+'Gossypium mustelinum':4,
+'Gossypium herbaceum subsp. africanum':4,
+'Gossypium thurberi':4,
+'Gossypium raimondii':4,
+'Gossypium arboreum':4,
+'Gossypium robinsonii':4,
+'Gossypium hirsutum':4,
+'Gossypium barbadense':4
+)Gossypium:4
+)Malvaceae:4
+)Malvales:4,
+(
+'Marcgravia coriacea':4,
+(
+(
+'Impatiens piufanensis':4,
+'Impatiens pritzelii':4,
+'Impatiens glandulifera':4
+)Impatiens:4,
+'Hydrocera triflora':4
+)Balsaminaceae:4,
+(
+'Sideroxylon wightianum':4,
+'Pouteria campechiana':4
+)Sapotaceae:4,
+'Clethra delavayi':4,
+'Sladenia celastrifolia':4,
+(
+'Eurya alata':4,
+'Euryodendron excelsum':4,
+'Anneslea fragrans':4,
+(
+'Adinandra angustifolia':4,
+'Adinandra millettii':4
+)Adinandra:4,
+'Pentaphylax euryoides':4,
+'Ternstroemia gymnanthera':4
+)Pentaphylacaceae:4,
+(
+(
+'Tapeinosperma netor':4,
+'Tapeinosperma multiflorum':4
+)Tapeinosperma:4,
+(
+'Parathesis donnell-smithii':4,
+'Parathesis chiapensis':4
+)Parathesis:4,
+'Embelia vestita':4,
+(
+'Ardisia polysticta':4,
+'Ardisia solanacea':4
+)Ardisia:4,
+(
+'Androsace laxa':4,
+'Androsace bulleyana':4,
+'Androsace paxiana':4
+)Androsace:4,
+(
+'Primula tsiangii':4,
+'Primula knuthiana':4,
+'Primula stenodonta':4,
+'Primula persimilis':4,
+'Primula chrysochlora':4,
+'Primula kwangtungensis':4,
+'Primula woodwardii':4,
+'Primula handeliana':4,
+'Primula helodoxa':4,
+'Primula veris':4,
+'Primula sinensis':4,
+'Primula obconica':4,
+'Primula poissonii':4,
+'Primula beesiana':4,
+'Primula bulleyana':4
+)Primula:4,
+(
+'Lysimachia coreana':4,
+'Lysimachia congestiflora':4
+)Lysimachia:4,
+(
+'Myrsine sandwicensis':4,
+'Myrsine stolonifera':4,
+'Myrsine africana':4
+)Myrsine:4,
+'Aegiceras corniculatum':4,
+'Elingamita johnsonii':4
+)Primulaceae:4,
+(
+'Symplocos costaricana':4,
+'Symplocos ovatilobata':4,
+'Symplocos paniculata':4
+)Symplocos:4,
+(
+(
+'Alniphyllum eberhardtii':4,
+'Alniphyllum pterospermum':4
+)Alniphyllum:4,
+'Changiostyrax dolichocarpus':4,
+'Perkinsiodendron macgregorii':4,
+(
+'Pterostyrax psilophyllus':4,
+'Pterostyrax hispidus':4,
+'Pterostyrax corymbosus':4
+)Pterostyrax:4,
+'Melliodendron xylocarpum':4,
+(
+'Bruinsmia polysperma':4,
+'Bruinsmia styracoides':4
+)Bruinsmia:4,
+'Huodendron biaristatum':4,
+'Rehderodendron macrocarpum':4,
+(
+'Halesia diptera':4,
+'Halesia carolina':4
+)Halesia:4,
+(
+'Styrax zhejiangensis':4,
+'Styrax grandiflorus':4,
+'Styrax suberifolius':4,
+'Styrax ramirezii':4,
+'Styrax obassis':4,
+'Styrax hemsleyanus':4,
+'Styrax confusus':4,
+'Styrax calvescens':4,
+'Styrax japonicus':4
+)Styrax:4,
+(
+'Sinojackia microcarpa':4,
+'Sinojackia huangmeiensis':4,
+'Sinojackia sarcocarpa':4,
+'Sinojackia xylocarpa':4,
+'Sinojackia rehderiana':4
+)Sinojackia:4
+)Styracaceae:4,
+(
+'Rhododendron delavayi var. delavayi':4,
+'Pityopus californicus':4,
+'Monotropsis odorata':4,
+'Hemitomes congestum':4,
+'Allotropa virgata':4,
+'Monotropa uniflora':4,
+(
+'Vaccinium oldhamii':4,
+'Vaccinium macrocarpon':4
+)Vaccinium:4
+)Ericaceae:4,
+(
+'Diospyros strigosa':4,
+'Diospyros maclurei':4,
+'Diospyros hainanensis':4,
+'Diospyros blancoi':4,
+'Diospyros cathayensis':4,
+'Diospyros glaucifolia':4,
+'Diospyros celebica':4,
+'Diospyros rhombifolia':4,
+'Diospyros oleifera':4,
+'Diospyros dumetorum':4,
+'Diospyros lotus':4,
+'Diospyros kaki':4,
+'Diospyros virginiana':4
+)Diospyros:4,
+(
+'Hartia laotica':4,
+(
+'Pyrenaria khasiana':4,
+'Pyrenaria pingpienensis':4,
+'Pyrenaria microcarpa':4,
+'Pyrenaria oblongicarpa':4,
+'Pyrenaria menglaensis':4,
+'Pyrenaria diospyricarpa':4
+)Pyrenaria:4,
+'Tutcheria championii':4,
+(
+'Gordonia fruticosa':4,
+'Gordonia lasianthus':4,
+'Gordonia brandegeei':4
+)Gordonia:4,
+'Franklinia alatamaha':4,
+'Apterosperma oblata':4,
+(
+'Polyspora dalgleishiana':4,
+'Polyspora speciosa':4,
+'Polyspora hainanensis':4,
+'Polyspora longicarpa':4,
+'Polyspora axillaris':4
+)Polyspora:4,
+(
+'Stewartia rubiginosa':4,
+'Stewartia sinii':4,
+'Stewartia obovata':4,
+'Stewartia micrantha':4,
+'Stewartia cordifolia':4,
+'Stewartia crassifolia':4,
+'Stewartia rostrata':4,
+'Stewartia calcicola':4,
+'Stewartia sinensis':4,
+'Stewartia serrata':4,
+'Stewartia monadelpha':4,
+'Stewartia malacodendron':4,
+'Stewartia villosa':4,
+'Stewartia pteropetiolata':4,
+'Stewartia ovata':4,
+'Stewartia pseudocamellia':4
+)Stewartia:4,
+(
+'Schima multibracteata':4,
+'Schima brevipedicellata':4,
+'Schima crenata':4,
+'Schima sericans':4,
+'Schima khasiana':4,
+'Schima sinensis':4,
+'Schima wallichii':4,
+'Schima remotiserrata':4,
+'Schima noronhae':4,
+'Schima argentea':4,
+'Schima superba':4
+)Schima:4,
+(
+'Camellia mingii':4,
+'Camellia renshanxiangiae':4,
+'Camellia pubicosta':4,
+'Camellia grandibracteata':4,
+'Camellia danzaiensis':4,
+'Camellia gymnogyna':4,
+'Camellia elongata':4,
+'Camellia szechuanensis':4,
+'Camellia leptophylla':4,
+'Camellia crapnelliana':4,
+'Camellia mairei':4,
+'Camellia azalea':4,
+'Camellia reticulata':4,
+'Camellia chekiangoleosa':4,
+'Camellia oleifera':4,
+'Camellia ptilophylla':4,
+'Camellia pitardii':4,
+'Camellia cuspidata':4,
+'Camellia yunnanensis':4,
+'Camellia taliensis':4,
+'Camellia sasanqua':4,
+'Camellia granthamiana':4,
+'Camellia petelotii':4,
+'Camellia nitidissima':4,
+'Camellia impressinervis':4,
+'Camellia japonica':4,
+'Camellia sinensis':4
+)Camellia:4
+)Theaceae:4,
+(
+(
+'Barringtonia fusicarpa':4,
+'Barringtonia racemosa':4
+)Barringtonia:4,
+'Bertholletia excelsa':4
+)Lecythidaceae:4,
+(
+'Saurauia tristyla':4,
+(
+'Actinidia tetramera':4,
+'Actinidia callosa var. henryi':4,
+'Actinidia zhejiangensis':4,
+'Actinidia rufa':4,
+'Actinidia kolomikta':4,
+'Actinidia lanceolata':4,
+'Actinidia eriantha':4,
+'Actinidia polygama':4,
+'Actinidia arguta':4,
+'Actinidia deliciosa':4,
+'Actinidia chinensis':4
+)Actinidia:4
+)Actinidiaceae:4
+)Ericales:4,
+(
+'Tetrastigma hemsleyanum':4,
+(
+'Ampelopsis japonica':4,
+'Ampelopsis humulifolia':4
+)Ampelopsis:4,
+(
+'Vitis x labruscana':4,
+'Vitis peninsularis':4,
+'Vitis rufotomentosa':4,
+'Vitis baileyana':4,
+'Vitis doaniana':4,
+'Vitis lanata':4,
+'Vitis retordii':4,
+'Vitis bloodworthiana':4,
+'Vitis biformis':4,
+'Vitis x champinii':4,
+'Vitis mustangensis':4,
+'Vitis vulpina':4,
+'Vitis treleasei':4,
+'Vitis palmata':4,
+'Vitis monticola':4,
+'Vitis jacquemontii':4,
+'Vitis girdiana':4,
+'Vitis cordifolia':4,
+'Vitis californica':4,
+'Vitis coignetiae':4,
+'Vitis ficifolia':4,
+'Vitis acerifolia':4,
+'Vitis bryoniifolia':4,
+'Vitis tiliifolia':4,
+'Vitis heyneana':4,
+'Vitis betulifolia':4,
+'Vitis shuttleworthii':4,
+'Vitis pseudoreticulata':4,
+'Vitis piasezkii':4,
+'Vitis thunbergii':4,
+'Vitis labrusca':4,
+'Vitis arizonica':4,
+'Vitis rupestris':4,
+'Vitis amurensis':4,
+(
+'Vitis cinerea var. cinerea':4,
+'Vitis cinerea var. floridana':4,
+'Vitis cinerea var. helleri':4
+)'Vitis cinerea':4,
+'Vitis rotundifolia var. munsoniana':4,
+'Vitis riparia':4,
+'Vitis vinifera':4,
+'Vitis aestivalis var. linsecomii':4
+)Vitis:4
+)Vitaceae:4,
+(
+'Lophiocarpus tenuissimus':4,
+'Asteropeia rhopaloides':4,
+'Macarthuria keigheryi':4,
+'Kewa sp. GY-2019':4,
+(
+'Achatocarpus pubescens':4,
+'Achatocarpus nigricans':4
+)Achatocarpus:4,
+(
+'Physena sessiliflora':4,
+'Physena madagascariensis':4
+)Physena:4,
+'Ancistrocladus tectorius':4,
+'Microtea debilis':4,
+(
+'Reaumuria trigyna':4,
+(
+'Myricaria prostrata':4,
+'Myricaria paniculata':4
+)Myricaria:4,
+'Hololachna songarica':4,
+'Tamarix chinensis':4
+)Tamaricaceae:4,
+'Barbeuia madagascariensis':4,
+(
+'Carnegiea gigantea':4,
+'Lophocereus schottii':4
+)Cactaceae:4,
+(
+'Nepenthes ventricosa x Nepenthes alata':4,
+'Nepenthes mirabilis':4
+)Nepenthes:4,
+'Halophytum ameghinoi':4,
+'Dioncophyllum thollonii':4,
+'Talinum paniculatum':4,
+(
+(
+'Calandrinia granulifera':4,
+'Calandrinia eremaea':4
+)Calandrinia:4,
+'Montia fontana':4,
+(
+'Cistanthe longiscapa':4,
+'Cistanthe grandiflora':4
+)Cistanthe:4
+)Montiaceae:4,
+'Rhabdodendron amazonicum':4,
+(
+'Frankenia laevis':4,
+'Frankenia pulverulenta':4
+)Frankenia:4,
+'Sarcobatus vermiculatus':4,
+(
+'Ceratostigma willmottianum':4,
+(
+'Limonium aureum':4,
+'Limonium tenellum':4
+)Limonium:4,
+'Plumbago auriculata':4
+)Plumbaginaceae:4,
+(
+'Oxyria sinensis':4,
+(
+'Rheum nobile':4,
+'Rheum wittrockii':4,
+'Rheum tanguticum':4,
+'Rheum palmatum':4
+)Rheum:4,
+(
+'Fallopia sachalinensis':4,
+'Fallopia multiflora':4
+)Fallopia:4,
+(
+'Fagopyrum luojishanense':4,
+'Fagopyrum dibotrys':4,
+'Fagopyrum esculentum subsp. ancestrale':4,
+'Fagopyrum tataricum':4
+)Fagopyrum:4,
+'Rumex acetosa':4
+)Polygonaceae:4,
+'Drosophyllum lusitanicum':4,
+(
+'Aldrovanda vesiculosa':4,
+(
+'Drosera erythrorhiza':4,
+'Drosera rotundifolia':4,
+'Drosera regia':4
+)Drosera:4,
+'Dionaea muscipula':4
+)Droseraceae:4,
+'Simmondsia chinensis':4,
+(
+'Trigastrotheca stricta':4,
+'Mollugo verticillata':4
+)Molluginaceae:4,
+(
+'Anredera cordifolia':4,
+'Basella alba':4
+)Basellaceae:4,
+(
+'Portulaca pilosa':4,
+'Portulaca oleracea':4,
+'Portulaca grandiflora':4
+)Portulaca:4,
+(
+(
+'Pseudostellaria okamotoi':4,
+'Pseudostellaria longipedicellata':4,
+'Pseudostellaria palibiniana':4,
+'Pseudostellaria heterophylla':4
+)Pseudostellaria:4,
+'Spergula arvensis':4,
+(
+'Colobanthus quitensis':4,
+'Colobanthus apetalus':4
+)Colobanthus:4,
+'Gymnocarpos przewalskii':4,
+'Psammosilene tunicoides':4,
+'Agrostemma githago':4,
+'Gypsophila vaccaria':4,
+(
+'Silene capitata':4,
+'Silene wilfordii':4,
+'Silene conoidea':4,
+'Silene paradoxa':4,
+'Silene aprica':4,
+'Silene vulgaris':4,
+'Silene noctiflora':4,
+'Silene conica':4,
+'Silene chalcedonica':4,
+'Silene latifolia':4
+)Silene:4,
+'Dianthus caryophyllus':4
+)Caryophyllaceae:4,
+(
+'Cyathula capitata':4,
+'Ptilotus polystachyus':4,
+'Alternanthera philoxeroides':4,
+'Deeringia amaranthoides':4,
+(
+'Celosia cristata':4,
+'Celosia argentea':4
+)Celosia:4,
+(
+'Amaranthus hypochondriacus':4,
+'Amaranthus caudatus':4
+)Amaranthus:4
+)Amaranthaceae:4,
+(
+'Oxybasis glauca':4,
+(
+'Dysphania pumilio':4,
+'Dysphania ambrosioides':4,
+'Dysphania botrys':4
+)Dysphania:4,
+'Atriplex centralasiatica':4,
+(
+'Haloxylon persicum':4,
+'Haloxylon ammodendron':4
+)Haloxylon:4,
+(
+'Suaeda malacosperma':4,
+'Suaeda glauca':4,
+'Suaeda salsa':4,
+'Suaeda japonica':4
+)Suaeda:4,
+(
+'Salicornia europaea':4,
+'Salicornia brachiata':4,
+'Salicornia bigelovii':4
+)Salicornia:4,
+'Spinacia oleracea':4,
+(
+'Chenopodium ficifolium':4,
+'Chenopodium quinoa':4,
+'Chenopodium album':4
+)Chenopodium:4
+)Chenopodiaceae:4,
+(
+'Sesuvium portulacastrum':4,
+'Tetragonia tetragonoides':4,
+(
+'Mesembryanthemum cordifolium':4,
+'Mesembryanthemum crystallinum':4
+)Mesembryanthemum:4
+)Aizoaceae:4,
+(
+'Boerhavia diffusa':4,
+'Pisonia aculeata':4,
+'Nyctaginia capitata':4,
+'Acleisanthes obtusa':4,
+(
+'Bougainvillea spectabilis':4,
+'Bougainvillea glabra':4
+)Bougainvillea:4,
+'Mirabilis jalapa':4
+)Nyctaginaceae:4,
+(
+'Stegnosperma cubense':4,
+'Stegnosperma halimifolium':4
+)Stegnosperma:4,
+(
+'Petiveria alliacea':4,
+'Rivina humilis':4
+)Petiveriaceae:4,
+'Gisekia pharnaceoides':4,
+(
+'Monococcus echinophorus':4,
+'Seguieria aculeata':4,
+(
+'Phytolacca insularis':4,
+'Phytolacca acinosa':4
+)Phytolacca:4
+)Phytolaccaceae:4
+)Caryophyllales:4,
+(
+'Morella rubra':4,
+(
+'Engelhardia roxburghiana':4,
+'Cyclocarya paliurus':4,
+'Platycarya strobilacea':4,
+(
+'Pterocarya macroptera var. insignis':4,
+'Pterocarya zhijiangensis':4,
+'Pterocarya hupehensis':4,
+'Pterocarya tonkinensis':4,
+'Pterocarya stenoptera':4,
+'Pterocarya fraxinifolia':4
+)Pterocarya:4,
+(
+'Carya kweichowensis':4,
+'Carya hunanensis':4,
+'Carya cathayensis':4,
+'Carya sinensis':4,
+'Carya illinoinensis':4
+)Carya:4,
+(
+'Juglans hopeiensis':4,
+'Juglans sigillata':4,
+'Juglans microcarpa':4,
+'Juglans mandshurica':4,
+'Juglans major':4,
+'Juglans hindsii':4,
+'Juglans cinerea':4,
+'Juglans cathayensis var. formosana':4,
+'Juglans ailanthifolia':4,
+'Juglans regia':4,
+'Juglans nigra':4
+)Juglans:4
+)Juglandaceae:4,
+'Casuarina glauca':4,
+(
+(
+'Ostrya chinensis':4,
+'Ostrya trichocarpa':4,
+'Ostrya japonica':4,
+'Ostrya rehderiana':4
+)Ostrya:4,
+(
+'Ostryopsis intermedia':4,
+'Ostryopsis nobilis':4,
+'Ostryopsis davidiana':4
+)Ostryopsis:4,
+(
+'Betula cordifolia':4,
+'Betula pendula var. carelica':4,
+'Betula chichibuensis':4,
+'Betula occidentalis':4,
+'Betula lenta':4,
+'Betula nana':4,
+'Betula populifolia':4,
+'Betula platyphylla':4,
+'Betula pubescens':4
+)Betula:4,
+(
+'Corylus wangii':4,
+'Corylus fargesii':4,
+'Corylus yunnanensis':4,
+'Corylus mandshurica':4,
+'Corylus sieboldiana':4,
+'Corylus jacquemontii':4,
+'Corylus ferox var. thibetica':4,
+'Corylus colurna':4,
+'Corylus heterophylla':4,
+'Corylus chinensis':4,
+'Corylus americana':4,
+'Corylus cornuta':4,
+'Corylus avellana':4
+)Corylus:4,
+(
+'Carpinus fargesiana':4,
+'Carpinus hebestroma':4,
+'Carpinus purpurinervis':4,
+'Carpinus oblongifolia':4,
+'Carpinus rupestris':4,
+'Carpinus viminea':4,
+'Carpinus tientaiensis':4,
+'Carpinus monbeigiana':4,
+'Carpinus fangiana':4,
+'Carpinus tschonoskii':4,
+'Carpinus cordata':4,
+'Carpinus putoensis':4,
+'Carpinus polyneura':4,
+'Carpinus caroliniana':4,
+'Carpinus betulus':4
+)Carpinus:4,
+(
+'Alnus orientalis':4,
+'Alnus alnobetula subsp. maximowiczii':4,
+'Alnus cremastogyne':4,
+'Alnus nitida':4,
+'Alnus subcordata':4,
+'Alnus rubra':4,
+'Alnus nepalensis':4,
+'Alnus japonica':4,
+'Alnus cordata':4,
+'Alnus glutinosa':4,
+'Alnus incana':4
+)Alnus:4
+)Betulaceae:4,
+(
+'Trigonobalanus doichangensis':4,
+'Lithocarpus balansae':4,
+(
+'Castanopsis hainanensis':4,
+'Castanopsis concinna':4,
+'Castanopsis sclerophylla':4,
+'Castanopsis fargesii':4,
+'Castanopsis echinocarpa':4
+)Castanopsis:4,
+(
+'Castanea henryi':4,
+'Castanea seguinii':4,
+'Castanea mollissima':4
+)Castanea:4,
+(
+'Fagus engleriana':4,
+'Fagus sylvatica':4,
+'Fagus crenata':4
+)Fagus:4,
+(
+'Quercus obovatifolia':4,
+'Quercus bawanglingensis':4,
+'Quercus sichourensis':4,
+'Quercus tungmaiensis':4,
+'Quercus tarokoensis':4,
+'Quercus aquifolioides':4,
+'Quercus dolicholepis':4,
+'Quercus chenii':4,
+'Quercus baronii':4,
+'Quercus coccinea':4,
+'Quercus wutaishanica':4,
+'Quercus spinosa':4,
+'Quercus glauca':4,
+'Quercus mongolica':4,
+'Quercus dentata':4,
+'Quercus aliena':4,
+'Quercus variabilis':4,
+'Quercus acutissima':4,
+'Quercus robur':4,
+'Quercus rubra':4
+)Quercus:4
+)Fagaceae:4
+)Fagales:4,
+(
+(
+'Elatostema dissectum':4,
+'Cecropia pachystachya':4,
+'Debregeasia orientalis':4,
+(
+'Boehmeria spicata':4,
+'Boehmeria umbrosa':4
+)Boehmeria:4
+)Urticaceae:4,
+(
+'Rhamnus taquetii':4,
+'Berchemia berchemiifolia':4,
+'Berchemiella wilsonii':4,
+(
+'Ziziphus jujuba':4,
+'Ziziphus spina-christi':4,
+'Ziziphus mauritiana':4
+)Ziziphus:4
+)Rhamnaceae:4,
+'Barbeya oleoides':4,
+(
+(
+'Hippophae neurocarpa':4,
+'Hippophae rhamnoides subsp. yunnanensis':4,
+'Hippophae gyantsensis':4
+)Hippophae:4,
+(
+'Elaeagnus mollis':4,
+'Elaeagnus macrophylla':4,
+'Elaeagnus angustifolia':4
+)Elaeagnus:4
+)Elaeagnaceae:4,
+(
+'Chaetachme aristata':4,
+(
+'Zelkova schneideriana':4,
+'Zelkova serrata':4
+)Zelkova:4,
+(
+'Ulmus elongata':4,
+'Ulmus chenmoui':4,
+'Ulmus gaussenii':4,
+'Ulmus davidiana':4,
+'Ulmus macrocarpa':4,
+'Ulmus pumila':4,
+'Ulmus laciniata':4,
+'Ulmus americana':4
+)Ulmus:4
+)Ulmaceae:4,
+(
+(
+'Vauquelinia pauciflora':4,
+'Vauquelinia australis':4
+)Vauquelinia:4,
+(
+'Hesperomeles pernettyoides':4,
+'Hesperomeles goudotiana':4,
+'Hesperomeles ferruginea':4,
+'Hesperomeles cuneata':4
+)Hesperomeles:4,
+(
+'Pourthiaea arguta':4,
+'Pourthiaea tomentosa':4,
+'Pourthiaea amphidoxa':4
+)Pourthiaea:4,
+'Prinsepia utilis':4,
+(
+'Cotoneaster wilsonii':4,
+'Cotoneaster schantungensis':4,
+'Cotoneaster taylorii':4,
+'Cotoneaster rubens':4,
+'Cotoneaster silvestrii':4,
+'Cotoneaster microphyllus':4,
+'Cotoneaster horizontalis':4,
+'Cotoneaster frigidus':4,
+'Cotoneaster buxifolius':4,
+'Cotoneaster acuminatus':4
+)Cotoneaster:4,
+(
+'Phippsiomeles matudae':4,
+'Phippsiomeles mexicana':4
+)Phippsiomeles:4,
+'Pentactina rupicola':4,
+'Crataegus kansuensis':4,
+'Potaninia mongolica':4,
+'Torminalis clusii':4,
+'Dichotomanthes tristaniicarpa':4,
+'Geum rupestre':4,
+'Docynia delavayi':4,
+'Pyracantha fortuneana':4,
+(
+'Gillenia trifoliata':4,
+'Gillenia stipulata':4
+)Gillenia:4,
+(
+'Photinia lanuginosa':4,
+'Photinia beckii':4,
+'Photinia sorbifolia':4,
+'Photinia blinii':4,
+'Photinia prionophylla':4,
+'Photinia lochengensis':4,
+'Photinia integrifolia':4,
+'Photinia villosa':4,
+'Photinia serratifolia':4
+)Photinia:4,
+(
+'Sanguisorba sitchensis':4,
+'Sanguisorba tenuifolia var. alba':4,
+'Sanguisorba filiformis':4,
+'Sanguisorba officinalis':4
+)Sanguisorba:4,
+'Bencomia exstipulata':4,
+(
+'Sorbus ulleungensis':4,
+'Sorbus setschwanensis':4,
+'Sorbus chamaemespilus':4,
+'Sorbus aria':4,
+'Sorbus torminalis':4
+)Sorbus:4,
+(
+'Malus x atrosanguinea':4,
+'Malus micromalus':4,
+'Malus yunnanensis':4,
+'Malus tschonoskii':4,
+'Malus trilobata':4,
+'Malus sieversii':4,
+'Malus prunifolia':4,
+'Malus prattii':4,
+'Malus ioensis':4,
+'Malus hupehensis':4,
+'Malus florentina':4,
+'Malus doumeri':4,
+'Malus coronaria':4,
+'Malus baccata':4,
+'Malus angustifolia':4
+)Malus:4,
+(
+'Rubus boninensis':4,
+'Rubus amabilis':4,
+'Rubus hybrid cultivar':4,
+'Rubus takesimensis':4,
+'Rubus coreanus':4,
+'Rubus trifidus':4,
+'Rubus crataegifolius':4
+)Rubus:4,
+(
+'Rosa berberifolia':4,
+'Rosa praelucens':4,
+'Rosa chinensis var. spontanea':4,
+'Rosa hybrid cultivar':4,
+'Rosa maximowicziana':4,
+'Rosa roxburghii':4,
+'Rosa laevigata var. leiocarpa':4,
+'Rosa banksiae':4,
+'Rosa lucieae':4,
+'Rosa multiflora':4,
+'Rosa rugosa':4,
+'Rosa canina':4
+)Rosa:4,
+(
+'Rhaphiolepis bibas':4,
+'Rhaphiolepis major':4,
+'Rhaphiolepis lanceolata':4,
+'Rhaphiolepis ferruginea':4,
+'Rhaphiolepis impressivena':4,
+'Rhaphiolepis salwinensis':4,
+'Rhaphiolepis salicifolia':4,
+'Rhaphiolepis obovata':4,
+'Rhaphiolepis henryi':4,
+'Rhaphiolepis seguinii':4,
+'Rhaphiolepis malipoensis':4,
+'Rhaphiolepis umbellata':4,
+'Rhaphiolepis indica':4
+)Rhaphiolepis:4,
+'Osteomeles schwerinae':4,
+'Malacomeles denticulata':4,
+'Cydonia oblonga':4,
+(
+'Chaenomeles japonica':4,
+'Chaenomeles sinensis':4,
+'Chaenomeles cathayensis':4
+)Chaenomeles:4,
+'Aronia arbutifolia':4,
+'Dasiphora fruticosa':4,
+(
+'Kageneckia lanceolata':4,
+'Kageneckia oblonga':4,
+'Kageneckia angustifolia':4
+)Kageneckia:4,
+(
+'Amelanchier pallida':4,
+'Amelanchier interior':4,
+'Amelanchier sanguinea':4,
+'Amelanchier humilis':4,
+'Amelanchier cusickii':4,
+'Amelanchier asiatica':4,
+'Amelanchier arborea':4,
+'Amelanchier bartramiana':4,
+'Amelanchier alnifolia':4
+)Amelanchier:4,
+(
+'Potentilla centigrana':4,
+'Potentilla freyniana':4,
+'Potentilla stolonifera':4,
+'Potentilla hebiichigo':4,
+'Potentilla indica':4
+)Potentilla:4,
+(
+'Pyrus spinosa':4,
+'Pyrus pashia':4,
+'Pyrus ussuriensis':4,
+'Pyrus communis':4,
+'Pyrus pyrifolia':4
+)Pyrus:4,
+(
+'Prunus matuurae':4,
+'Prunus mongolica':4,
+'Prunus pedunculata':4,
+'Prunus triloba':4,
+'Prunus humilis':4,
+'Prunus speciosa':4,
+'Prunus cerasoides':4,
+'Prunus kansuensis':4,
+'Prunus zippeliana':4,
+'Prunus pseudocerasus':4,
+'Prunus davidiana':4,
+'Prunus mira':4,
+'Prunus tenella':4,
+'Prunus campanulata':4,
+'Prunus tomentosa':4,
+'Prunus mume':4,
+'Prunus takesimensis':4,
+'Prunus padus':4,
+'Prunus maximowiczii':4,
+'Prunus salicina':4,
+'Prunus avium':4,
+'Prunus armeniaca':4,
+'Prunus serotina':4,
+'Prunus persica':4,
+'Prunus yedoensis':4,
+'Prunus dulcis':4
+)Prunus:4,
+(
+'Fragaria mandshurica':4,
+(
+'Fragaria vesca subsp. bracteata':4,
+'Fragaria vesca subsp. vesca':4
+)'Fragaria vesca':4,
+'Fragaria virginiana':4,
+'Fragaria pentaphylla':4,
+'Fragaria orientalis':4,
+'Fragaria nipponica':4,
+'Fragaria chiloensis':4,
+'Fragaria iinumae':4,
+'Fragaria x ananassa':4
+)Fragaria:4
+)Rosaceae:4,
+(
+'Trophis scandens':4,
+'Antiaris toxicaria':4,
+(
+'Morus notabilis':4,
+'Morus celtidifolia':4,
+'Morus indica':4,
+'Morus mongolica':4,
+'Morus cathayana':4
+)Morus:4,
+(
+'Broussonetia monoica':4,
+'Broussonetia luzonica':4,
+'Broussonetia kurzii':4,
+'Broussonetia kazinoki x Broussonetia papyrifera':4,
+'Broussonetia kaempferi':4,
+'Broussonetia papyrifera':4
+)Broussonetia:4,
+(
+'Ficus racemosa':4,
+'Ficus religiosa':4,
+'Ficus carica':4
+)Ficus:4
+)Moraceae:4,
+(
+'Parasponia rugosa':4,
+'Celtis biondii':4,
+'Lozanella enantiophylla':4,
+'Pteroceltis tatarinowii':4,
+'Gironniera subaequalis':4,
+'Trema orientale':4,
+'Aphananthe aspera':4,
+(
+'Humulus scandens':4,
+'Humulus lupulus':4
+)Humulus:4,
+'Cannabis sativa':4
+)Cannabaceae:4
+)Rosales:4,
+(
+'Euptelea pleiosperma':4,
+(
+'Stephania japonica':4,
+'Tinospora cordifolia':4,
+'Sinomenium acutum':4,
+'Pericampylus glaucus':4,
+'Menispermum dauricum':4
+)Menispermaceae:4,
+(
+'Kingdonia uniflora':4,
+'Circaeaster agrestis':4
+)Circaeasteraceae:4,
+(
+(
+'Leontice armeniaca':4,
+'Leontice incerta':4
+)Leontice:4,
+'Plagiorhegma dubium':4,
+(
+'Gymnospermium kiangnanense':4,
+'Gymnospermium microrrhynchum':4
+)Gymnospermium:4,
+'Sinopodophyllum hexandrum':4,
+'Ranzania japonica':4,
+(
+'Epimedium xichangense':4,
+'Epimedium pseudowushanense':4,
+'Epimedium lishihchenii':4,
+'Epimedium ilicifolium':4,
+'Epimedium borealiguizhouense':4,
+'Epimedium mikinorii':4,
+'Epimedium brevicornu':4,
+'Epimedium sagittatum':4,
+'Epimedium dolichostemon':4,
+'Epimedium acuminatum':4,
+'Epimedium wushanense':4,
+'Epimedium chlorandrum':4,
+'Epimedium koreanum':4
+)Epimedium:4,
+(
+'Dysosma tsayuensis':4,
+'Dysosma delavayi':4,
+'Dysosma aurantiocaulis':4,
+'Dysosma difformis':4,
+'Dysosma majoensis':4,
+'Dysosma versipellis':4,
+'Dysosma pleiantha':4
+)Dysosma:4,
+(
+'Diphylleia sinensis':4,
+'Diphylleia grayi':4,
+'Diphylleia cymosa':4
+)Diphylleia:4,
+'Achlys triphylla':4,
+'Caulophyllum robustum':4,
+'Vancouveria hexandra':4,
+'Nandina domestica':4,
+'Bongardia chrysogonum':4,
+'Podophyllum peltatum':4,
+(
+'Berberis aristata':4,
+'Berberis fortunei':4,
+'Berberis amurensis':4,
+'Berberis koreana':4,
+'Berberis bealei':4
+)Berberis:4
+)Berberidaceae:4,
+(
+'Stauntonia obovatifoliola subsp. urophylla':4,
+'Decaisnea insignis':4,
+'Sinofranchetia chinensis':4,
+'Holboellia latifolia':4,
+(
+'Akebia trifoliata':4,
+'Akebia quinata':4
+)Akebia:4
+)Lardizabalaceae:4,
+(
+'Corydalis conspersa':4,
+'Coreanomecon hylomeconoides':4,
+'Macleaya microcarpa':4,
+'Meconopsis racemosa':4,
+'Hylomecon japonica':4,
+'Chelidonium majus':4,
+'Lamprocapnos spectabilis':4,
+(
+'Papaver rhoeas':4,
+'Papaver orientale':4,
+'Papaver somniferum':4
+)Papaver:4
+)Papaveraceae:4,
+(
+'Adonis sutchuenensis':4,
+'Paraquilegia anemonoides':4,
+'Delphinium maackianum':4,
+'Dichocarpum fargesii':4,
+'Calathodes oxycarpa':4,
+(
+'Naravelia pilulifera':4,
+'Naravelia zeylanica':4
+)Naravelia:4,
+'Callianthemum taipaicum':4,
+'Anemoclema glaucifolium':4,
+(
+'Urophysa rockii':4,
+'Urophysa henryi':4
+)Urophysa:4,
+'Isopyrum manshuricum':4,
+'Semiaquilegia adoxoides':4,
+'Oxygraphis glacialis':4,
+(
+'Coptis chinensis':4,
+'Coptis quinquesecta':4
+)Coptis:4,
+(
+'Clematis trichotoma':4,
+'Clematis repens':4,
+'Clematis macropetala':4,
+'Clematis loureiroana':4,
+'Clematis heracleifolia':4,
+'Clematis brevicaudata':4,
+'Clematis acerifolia':4,
+'Clematis uncinata':4,
+'Clematis terniflora':4,
+'Clematis brachyura':4,
+'Clematis alternata':4
+)Clematis:4,
+'Gymnaconitum gymnandrum':4,
+'Leptopyrum fumarioides':4,
+'Helleborus thibetanus':4,
+'Enemion raddeanum':4,
+(
+'Anemone tomentosa':4,
+'Anemone chinensis':4,
+'Anemone cernua var. koreana':4,
+'Anemone raddeana':4,
+'Anemone maxima':4,
+'Anemone henryi':4,
+(
+'Anemone hepatica var. asiatica':4,
+'Anemone hepatica var. japonica':4
+)'Anemone hepatica':4,
+'Anemone trullifolia':4,
+'Anemone narcissiflora':4
+)Anemone:4,
+(
+'Ranunculus macranthus':4,
+'Ranunculus reptans':4,
+'Ranunculus occidentalis':4,
+'Ranunculus cantoniensis':4,
+'Ranunculus repens':4
+)Ranunculus:4,
+'Staphisagria macrosperma':4,
+(
+'Asteropyrum peltatum':4,
+'Asteropyrum cavaleriei':4
+)Asteropyrum:4,
+'Megaleranthis saniculifolia':4,
+'Eranthis stellata':4,
+'Trollius chinensis':4,
+'Beesia calthifolia':4,
+'Anemonopsis macrophylla':4,
+(
+'Actaea vaginata':4,
+'Actaea heracleifolia':4,
+'Actaea dahurica':4,
+'Actaea asiatica':4
+)Actaea:4,
+(
+'Aconitum pseudolaeve':4,
+'Aconitum longecassidatum':4,
+'Aconitum angustius':4,
+'Aconitum coreanum':4,
+'Aconitum chiisanense':4,
+'Aconitum kusnezoffii':4,
+'Aconitum monanthum':4,
+'Aconitum episcopale':4,
+'Aconitum brachypodum':4,
+'Aconitum contortum':4,
+'Aconitum vilmorinianum':4,
+'Aconitum delavayi':4,
+'Aconitum finetianum':4,
+'Aconitum hemsleyanum':4,
+'Aconitum sinomontanum':4,
+'Aconitum austrokoreense':4,
+'Aconitum carmichaelii':4,
+'Aconitum ciliare':4
+)Aconitum:4,
+(
+'Thalictrum coreanum':4,
+'Thalictrum minus':4,
+'Thalictrum thalictroides':4
+)Thalictrum:4,
+(
+'Aquilegia rockii':4,
+'Aquilegia coerulea':4,
+'Aquilegia ecalcarata':4
+)Aquilegia:4,
+'Glaucidium palmatum':4,
+(
+'Consolida orientalis':4,
+'Consolida ajacis':4
+)Consolida:4,
+'Hydrastis canadensis':4,
+'Caltha palustris':4,
+'Nigella damascena':4
+)Ranunculaceae:4
+)Ranunculales:4,
+(
+(
+'Actinodaphne lancifolia':4,
+(
+'Phoebe omeiensis':4,
+'Phoebe zhennan':4,
+'Phoebe chekiangensis':4,
+'Phoebe neurantha':4,
+'Phoebe sheareri':4,
+'Phoebe bournei':4
+)Phoebe:4,
+'Sassafras tzumu':4,
+(
+'Machilus balansae':4,
+'Machilus pauhoi':4,
+'Machilus yunnanensis':4,
+'Machilus thunbergii':4
+)Machilus:4,
+'Parasassafras confertiflorum':4,
+(
+'Neocinnamomum delavayi':4,
+'Neocinnamomum mekongense':4
+)Neocinnamomum:4,
+(
+'Lindera rubronervia':4,
+'Lindera neesiana':4,
+'Lindera floribunda':4,
+'Lindera sericea':4,
+'Lindera angustifolia':4,
+'Lindera praecox':4,
+'Lindera nacusua':4,
+'Lindera aggregata':4,
+'Lindera chunii':4,
+'Lindera glauca':4,
+'Lindera reflexa':4,
+'Lindera obtusiloba':4,
+'Lindera metcalfiana':4,
+'Lindera megaphylla':4,
+'Lindera communis':4,
+'Lindera erythrocarpa':4
+)Lindera:4,
+'Cryptocarya chinensis':4,
+(
+'Alseodaphne gracilis':4,
+'Alseodaphne huanglianshanensis':4,
+'Alseodaphne semecarpifolia':4
+)Alseodaphne:4,
+'Cassytha filiformis':4,
+'Laurus nobilis':4,
+'Litsea japonica':4,
+(
+'Cinnamomum yabunikkei':4,
+'Cinnamomum micranthum':4,
+'Cinnamomum verum':4,
+'Cinnamomum aromaticum':4,
+'Cinnamomum camphora':4
+)Cinnamomum:4,
+'Persea americana':4
+)Lauraceae:4,
+(
+'Idiospermum australiense':4,
+(
+'Chimonanthus nitens':4,
+'Chimonanthus praecox':4
+)Chimonanthus:4,
+(
+'Calycanthus floridus var. glaucus':4,
+'Calycanthus chinensis':4
+)Calycanthus:4
+)Calycanthaceae:4
+)Laurales:4,
+(
+'Horsfieldia pandurifolia':4,
+(
+'Chieniodendron hainanense':4,
+'Uvaria macrophylla':4,
+'Greenwayodendron suaveolens':4,
+'Annona cherimola':4
+)Annonaceae:4,
+(
+(
+'Liriodendron tulipifera':4,
+'Liriodendron chinense':4
+)Liriodendron:4,
+(
+'Magnolia glaucifolia':4,
+'Magnolia sinostellata':4,
+'Magnolia laevifolia':4,
+'Magnolia odoratissima':4,
+'Magnolia yunnanensis':4,
+'Magnolia alba':4,
+'Magnolia shiluensis':4,
+'Magnolia odora':4,
+'Magnolia maudiae':4,
+'Magnolia sinica':4,
+'Magnolia dandyi':4,
+'Magnolia insignis':4,
+'Magnolia duclouxii':4,
+'Magnolia conifera':4,
+'Magnolia aromatica':4,
+'Magnolia zenii':4,
+'Magnolia wilsonii':4,
+'Magnolia sprengeri':4,
+'Magnolia macrophylla var. dealbata':4,
+'Magnolia cathcartii':4,
+'Magnolia biondii':4,
+'Magnolia kwangsiensis':4,
+'Magnolia sieboldii':4,
+'Magnolia officinalis subsp. biloba':4,
+'Magnolia denudata':4,
+'Magnolia kobus':4,
+'Magnolia tripetala':4,
+'Magnolia pyramidata':4,
+'Magnolia salicifolia':4,
+'Magnolia grandiflora':4,
+'Magnolia liliiflora':4
+)Magnolia:4
+)Magnoliaceae:4
+)Magnoliales:4,
+(
+(
+(
+'Commiphora gileadensis':4,
+'Commiphora foliacea':4,
+'Commiphora wightii':4
+)Commiphora:4,
+'Boswellia sacra':4
+)Burseraceae:4,
+(
+'Ailanthus altissimus':4,
+'Leitneria floridana':4
+)Simaroubaceae:4,
+(
+(
+'Khaya madagascariensis':4,
+'Khaya senegalensis':4
+)Khaya:4,
+'Swietenia mahagoni':4,
+(
+'Xylocarpus rumphii':4,
+'Xylocarpus moluccensis':4,
+'Xylocarpus granatum':4
+)Xylocarpus:4,
+'Carapa guianensis':4,
+(
+'Entandrophragma cylindricum':4,
+'Entandrophragma caudatum':4
+)Entandrophragma:4,
+'Cedrela odorata':4,
+'Azadirachta indica':4,
+'Toona ciliata':4
+)Meliaceae:4,
+(
+'Eurycorymbus cavaleriei':4,
+(
+'Aesculus chinensis':4,
+'Aesculus wangii':4
+)Aesculus:4,
+'Litchi chinensis':4,
+'Dodonaea viscosa':4,
+'Dimocarpus longan':4,
+'Xanthoceras sorbifolium':4,
+'Sapindus mukorossi':4,
+(
+'Acer fenzelianum':4,
+'Acer sino-oblongum':4,
+'Acer amplum subsp. catalpifolium':4,
+'Acer miaotaiense':4,
+'Acer morrisonense':4,
+'Acer wilsonii':4,
+'Acer laevigatum':4,
+'Acer griseum':4,
+'Acer davidii':4,
+'Acer triflorum':4,
+'Acer palmatum':4,
+'Acer buergerianum':4,
+'Acer pseudosieboldianum':4,
+'Acer takesimense':4,
+'Acer truncatum':4
+)Acer:4,
+(
+'Dipteronia dyeriana':4,
+'Dipteronia sinensis':4
+)Dipteronia:4,
+'Koelreuteria paniculata':4
+)Sapindaceae:4,
+(
+'Sclerocarya birrea':4,
+(
+'Rhus chinensis':4,
+'Rhus typhina':4
+)Rhus:4,
+'Anacardium occidentale':4,
+(
+'Spondias bahiensis':4,
+'Spondias tuberosa':4,
+'Spondias mombin':4
+)Spondias:4,
+(
+'Pistacia weinmaniifolia':4,
+'Pistacia chinensis':4,
+'Pistacia vera':4
+)Pistacia:4,
+'Mangifera indica':4,
+'Toxicodendron vernicifluum':4
+)Anacardiaceae:4,
+(
+(
+'Zanthoxylum tragodes':4,
+'Zanthoxylum paniculatum':4,
+'Zanthoxylum madagascariense':4,
+'Zanthoxylum pinnatum':4,
+'Zanthoxylum schinifolium':4,
+'Zanthoxylum piperitum':4,
+'Zanthoxylum simulans':4,
+'Zanthoxylum bungeanum':4
+)Zanthoxylum:4,
+'Merrillia caloxylon':4,
+'Murraya koenigii':4,
+(
+'Glycosmis mauritiana':4,
+'Glycosmis pentaphylla':4
+)Glycosmis:4,
+'Clausena excavata':4,
+'Phellodendron amurense':4,
+'Micromelum minutum':4,
+'Casimiroa edulis':4,
+'Ruta graveolens':4,
+(
+'Citrus polytrifolia':4,
+'Citrus depressa':4,
+'Citrus platymamma':4,
+'Citrus aurantiifolia':4,
+'Citrus reticulata':4,
+'Citrus maxima':4,
+'Citrus sinensis':4,
+'Citrus limon':4
+)Citrus:4
+)Rutaceae:4
+)Sapindales:4
+)Magnoliopsida:4
+)Streptophyta:4
+)Viridiplantae:4
+)Eukaryota:4;

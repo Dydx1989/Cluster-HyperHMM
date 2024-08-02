@@ -13,10 +13,10 @@ source("cHHMM.R")
 #  missing value where TRUE/FALSE needed
 
 #expt = "Kleborate"
-expt = "synthetic"
+expt = "mtDNA"
 #expt = "PATHOGEN"
 sf = 2
-
+given.tree = FALSE
 
 if(expt == "AMR") {
   other.data = t(read.csv("K.p.binary.csv"))
@@ -89,16 +89,32 @@ if(expt == "AMR") {
   # Retain only rows and columns that are not all zeros or all ones
   src.data<- src.data[non_zero_one_rows, non_zero_one_columns]
   
+} else if(expt == "cpDNA") {
+  df = read.csv("pt-barcodes-manual.csv")
+  df=df[1:100,]
+  tree = read.tree("pt-tree-manual.phy")
+  tmp = tolower(gsub("'", "", tree$tip.label))
+  tree$tip.label = tmp
+  tree.set = curate.tree(tree, df)
+  src.data = 1-t(df[2:ncol(df)])
+  class(src.data) = "numeric"
+  src.data = as.data.frame(src.data)
+  ind.labels = df[,1]
+  given.tree = TRUE
+} else if(expt == "mtDNA") {
+  set.seed(1)
+  df = read.csv("mt-barcodes-manual.csv")
+  df=df[sample(1:nrow(df), 200),]
+  tree = read.tree("mt-tree-manual.phy")
+  tmp = tolower(gsub("'", "", tree$tip.label))
+  tree$tip.label = tmp
+  tree.set = curate.tree(tree, df)
+  src.data = 1-t(df[2:ncol(df)])
+  class(src.data) = "numeric"
+  src.data = as.data.frame(src.data)
+  ind.labels = df[,1]
+  given.tree = TRUE
 }
-
-
-
-
-
-
-
-
-
 
 
 ## Use plot for Gap method without Monte Carlo (“bootstrap”) samples (B)
@@ -152,13 +168,18 @@ print(
 dev.off()
 
 cross.sectional.obs = cHHMM.cross.sectional(clustered.structure)
-phylogenetic.obs = cHHMM.phylogenetic.estimation(clustered.structure)
-
 cross.sectional.obs.majority = cHHMM.cross.sectional(clustered.structure, occupancy="majority")
-phylogenetic.obs.majority = cHHMM.phylogenetic.estimation(clustered.structure, occupancy="majority")
-
 cross.sectional.obs.relative = cHHMM.cross.sectional(clustered.structure, occupancy="relative")
-phylogenetic.obs.relative = cHHMM.phylogenetic.estimation(clustered.structure, occupancy="relative")
+
+if(given.tree == FALSE) {
+  phylogenetic.obs = cHHMM.phylogenetic.estimation(clustered.structure)
+  phylogenetic.obs.majority = cHHMM.phylogenetic.estimation(clustered.structure, occupancy="majority")
+  phylogenetic.obs.relative = cHHMM.phylogenetic.estimation(clustered.structure, occupancy="relative")
+} else {
+  phylogenetic.obs = cHHMM.phylogenetic.assignment(clustered.structure, tree.set$tree, ind.labels)
+  phylogenetic.obs.majority = cHHMM.phylogenetic.assignment(clustered.structure, tree.set$tree, ind.labels, occupancy="majority")
+  phylogenetic.obs.relative = cHHMM.phylogenetic.assignment(clustered.structure, tree.set$tree, ind.labels, occupancy="relative")
+}
 
 fit.cross.sectional = HyperHMM(cross.sectional.obs$cross_sectional_data, nboot = 2)
 fit.phylogenetic = HyperHMM(phylogenetic.obs$dests, initialstates = phylogenetic.obs$srcs, nboot = 2)
@@ -286,13 +307,18 @@ print(g.cids.alt)
 dev.off()
 
 cross.sectional.obs.alt = cHHMM.cross.sectional(clustered.structure.alt)
-phylogenetic.obs.alt = cHHMM.phylogenetic.estimation(clustered.structure.alt)
-
 cross.sectional.obs.majority.alt = cHHMM.cross.sectional(clustered.structure.alt, occupancy="majority")
-phylogenetic.obs.majority.alt = cHHMM.phylogenetic.estimation(clustered.structure.alt, occupancy="majority")
-
 cross.sectional.obs.relative.alt = cHHMM.cross.sectional(clustered.structure.alt, occupancy="relative")
-phylogenetic.obs.relative.alt = cHHMM.phylogenetic.estimation(clustered.structure.alt, occupancy="relative")
+
+if(given.tree == FALSE) {
+  phylogenetic.obs.alt = cHHMM.phylogenetic.estimation(clustered.structure.alt)
+  phylogenetic.obs.majority.alt = cHHMM.phylogenetic.estimation(clustered.structure.alt, occupancy="majority")
+  phylogenetic.obs.relative.alt = cHHMM.phylogenetic.estimation(clustered.structure.alt, occupancy="relative")
+} else {
+  phylogenetic.obs.alt = cHHMM.phylogenetic.assignment(clustered.structure.alt, tree.set$tree, ind.labels)
+  phylogenetic.obs.majority.alt = cHHMM.phylogenetic.assignment(clustered.structure.alt, tree.set$tree, ind.labels, occupancy="majority")
+  phylogenetic.obs.relative.alt = cHHMM.phylogenetic.assignment(clustered.structure.alt, tree.set$tree, ind.labels, occupancy="relative")
+}
 
 fit.cross.sectional.alt = HyperHMM(cross.sectional.obs.alt$cross_sectional_data, nboot = 2)
 fit.phylogenetic.alt = HyperHMM(phylogenetic.obs.alt$dests, initialstates = phylogenetic.obs.alt$srcs, nboot = 2)

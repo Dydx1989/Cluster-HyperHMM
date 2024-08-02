@@ -217,8 +217,35 @@ String_barcode <- function(x) {
   return(paste(s))
 }
 
+cHHMM.phylogenetic.assignment = function(cluster.structure, tree, ind.labels, occupancy="any") {
+  r.list = list()
+  cross.sectional = cHHMM.cross.sectional(cluster.structure, occupancy)
+  dset = data.frame(label=ind.labels, cross.sectional$cross_sectional_data)
+  ct = curate.tree(tree, dset)
+  
+  r.list[["full_tree"]] = ct$tree
+  # Loop over all nodes in the tree
+  finalpairs = data.frame()
+  for (i in 1:nrow(ct$srcs)) {
+    if (labels[treePairs[i,1]]==labels[treePairs[i,2]]) {
+      next
+    }
+    finalpairs = rbind(finalpairs, data.frame(Anc=paste0(ct$srcs[i,], collapse=""), 
+                                              Desc=paste0(ct$dests[i,], collapse="")))
+  }
+ 
+  sorted_pairs <- finalpairs[order(finalpairs$Anc), ]
+
+  r.list[["sorted_pairs"]] = sorted_pairs
+  sp= sorted_pairs
+  r.list[["srcs"]] = matrix(as.numeric(unlist(strsplit(sp$Anc, ""))), ncol=str_length(sp$Anc[1]), byrow = TRUE)
+  r.list[["dests"]] = matrix(as.numeric(unlist(strsplit(sp$Desc, ""))), ncol=str_length(sp$Anc[1]), byrow= TRUE)
+  
+  return(r.list)
+}
+  
 # take clustered structure and return estimated phylogeny and transitions from ancestral reconstruction
-cHHMM.phylogenetic.estimation = function(cluster.structure, occupancy="any") {
+cHHMM.phylogenetic.estimation = function(cluster.structure, occupancy="any", true.tree = NA) {
   
   r.list = list()
   cross.sectional = cHHMM.cross.sectional(cluster.structure, occupancy)
@@ -249,7 +276,6 @@ cHHMM.phylogenetic.estimation = function(cluster.structure, occupancy="any") {
     # If only 0s or only 1s are present, return FALSE
     return(FALSE)
   }
-  
   
   # Check if full_data contains all 0s or 1s
   if (is_mixture_of_01(t(full_data))) {
@@ -286,7 +312,7 @@ cHHMM.phylogenetic.estimation = function(cluster.structure, occupancy="any") {
     # uncomment to dichotomise, but doesn't seem to improve performance
     # tree = multi2di(tree)
     tree <- as.phylo(pruned.out$tree_col) 
-    
+  
     tree$orig.label = tree$tip.label
     tree$tip.label = unlist(apply(barcodes[tree$tip.label,], 1, paste0, collapse=""))
     # Convert tree$tip.label to numeric indices
@@ -433,6 +459,114 @@ cHHMM.phylogenetic.estimation = function(cluster.structure, occupancy="any") {
   
   
   
+}
+
+curate.tree = function(tree.src, data.src, losses = FALSE, data.header=TRUE) {
+  if(is.character(tree.src)) {
+    # read in Newick tree and root
+    my.tree = read.tree(tree.src)
+    my.rooted.tree = root(my.tree, 1, resolve.root = TRUE)
+  } else {
+    my.rooted.tree = tree.src
+  }
+  
+  if(is.character(data.src)) {
+    # read in barcode data
+    my.data = read.csv(data.src, header=data.header)
+    colnames(my.data)[1] = "label"
+  } else {
+    my.data = data.src
+    colnames(my.data)[1] = "label"
+  }
+  
+  match.set = match(my.data$label, my.rooted.tree$tip.label)
+  if(any(is.na(match.set))) {
+    message("Found observations that didn't correspond to tips of the tree!")
+    my.data = my.data[-which(is.na(match.set)),]
+    match.set = match(my.data$label, my.rooted.tree$tip.label)
+  }
+  
+  if(any(duplicated(my.data$label))) {
+    message("Duplicates in observation set!")
+  }
+  
+  # prune tree to include only those tips in the barcode dataset
+  tree = drop.tip(my.rooted.tree,
+                  my.rooted.tree$tip.label[-match.set])
+  
+  tree$node.label = as.character(length(tree$tip.label) + 1:tree$Nnode)
+  tree.labels = c(tree$tip.label, tree$node.label)
+  
+  if(any(duplicated(tree$tip.label))) {
+    message("Duplicates in tree tips!")
+  }
+  
+  cat("\n------- Painting ancestors...\n  ")
+  
+  # initialise "recursive" algorithm
+  change = T
+  new.row = my.data[1,]
+  changes = data.frame()
+  
+  # while we're still making changes
+  while(change == T) {
+    change = F
+    # loop through all nodes
+    for(tree.ref in 1:length(tree.labels)) {
+      #print(tree.ref)
+      this.label = tree.labels[tree.ref]
+      # see if this node exists in our barcode dataset
+      if(!(this.label %in% my.data$label)) {
+        # if not, check to see if its children are all characterised
+        descendant.refs = Children(tree, tree.ref)
+        if(all(tree.labels[descendant.refs] %in% my.data$label)) {
+          #print(paste0("Doing ", this.label))
+          ## ancestral state reconstruction
+          # pull the rows in our barcode dataset corresponding to children of this node
+          descendant.rows = which(my.data$label %in% tree.labels[descendant.refs])
+          if(losses == FALSE) {
+            # bitwise AND to construct the ancestral state
+            new.barcode = apply(my.data[descendant.rows,2:ncol(my.data)], 2, prod)
+          } else {
+            # bitwise OR to construct the ancestral state
+            new.barcode = apply(my.data[descendant.rows,2:ncol(my.data)], 2, max)
+          }
+          # add this ancestral state to the barcode dataset
+          new.data = new.row
+          new.data$label[1] = this.label
+          new.data[1,2:ncol(new.data)] = new.barcode
+          my.data = rbind(my.data, new.data)
+          
+          ## adding transitions to our observation set
+          # loop through children
+          for(d.ref in descendant.refs) {
+            # pull the barcodes and branch lengths together and add to data frame
+            d.row = which(my.data$label == tree.labels[d.ref])
+            # get the reference for this edge
+            e.ref = which(tree$edge[,2] == d.ref)
+            changes = rbind(changes, 
+                            data.frame(from=paste0(new.data[2:ncol(new.data)], collapse=""),
+                                       to=paste0(my.data[d.row,2:ncol(new.data)], collapse=""),
+                                       time=tree$edge.length[e.ref],
+                                       from.node=this.label,
+                                       to.node=tree.labels[d.ref]))
+          }
+          # we made a change, so keep the loop going
+          change = T
+        }
+      }
+    }
+  }
+  srcs = matrix(as.numeric(unlist(lapply(changes$from, strsplit, split=""))), byrow=TRUE, ncol=ncol(new.data)-1)
+  dests = matrix(as.numeric(unlist(lapply(changes$to, strsplit, split=""))), byrow=TRUE, ncol=ncol(new.data)-1)
+  
+  rL = list("tree" = tree,
+            "data" = my.data,
+            "transitions" = changes,
+            "srcs" = srcs,
+            "dests" = dests,
+            "times" = changes$time)
+  return(rL)
 }
 
 # produce comparison matrix for different approaches
