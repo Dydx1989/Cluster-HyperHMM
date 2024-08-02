@@ -25,18 +25,18 @@ Pipeline outline
 
 A pipeline will generally involve acquiring and pre-processing data, clustering, HyperHMM inference on the clustered data, then output and interpretation. All except pre-processing are case-general and are performed in `cHHMM-expts_Kleborate.R`. 
 
-Several case studies are included:
+Several case studies are included in `cHHMM-expts.R`:
 
-* _Kleborate_. Data on *Klebsiella pneumoniae* genomes from around the world. `Download_and_curate-kleborate_data.R` downloads and curates these data. Run `cHHMM-expts_Kleborate.R` with `expt = "Kleborate"` (default) for this.
-* _Malaria_. Data on severe malaria progression in patients. Data is already included in `jallow_dataset_binary_with2s.csv`. Run `cHHMM-expts_Kleborate.R` with `expt = "malaria"` for this.
-* _Synthetic_. A simple, synthetically constructed dataset. Run `cHHMM-expts_Kleborate.R` with `expt = "synthetic"` for this.
-* _Organelle DNA_. Data on evolutionary loss of genes from organelle DNA (mitochondrial and chloroplast DNA) -- with independently estimated phylogenies. Run `cHHMM-expts_Kleborate.R` with `expt = "mtDNA"` or `expt = "cpDNA"` for this.
+* _Kleborate_. Data on *Klebsiella pneumoniae* genomes from around the world. `Download_and_curate-kleborate_data.R` downloads and curates these data. Run `cHHMM-expts.R` with `expt = "Kleborate"` for this.
+* _Malaria_. Data on severe malaria progression in patients. Data is already included in `jallow_dataset_binary_with2s.csv`. Run `cHHMM-expts.R` with `expt = "malaria"` for this.
+* _Synthetic_. A simple, synthetically constructed dataset. Run `cHHMM-expts.R` with `expt = "synthetic"` for this.
+* _Organelle DNA_. Data on evolutionary loss of genes from organelle DNA (mitochondrial and chloroplast DNA) -- with independently estimated phylogenies. Run `cHHMM-expts.R` with `expt = "mtDNA"` or `expt = "cpDNA"` for this.
 
 The outputs will include illustrations of the cluster selection and identities, summaries of the inferred dynamics under different evolutionary assumptions, and comparisons across assumptions and clustering protocols.
 
 Pipeline functions
 ---
-See the above figure for each key function's position in the workflow.
+See the above figure for each key function's position in the workflow. These are all either in `cHHMM.R` or in the original HyperHMM code.
 
 | Function    | Description | Key arguments (* default)|
 | -------- | ------- |------|
