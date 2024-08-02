@@ -12,8 +12,8 @@ source("cHHMM.R")
 #Error in if (mm < k) stop("more cluster centers than distinct data points.") : 
 #  missing value where TRUE/FALSE needed
 
-expt = "Kleborate"
-#expt = "malaria"
+#expt = "Kleborate"
+expt = "malaria"
 #expt = "PATHOGEN"
 sf = 2
 
@@ -170,12 +170,12 @@ png(paste0(expt, "-out-fluxes.png"), width=600*sf, height=400*sf, res=72*sf)
 print(g.fluxes)
 dev.off()
 
-g.all = ggarrange( plot.standard(fit.cross.sectional),
-           plot.standard(fit.phylogenetic), 
-           plot.standard(fit.cross.sectional.majority),
-           plot.standard(fit.phylogenetic.majority),
+g.all = ggarrange( plot.standard(fit.cross.sectional, label="Cross-sectional\nAny occupancy"),
+           plot.standard(fit.phylogenetic, label="Phylogenetic\nAny occupancy"), 
+           plot.standard(fit.cross.sectional.majority, label="Cross-sectional\nMajority occupancy"),
+           plot.standard(fit.phylogenetic.majority, label="Phylogenetic\nMajority occupancy"),
            nrow=2, ncol=2,
-           labels=c("A. CS any", "B. Phy any", "C. CS maj", "D. Phy maj"))
+           labels=c("A.", "B.", "C.", "D."))
 png(paste0(expt, "-out-all.png"), width=1600*sf, height=800*sf, res=72*sf)
 print(g.all)
 dev.off()
