@@ -172,8 +172,16 @@ cHHMM.cross.sectional = function(cluster.structure, occupancy="any") {
       # impose occupancy requirements
       if(occupancy == "any") { 
         required = 1
-      } else {
+      } else if(occupancy == "majority") {
         required = num.members/2
+      } else if(occupancy == "relative") {
+        this.cluster = which(N2[,j]==1)
+        if(length(this.cluster) > 1) {
+          occ.dist = rowSums(N1[,this.cluster])
+        } else {
+          occ.dist = N1[,this.cluster]
+        }
+        required = mean(occ.dist)
       }
       # count number of members in this record
       hits = length(which(N1[i,]==1 & N2[,j]==1))

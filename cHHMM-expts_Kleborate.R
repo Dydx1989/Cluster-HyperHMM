@@ -157,10 +157,15 @@ phylogenetic.obs = cHHMM.phylogenetic.estimation(clustered.structure)
 cross.sectional.obs.majority = cHHMM.cross.sectional(clustered.structure, occupancy="majority")
 phylogenetic.obs.majority = cHHMM.phylogenetic.estimation(clustered.structure, occupancy="majority")
 
+cross.sectional.obs.relative = cHHMM.cross.sectional(clustered.structure, occupancy="relative")
+phylogenetic.obs.relative = cHHMM.phylogenetic.estimation(clustered.structure, occupancy="relative")
+
 fit.cross.sectional = HyperHMM(cross.sectional.obs$cross_sectional_data, nboot = 2)
 fit.phylogenetic = HyperHMM(phylogenetic.obs$dests, initialstates = phylogenetic.obs$srcs, nboot = 2)
 fit.cross.sectional.majority = HyperHMM(cross.sectional.obs.majority$cross_sectional_data, nboot = 2)
 fit.phylogenetic.majority = HyperHMM(phylogenetic.obs.majority$dests, initialstates = phylogenetic.obs.majority$srcs, nboot = 2)
+fit.cross.sectional.relative = HyperHMM(cross.sectional.obs.relative$cross_sectional_data, nboot = 2)
+fit.phylogenetic.relative = HyperHMM(phylogenetic.obs.relative$dests, initialstates = phylogenetic.obs.relative$srcs, nboot = 2)
 
 g.fluxes =  ggarrange(
   plot.hypercube.flux(fit.cross.sectional, thresh = 0.02),
@@ -170,13 +175,24 @@ png(paste0(expt, "-out-fluxes.png"), width=600*sf, height=400*sf, res=72*sf)
 print(g.fluxes)
 dev.off()
 
-g.all = ggarrange( plot.standard(fit.cross.sectional, label="Cross-sectional\nAny occupancy"),
-           plot.standard(fit.phylogenetic, label="Phylogenetic\nAny occupancy"), 
-           plot.standard(fit.cross.sectional.majority, label="Cross-sectional\nMajority occupancy"),
-           plot.standard(fit.phylogenetic.majority, label="Phylogenetic\nMajority occupancy"),
-           nrow=2, ncol=2,
-           labels=c("A.", "B.", "C.", "D."))
-png(paste0(expt, "-out-all.png"), width=1600*sf, height=800*sf, res=72*sf)
+plot.cHHMM(cross.sectional.obs$cross_sectional_data, fit.cross.sectional, label="Cross-sectional\nAny occupancy")
+pheatmap(cross.sectional.obs$cross_sectional_data, cluster_cols = FALSE, cluster_rows = FALSE, color = c("white", "grey"), legend=FALSE)
+
+#g.all = ggarrange( plot.standard(fit.cross.sectional, label="Cross-sectional\nAny occupancy"),
+#           plot.standard(fit.phylogenetic, label="Phylogenetic\nAny occupancy"), 
+#           plot.standard(fit.cross.sectional.majority, label="Cross-sectional\nMajority occupancy"),
+#           plot.standard(fit.phylogenetic.majority, label="Phylogenetic\nMajority occupancy"),
+#           plot.standard(fit.cross.sectional.relative, label="Cross-sectional\nRelative occupancy"),
+#           plot.standard(fit.phylogenetic.relative, label="Phylogenetic\nRelative occupancy"),
+    g.all = ggarrange( plot.cHHMM(cross.sectional.obs$cross_sectional_data, fit.cross.sectional, label="Cross-sectional\nAny occupancy"),
+                       plot.cHHMM(phylogenetic.obs$dests, fit.phylogenetic, label="Phylogenetic\nAny occupancy"),
+                       plot.cHHMM(cross.sectional.obs.majority$cross_sectional_data, fit.cross.sectional.majority, label="Cross-sectional\nMajority occupancy"),
+                       plot.cHHMM(phylogenetic.obs.majority$dests, fit.phylogenetic, label="Phylogenetic\nMajority occupancy"),
+                       plot.cHHMM(cross.sectional.obs.relative$cross_sectional_data, fit.cross.sectional.relative, label="Cross-sectional\nRelative occupancy"),
+                       plot.cHHMM(phylogenetic.obs.relative$dests, fit.phylogenetic.relative, label="Phylogenetic\nRelative occupancy"),
+           nrow=3, ncol=2,
+           labels=c("A.", "B.", "C.", "D.", "E.", "F."))
+png(paste0(expt, "-out-all.png"), width=1600*sf, height=1200*sf, res=72*sf)
 print(g.all)
 dev.off()
 
@@ -275,10 +291,15 @@ phylogenetic.obs.alt = cHHMM.phylogenetic.estimation(clustered.structure.alt)
 cross.sectional.obs.majority.alt = cHHMM.cross.sectional(clustered.structure.alt, occupancy="majority")
 phylogenetic.obs.majority.alt = cHHMM.phylogenetic.estimation(clustered.structure.alt, occupancy="majority")
 
+cross.sectional.obs.relative.alt = cHHMM.cross.sectional(clustered.structure.alt, occupancy="relative")
+phylogenetic.obs.relative.alt = cHHMM.phylogenetic.estimation(clustered.structure.alt, occupancy="relative")
+
 fit.cross.sectional.alt = HyperHMM(cross.sectional.obs.alt$cross_sectional_data, nboot = 2)
 fit.phylogenetic.alt = HyperHMM(phylogenetic.obs.alt$dests, initialstates = phylogenetic.obs.alt$srcs, nboot = 2)
 fit.cross.sectional.majority.alt = HyperHMM(cross.sectional.obs.majority.alt$cross_sectional_data, nboot = 2)
 fit.phylogenetic.majority.alt = HyperHMM(phylogenetic.obs.majority.alt$dests, initialstates = phylogenetic.obs.majority.alt$srcs, nboot = 2)
+fit.cross.sectional.relative.alt = HyperHMM(cross.sectional.obs.relative.alt$cross_sectional_data, nboot = 2)
+fit.phylogenetic.relative.alt = HyperHMM(phylogenetic.obs.relative.alt$dests, initialstates = phylogenetic.obs.relative.alt$srcs, nboot = 2)
 
 g.fluxes.alt =  ggarrange(
   plot.hypercube.flux(fit.cross.sectional.alt, thresh = 0.02),
@@ -288,15 +309,18 @@ png(paste0(expt, "-alt-out-fluxes.png"), width=600*sf, height=400*sf, res=72*sf)
 print(g.fluxes.alt)
 dev.off()
 
-g.all.alt = ggarrange( plot.standard(fit.cross.sectional.alt),
-                   plot.standard(fit.phylogenetic.alt), 
-                   plot.standard(fit.cross.sectional.majority.alt),
-                   plot.standard(fit.phylogenetic.majority.alt),
-                   nrow=2, ncol=2,
-                   labels=c("A. CS any", "B. Phy any", "C. CS maj", "D. Phy maj"))
-png(paste0(expt, "-alt-out-all.png"), width=1600*sf, height=800*sf, res=72*sf)
-print(g.all.alt)
+g.all.alt = ggarrange( plot.cHHMM(cross.sectional.obs.alt$cross_sectional_data, fit.cross.sectional.alt, label="Cross-sectional\nAny occupancy"),
+                   plot.cHHMM(phylogenetic.obs.alt$dests, fit.phylogenetic.alt, label="Phylogenetic\nAny occupancy"),
+                   plot.cHHMM(cross.sectional.obs.majority.alt$cross_sectional_data, fit.cross.sectional.majority.alt, label="Cross-sectional\nMajority occupancy"),
+                   plot.cHHMM(phylogenetic.obs.majority.alt$dests, fit.phylogenetic.alt, label="Phylogenetic\nMajority occupancy"),
+                   plot.cHHMM(cross.sectional.obs.relative.alt$cross_sectional_data.alt, fit.cross.sectional.relative, label="Cross-sectional\nRelative occupancy"),
+                   plot.cHHMM(phylogenetic.obs.relative.alt$dests, fit.phylogenetic.relative.alt, label="Phylogenetic\nRelative occupancy"),
+                   nrow=3, ncol=2,
+                   labels=c("A.", "B.", "C.", "D.", "E.", "F."))
+png(paste0(expt, "-alt-out-all.png"), width=1600*sf, height=1200*sf, res=72*sf)
+print(g.all)
 dev.off()
+
 
 comp.any.cs.phy.alt = cHHMM.matrix.comparison(fit.cross.sectional.alt, fit.phylogenetic.alt)
 comp.cs.alt = cHHMM.matrix.comparison(fit.cross.sectional.alt, fit.cross.sectional.majority.alt)
