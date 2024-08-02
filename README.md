@@ -2,7 +2,8 @@
 
 Cluster large-scale data and perform evolutionary inference using HyperHMM https://academic.oup.com/bioinformatics/article/39/1/btac803/6895098 (code https://github.com/StochasticBiology/hypercube-hmm ).
 
-![image](https://github.com/user-attachments/assets/1649970a-5b9e-42e8-8286-222d982cac92)
+![image](https://github.com/user-attachments/assets/f6fb08e1-d0c5-422d-81e6-20e0d706ac06)
+
 
 Overview
 ---
