@@ -313,7 +313,7 @@ g.all.alt = ggarrange( plot.cHHMM(cross.sectional.obs.alt$cross_sectional_data, 
                    plot.cHHMM(phylogenetic.obs.alt$dests, fit.phylogenetic.alt, label="Phylogenetic\nAny occupancy"),
                    plot.cHHMM(cross.sectional.obs.majority.alt$cross_sectional_data, fit.cross.sectional.majority.alt, label="Cross-sectional\nMajority occupancy"),
                    plot.cHHMM(phylogenetic.obs.majority.alt$dests, fit.phylogenetic.alt, label="Phylogenetic\nMajority occupancy"),
-                   plot.cHHMM(cross.sectional.obs.relative.alt$cross_sectional_data.alt, fit.cross.sectional.relative, label="Cross-sectional\nRelative occupancy"),
+                   plot.cHHMM(cross.sectional.obs.relative.alt$cross_sectional_data, fit.cross.sectional.relative.alt, label="Cross-sectional\nRelative occupancy"),
                    plot.cHHMM(phylogenetic.obs.relative.alt$dests, fit.phylogenetic.relative.alt, label="Phylogenetic\nRelative occupancy"),
                    nrow=3, ncol=2,
                    labels=c("A.", "B.", "C.", "D.", "E.", "F."))
