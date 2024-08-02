@@ -36,6 +36,8 @@ The outputs will include illustrations of the cluster selection and identities, 
 
 Pipeline functions
 ---
+See the above figure for each key function's position in the workflow.
+
 | Function    | Description | Key arguments (* default)|
 | -------- | ------- |------|
 | `cHHMM.cluster.features`  | Takes binary data and returns an object describing the clustering that has been assigned    | `method` = `Gap`* (gap statistic) or `NbClust` (k-means) |
