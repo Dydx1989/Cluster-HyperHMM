@@ -227,7 +227,7 @@ cHHMM.phylogenetic.assignment = function(cluster.structure, tree, ind.labels, oc
   # Loop over all nodes in the tree
   finalpairs = data.frame()
   for (i in 1:nrow(ct$srcs)) {
-    if (labels[treePairs[i,1]]==labels[treePairs[i,2]]) {
+    if (paste0(ct$srcs[i,], collapse="")==paste0(ct$dests[i,], collapse="")) {
       next
     }
     finalpairs = rbind(finalpairs, data.frame(Anc=paste0(ct$srcs[i,], collapse=""), 
