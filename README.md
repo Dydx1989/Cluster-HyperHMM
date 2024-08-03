@@ -23,7 +23,7 @@ As such, Cluster-HyperHMM allows:
 Pipeline outline
 ---
 
-A pipeline will generally involve acquiring and pre-processing data, clustering, HyperHMM inference on the clustered data, then output and interpretation. All except pre-processing are case-general and are performed in `cHHMM-expts_Kleborate.R`. 
+A pipeline will generally involve acquiring and pre-processing data, clustering, HyperHMM inference on the clustered data, then output and interpretation. All except pre-processing are case-general and are performed in `cHHMM-expts.R`. 
 
 Several case studies are included in `cHHMM-expts.R`:
 
