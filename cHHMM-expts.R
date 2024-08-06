@@ -12,11 +12,12 @@ source("cHHMM.R")
 #Error in if (mm < k) stop("more cluster centers than distinct data points.") : 
 #  missing value where TRUE/FALSE needed
 
-#expt = "Kleborate"
+expt = "Kleborate"
 expt = "malaria"
 #expt = "PATHOGEN"
 sf = 2
 given.tree = FALSE
+reduce.data = FALSE
 
 if(expt == "AMR") {
   other.data = t(read.csv("K.p.binary.csv"))
@@ -40,11 +41,11 @@ if(expt == "AMR") {
   synth.data = matrix(0, nrow=nr, ncol=nc)
   for(i in 1:nrow(synth.data)) {
     if(i < nr/3) {
-      synth.data[i,] = c(rbinom(nc/3, 1, 0.9), rbinom(nc/3, 1, 0.1), rbinom(nc/3, 1, 0.5))
+      synth.data[i,] = c(rbinom(nc/3, 1, 0.9), rbinom(nc/3, 1, 0.1), rbinom(nc/3, 1, 0.1))
     } else if(i < 2*nr/3) {
-      synth.data[i,] = c(rbinom(nc/3, 1, 0.1), rbinom(nc/3, 1, 0.5), rbinom(nc/3, 1, 0.9))
+      synth.data[i,] = c(rbinom(nc/3, 1, 0.9), rbinom(nc/3, 1, 0.7), rbinom(nc/3, 1, 0.2))
     } else {
-      synth.data[i,] = c(rbinom(nc/3, 1, 0.5), rbinom(nc/3, 1, 0.9), rbinom(nc/3, 1, 0.1))
+      synth.data[i,] = c(rbinom(nc/3, 1, 0.9), rbinom(nc/3, 1, 0.9), rbinom(nc/3, 1, 0.5))
     }
   }
   src.data = as.data.frame(t(synth.data))
@@ -117,12 +118,19 @@ if(expt == "AMR") {
   given.tree = TRUE
 }
 
+if(reduce.data == TRUE) {
+  set.seed(1)
+  old.src.data = src.data
+  src.data = src.data[which(rowSums(src.data)>10),]
+  src.data = src.data[,sample(1:ncol(src.data), 200)]
+}
 
 ## Use plot for Gap method without Monte Carlo (“bootstrap”) samples (B)
 #plot((clustered.structure[["gap_stat"]]))
 
 png(paste0(expt, "-data.png"), width=600*sf, height=400*sf, res=72*sf)
-print(pheatmap(src.data))
+#print(pheatmap(src.data))
+print(pheatmap(src.data, color = c("white", "grey"), show_rownames = FALSE, legend=FALSE))
 dev.off()
 
 clustered.structure = cHHMM.cluster.features(src.data,method="Gap")
@@ -132,9 +140,9 @@ first_max_index <- which(diff(sign(diff(clustered.structure[["gap_stat"]]$Gap)))
 png(paste0(expt, "-gap-stat.png"), width=400*sf, height=300*sf, res=72*sf)
 print(
   ggplot(clustered.structure[["gap_stat"]], aes(x = 1:length(Gap), y = Gap)) +
-    geom_line(color = "blue") + 
-    geom_point(color = "blue") +
-    geom_vline(xintercept = first_max_index, color = "red", linetype = "dashed") +
+    geom_line(color = "grey") + 
+    geom_point(color = "grey") +
+    geom_vline(xintercept = first_max_index, color = "black", linetype = "dashed") +
     labs(x = "Number of Clusters", y = "Gap Statistic", title = "Gap Statistic vs. Number of Clusters") 
 )
 dev.off()
@@ -222,15 +230,20 @@ comp.any.cs.phy = cHHMM.matrix.comparison(fit.cross.sectional, fit.phylogenetic)
 comp.cs = cHHMM.matrix.comparison(fit.cross.sectional, fit.cross.sectional.majority)
 comp.phy = cHHMM.matrix.comparison(fit.phylogenetic, fit.phylogenetic.majority)
 
+rwb.col <- colorRampPalette(c("red", "white", "blue"))(100)
+
 g.any.cs.phy = as.ggplot(pheatmap(comp.any.cs.phy$results_matrix, show_rownames = TRUE,cluster_cols=F,cluster_rows=F,
          cex=1,clustering_distance_rows = "manhattan", cex=1,
-         clustering_distance_cols = "manhattan", clustering_method = "complete",border_color = TRUE,display_numbers = T))
+         clustering_distance_cols = "manhattan", clustering_method = "complete",border_color = TRUE,display_numbers = T,
+         color = rwb.col))
 g.cs = as.ggplot(pheatmap(comp.cs$results_matrix, show_rownames = TRUE,cluster_cols=F,cluster_rows=F,
                                   cex=1,clustering_distance_rows = "manhattan", cex=1,
-                                  clustering_distance_cols = "manhattan", clustering_method = "complete",border_color = TRUE,display_numbers = T))
+                                  clustering_distance_cols = "manhattan", clustering_method = "complete",border_color = TRUE,display_numbers = T,
+                          color = rwb.col))
 g.phy = as.ggplot(pheatmap(comp.phy$results_matrix, show_rownames = TRUE,cluster_cols=F,cluster_rows=F,
                                   cex=1,clustering_distance_rows = "manhattan", cex=1,
-                                  clustering_distance_cols = "manhattan", clustering_method = "complete",border_color = TRUE,display_numbers = T))
+                                  clustering_distance_cols = "manhattan", clustering_method = "complete",border_color = TRUE,display_numbers = T,
+                           color = rwb.col))
 g.matrices = ggarrange(g.any.cs.phy,
                        g.cs,
                        g.phy,
@@ -355,13 +368,16 @@ comp.phy.alt = cHHMM.matrix.comparison(fit.phylogenetic.alt, fit.phylogenetic.ma
 
 g.any.cs.phy.alt = as.ggplot(pheatmap(comp.any.cs.phy.alt$results_matrix, show_rownames = TRUE,cluster_cols=F,cluster_rows=F,
                                   cex=1,clustering_distance_rows = "manhattan", cex=1,
-                                  clustering_distance_cols = "manhattan", clustering_method = "complete",border_color = TRUE,display_numbers = T))
+                                  clustering_distance_cols = "manhattan", clustering_method = "complete",border_color = TRUE,display_numbers = T,
+                                  color = rwb.col))
 g.cs.alt = as.ggplot(pheatmap(comp.cs.alt$results_matrix, show_rownames = TRUE,cluster_cols=F,cluster_rows=F,
                           cex=1,clustering_distance_rows = "manhattan", cex=1,
-                          clustering_distance_cols = "manhattan", clustering_method = "complete",border_color = TRUE,display_numbers = T))
+                          clustering_distance_cols = "manhattan", clustering_method = "complete",border_color = TRUE,display_numbers = T,
+                          color = rwb.col))
 g.phy.alt = as.ggplot(pheatmap(comp.phy.alt$results_matrix, show_rownames = TRUE,cluster_cols=F,cluster_rows=F,
                            cex=1,clustering_distance_rows = "manhattan", cex=1,
-                           clustering_distance_cols = "manhattan", clustering_method = "complete",border_color = TRUE,display_numbers = T))
+                           clustering_distance_cols = "manhattan", clustering_method = "complete",border_color = TRUE,display_numbers = T,
+                           color = rwb.col))
 g.matrices.alt = ggarrange(g.any.cs.phy.alt,
                        g.cs.alt,
                        g.phy.alt,
