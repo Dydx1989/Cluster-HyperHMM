@@ -159,13 +159,26 @@ for(i in 1:nrow(ids)) {
   df.plot = rbind(df.plot, data.frame(cluster=cid, level=levels[cid], name=rownames(ids)[i]))
   levels[cid] = levels[cid]+1
 }
+max.level = 15
+for(i in unique(df.plot$cluster)) {
+  clus.size = length(which(df.plot$cluster == i,))
+  if(clus.size > max.level) {
+    tmp = df.plot[sample(which(df.plot$cluster == i), max.level),]
+    tmp$level = 0:(max.level-1)
+    tmp = rbind(tmp, data.frame(cluster=i,level=max.level+1,name=paste0(c(clus.size-max.level, " more"), collapse="")))
+    tmp = rbind(tmp, data.frame(cluster=i,level=max.level,name="..."))
+    df.plot = df.plot[df.plot$cluster != i,]
+    df.plot = rbind(df.plot, tmp)
+  }
+}
 g.cids = ggplot(df.plot, aes(x=cluster, y=level, label=name)) + geom_text() +
   scale_x_continuous(breaks=1:ncol(ids)) + scale_y_continuous(breaks=NULL) +
-  labs(x = "Cluster ID", y = "") + theme_minimal()
+  labs(x = "Cluster ID", y = "") + theme_minimal() 
 png(paste0(expt, "-cluster-IDs.png"), width=600*sf, height=300*sf, res=72*sf)
 print(g.cids)
 dev.off()
 
+ggplot(df.plot) + geom_text_wordcloud(aes(label=name), size=1) + facet_wrap(~cluster)
 ####
 png(paste0(expt, "-clusters.png"), width=600*sf, height=400*sf, res=72*sf)
 print(
