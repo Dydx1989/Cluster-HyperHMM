@@ -178,7 +178,6 @@ png(paste0(expt, "-cluster-IDs.png"), width=600*sf, height=300*sf, res=72*sf)
 print(g.cids)
 dev.off()
 
-ggplot(df.plot) + geom_text_wordcloud(aes(label=name), size=1) + facet_wrap(~cluster)
 ####
 png(paste0(expt, "-clusters.png"), width=600*sf, height=400*sf, res=72*sf)
 print(
