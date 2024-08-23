@@ -14,6 +14,7 @@ source("cHHMM.R")
 
 expt = "Kleborate"
 expt = "malaria"
+expt = "synthetic2"
 #expt = "PATHOGEN"
 sf = 2
 given.tree = FALSE
@@ -46,6 +47,33 @@ if(expt == "AMR") {
       synth.data[i,] = c(rbinom(nc/3, 1, 0.9), rbinom(nc/3, 1, 0.7), rbinom(nc/3, 1, 0.2))
     } else {
       synth.data[i,] = c(rbinom(nc/3, 1, 0.9), rbinom(nc/3, 1, 0.9), rbinom(nc/3, 1, 0.5))
+    }
+  }
+  src.data = as.data.frame(t(synth.data))
+} else if(expt == "synthetic2") {
+  set.seed(1)
+  nr = 200
+  nc = 160
+  fc = 20
+  synth.data = matrix(0, nrow=nr, ncol=nc)
+  for(i in 1:nrow(synth.data)) {
+    # 1000, 1100, 1110, 0001, 0011, 1110, 1111
+    if(i <= 1*fc) {
+      synth.data[i,] = c(rbinom(nc/4, 1, 0.9), rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.1))
+    } else if(i <= 2*fc) {
+      synth.data[i,] = c(rbinom(nc/4, 1, 0.9), rbinom(nc/4, 1, 0.7), rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.1))
+    } else if(i <= 3*fc) {
+      synth.data[i,] = c(rbinom(nc/4, 1, 0.9), rbinom(nc/4, 1, 0.9), rbinom(nc/4, 1, 0.7), rbinom(nc/4, 1, 0.1))
+    } else if(i <= 4*fc) {
+      synth.data[i,] = c(rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.9))
+    } else if(i <= 5*fc) {
+      synth.data[i,] = c(rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.5), rbinom(nc/4, 1, 0.5), rbinom(nc/4, 1, 0.9))
+    } else if(i <= 6*fc) {
+      synth.data[i,] = c(rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.7), rbinom(nc/4, 1, 0.9), rbinom(nc/4, 1, 0.9))
+    } else if(i <= 7*fc) {
+      synth.data[i,] = c(rbinom(nc/4, 1, 0.9), rbinom(nc/4, 1, 0.9), rbinom(nc/4, 1, 0.9), rbinom(nc/4, 1, 0.9))
+    } else {
+      synth.data[i,] = rbinom(nc, 1, 0.08)
     }
   }
   src.data = as.data.frame(t(synth.data))
@@ -193,9 +221,15 @@ cross.sectional.obs.majority = cHHMM.cross.sectional(clustered.structure, occupa
 cross.sectional.obs.relative = cHHMM.cross.sectional(clustered.structure, occupancy="relative")
 
 if(given.tree == FALSE) {
+  # Phylogenetic tree reconstruction via Dendrogram
   phylogenetic.obs = cHHMM.phylogenetic.estimation(clustered.structure)
   phylogenetic.obs.majority = cHHMM.phylogenetic.estimation(clustered.structure, occupancy="majority")
   phylogenetic.obs.relative = cHHMM.phylogenetic.estimation(clustered.structure, occupancy="relative")
+  
+  # Phylogenetic tree reconstruction via Max Parsimony (pars)
+  phylogenetic.pars.obs = cHHMM.phylogenetic.estimation.parsimony(clustered.structure)
+  phylogenetic.pars.obs.majority = cHHMM.phylogenetic.estimation.parsimony(clustered.structure, occupancy="majority")
+  phylogenetic.pars.obs.relative = cHHMM.phylogenetic.estimation.parsimony(clustered.structure, occupancy="relative")
 } else {
   phylogenetic.obs = cHHMM.phylogenetic.assignment(clustered.structure, tree.set$tree, ind.labels)
   phylogenetic.obs.majority = cHHMM.phylogenetic.assignment(clustered.structure, tree.set$tree, ind.labels, occupancy="majority")
@@ -208,11 +242,15 @@ fit.cross.sectional.majority = HyperHMM(cross.sectional.obs.majority$cross_secti
 fit.phylogenetic.majority = HyperHMM(phylogenetic.obs.majority$dests, initialstates = phylogenetic.obs.majority$srcs, nboot = 2)
 fit.cross.sectional.relative = HyperHMM(cross.sectional.obs.relative$cross_sectional_data, nboot = 2)
 fit.phylogenetic.relative = HyperHMM(phylogenetic.obs.relative$dests, initialstates = phylogenetic.obs.relative$srcs, nboot = 2)
+fit.phylogenetic.pars = HyperHMM(phylogenetic.pars.obs$dests, initialstates = phylogenetic.pars.obs$srcs, nboot = 2)
+fit.phylogenetic.pars.majority = HyperHMM(phylogenetic.pars.obs.majority$dests, initialstates = phylogenetic.pars.obs.majority$srcs, nboot = 2)
+fit.phylogenetic.pars.relative = HyperHMM(phylogenetic.pars.obs.relative$dests, initialstates = phylogenetic.pars.obs.relative$srcs, nboot = 2)
 
 g.fluxes =  ggarrange(
   plot.hypercube.flux(fit.cross.sectional, thresh = 0.02),
   plot.hypercube.flux(fit.phylogenetic, thresh=0.02),
-  labels=c("A. CS", "B. Phy"))
+  plot.hypercube.flux(fit.phylogenetic.pars, thresh=0.02),
+  labels=c("A. Independent", "B. Similarity", "C. Parsimony"))
 png(paste0(expt, "-out-fluxes.png"), width=600*sf, height=400*sf, res=72*sf)
 print(g.fluxes)
 dev.off()
@@ -226,14 +264,17 @@ plot.cHHMM(cross.sectional.obs$cross_sectional_data, fit.cross.sectional, label=
 #           plot.standard(fit.phylogenetic.majority, label="Phylogenetic\nMajority occupancy"),
 #           plot.standard(fit.cross.sectional.relative, label="Cross-sectional\nRelative occupancy"),
 #           plot.standard(fit.phylogenetic.relative, label="Phylogenetic\nRelative occupancy"),
-    g.all = ggarrange( plot.cHHMM(cross.sectional.obs$cross_sectional_data, fit.cross.sectional, label="Cross-sectional\nAny occupancy"),
-                       plot.cHHMM(phylogenetic.obs$dests, fit.phylogenetic, label="Phylogenetic\nAny occupancy"),
-                       plot.cHHMM(cross.sectional.obs.majority$cross_sectional_data, fit.cross.sectional.majority, label="Cross-sectional\nMajority occupancy"),
-                       plot.cHHMM(phylogenetic.obs.majority$dests, fit.phylogenetic.majority, label="Phylogenetic\nMajority occupancy"),
-                       plot.cHHMM(cross.sectional.obs.relative$cross_sectional_data, fit.cross.sectional.relative, label="Cross-sectional\nRelative occupancy"),
-                       plot.cHHMM(phylogenetic.obs.relative$dests, fit.phylogenetic.relative, label="Phylogenetic\nRelative occupancy"),
-           nrow=3, ncol=2,
-           labels=c("A.", "B.", "C.", "D.", "E.", "F."))
+g.all = ggarrange( plot.cHHMM(cross.sectional.obs$cross_sectional_data, fit.cross.sectional, label="Independent\nAny occupancy"),
+                   plot.cHHMM(phylogenetic.obs$dests, fit.phylogenetic, label="Similarity\nAny occupancy"),
+                   plot.cHHMM(phylogenetic.pars.obs$dests, fit.phylogenetic.pars, label="Parsimony\nAny occupancy"),
+                   plot.cHHMM(cross.sectional.obs.majority$cross_sectional_data, fit.cross.sectional.majority, label="Independent\nMajority occupancy"),
+                   plot.cHHMM(phylogenetic.obs.majority$dests, fit.phylogenetic.majority, label="Similarity\nMajority occupancy"),
+                   plot.cHHMM(phylogenetic.pars.obs.majority$dests, fit.phylogenetic.pars.majority, label="Pparsimony\nMajority occupancy"),
+                   plot.cHHMM(cross.sectional.obs.relative$cross_sectional_data, fit.cross.sectional.relative, label="Independent\nRelative occupancy"),
+                   plot.cHHMM(phylogenetic.obs.relative$dests, fit.phylogenetic.relative, label="Similarity\nRelative occupancy"),
+                   plot.cHHMM(phylogenetic.pars.obs.relative$dests, fit.phylogenetic.pars.relative, label="Parsimony\nRelative occupancy"),
+                   nrow=3, ncol=3,
+                   labels=c("A.", "B.", "C.", "D.", "E.", "F.","G.","H.","I."))
 png(paste0(expt, "-out-all.png"), width=1600*sf, height=1200*sf, res=72*sf)
 print(g.all)
 dev.off()
