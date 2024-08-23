@@ -406,7 +406,7 @@ plot.cHHMM = function(data, fitted, label="") {
                                        color = c("white", "grey"), show_rownames = FALSE, legend=FALSE)) +
           ggtitle(label) + theme(plot.title = element_text(hjust = 1))
         }
-           plot.standard = ggarrange(plot.data, plot.bubs, plot.flux,  nrow=1) 
+           plot.standard = ggarrange(plot.data, plot.bubs, plot.flux,  nrow=1, widths=c(1,1.5,2)) 
   return(plot.standard)
 }
 
@@ -459,7 +459,8 @@ BinToDec <- function(state) {
 }
 
 # adapted HyperTraPS plot for HyperHMM outputs
-plot.hypercube.flux = function(my.post, thresh = 0.05, node.labels = TRUE, use.probability = FALSE) {
+plot.hypercube.flux = function(my.post, thresh = 0.05, node.labels = FALSE, 
+                               use.probability = FALSE, old.style = FALSE) {
   ### produce hypercube subgraph
   bigL = my.post$L
   if(use.probability == TRUE) {
@@ -467,6 +468,41 @@ plot.hypercube.flux = function(my.post, thresh = 0.05, node.labels = TRUE, use.p
   } else {
     trans.p = my.post$transitions[my.post$transitions$Flux > thresh & my.post$transitions$Bootstrap == 0,]
   }
+  trans.p$frombin = sapply(trans.p$From, DecToBin, len=bigL)
+  trans.p$tobin = sapply(trans.p$To, DecToBin, len=bigL)
+  trans.p$change = 0
+  for(i in 1:nrow(trans.p)) {
+    src = strsplit(trans.p$frombin[i], split="")[[1]]
+    dest = strsplit(trans.p$tobin[i], split="")[[1]]
+    ref = which(src != dest)
+    trans.p$change[i] = ref
+  }
+  if(old.style != TRUE) {
+    trans.p = trans.p[trans.p$Bootstrap == 0,]
+    gdf = data.frame(From=trans.p$frombin, To=trans.p$tobin, Probability=trans.p$Probability, Flux=trans.p$Flux, Change=trans.p$change)
+    trans.g = graph_from_data_frame(gdf)
+    bs = V(trans.g)$name
+    V(trans.g)$binname = bs
+    layers = str_count(bs, "1")
+    if(use.probability == TRUE) {
+      this.plot =  ggraph(trans.g, layout="sugiyama", layers=layers) + 
+        geom_edge_link(aes(edge_width=Flux, edge_alpha=Flux, label=Change), color="#AAAAFF", 
+                       angle_calc="across", check_overlap = TRUE, label_size = 2.5) + 
+        scale_edge_width(limits=c(0,NA)) + scale_edge_alpha(limits=c(0,NA)) +
+        theme_graph(base_family="sans") + theme(legend.position = "none")
+    } else {
+      this.plot =  ggraph(trans.g, layout="sugiyama", layers=layers) + 
+        geom_edge_link(aes(edge_width=Flux, edge_alpha=Flux, label=Change), color="#AAAAFF", 
+                       angle_calc="across", check_overlap = TRUE, label_size = 2.5) + 
+        scale_edge_width(limits=c(0,NA)) + scale_edge_alpha(limits=c(0,NA)) +
+        theme_graph(base_family="sans")  + theme(legend.position = "none")
+    }  
+    if(node.labels == TRUE) {
+      this.plot = this.plot + geom_node_text(aes(label=binname),angle=45,size=2) 
+    }
+    return(this.plot)
+  }
+  
   trans.g = graph_from_data_frame(trans.p[,2:ncol(trans.p)])
   bs = unlist(lapply(as.numeric(V(trans.g)$name), DecToBin, len=bigL))
   V(trans.g)$binname = V(trans.g)$name
