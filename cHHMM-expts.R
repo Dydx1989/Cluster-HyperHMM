@@ -14,11 +14,16 @@ source("cHHMM.R")
 
 expt = "Kleborate"
 expt = "malaria"
+expt = "malaria-full"
+expt = "malaria-notfus"
 expt = "synthetic2"
 #expt = "PATHOGEN"
 sf = 2
 given.tree = FALSE
 reduce.data = FALSE
+if(expt == "Kleborate") {
+  reduce.data = TRUE
+}
 
 if(expt == "AMR") {
   other.data = t(read.csv("K.p.binary.csv"))
@@ -61,15 +66,15 @@ if(expt == "AMR") {
     if(i <= 1*fc) {
       synth.data[i,] = c(rbinom(nc/4, 1, 0.9), rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.1))
     } else if(i <= 2*fc) {
-      synth.data[i,] = c(rbinom(nc/4, 1, 0.9), rbinom(nc/4, 1, 0.7), rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.1))
+      synth.data[i,] = c(rbinom(nc/4, 1, 0.9), rbinom(nc/4, 1, 0.9), rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.1))
     } else if(i <= 3*fc) {
-      synth.data[i,] = c(rbinom(nc/4, 1, 0.9), rbinom(nc/4, 1, 0.9), rbinom(nc/4, 1, 0.7), rbinom(nc/4, 1, 0.1))
+      synth.data[i,] = c(rbinom(nc/4, 1, 0.9), rbinom(nc/4, 1, 0.9), rbinom(nc/4, 1, 0.9), rbinom(nc/4, 1, 0.1))
     } else if(i <= 4*fc) {
       synth.data[i,] = c(rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.9))
     } else if(i <= 5*fc) {
-      synth.data[i,] = c(rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.5), rbinom(nc/4, 1, 0.5), rbinom(nc/4, 1, 0.9))
+      synth.data[i,] = c(rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.9), rbinom(nc/4, 1, 0.9))
     } else if(i <= 6*fc) {
-      synth.data[i,] = c(rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.7), rbinom(nc/4, 1, 0.9), rbinom(nc/4, 1, 0.9))
+      synth.data[i,] = c(rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.9), rbinom(nc/4, 1, 0.9), rbinom(nc/4, 1, 0.9))
     } else if(i <= 7*fc) {
       synth.data[i,] = c(rbinom(nc/4, 1, 0.9), rbinom(nc/4, 1, 0.9), rbinom(nc/4, 1, 0.9), rbinom(nc/4, 1, 0.9))
     } else {
@@ -82,8 +87,25 @@ if(expt == "AMR") {
   other.data = other.data[2:nrow(other.data),1:200]
   
   class(other.data) = "numeric"
-  other.data[other.data==2] = 1
+  other.data[other.data==2] = 0
   src.data = as.data.frame(other.data)
+} else if(expt == "malaria-full") {
+  other.data = t(read.csv("jallow_dataset_binary_with2s.csv"))
+  other.data = other.data[2:nrow(other.data),]
+  
+  class(other.data) = "numeric"
+  other.data[other.data==2] = 0
+  src.data = as.data.frame(other.data)
+  src.data = src.data[,colSums(src.data) != 0 & colSums(src.data) != nrow(src.data)]
+} else if(expt == "malaria-notfus") {
+  other.data = t(read.csv("jallow_dataset_binary_with2s.csv"))
+  other.data = other.data[2:nrow(other.data),]
+  ref = which(rownames(other.data) == "tfus" | rownames(other.data) == "death")
+  other.data = other.data[-ref,]
+  class(other.data) = "numeric"
+  other.data[other.data==2] = 0
+  src.data = as.data.frame(other.data)
+  src.data = src.data[,colSums(src.data) != 0 & colSums(src.data) != nrow(src.data)]
 } else if(expt == "PATHOGEN") {
   #Source: Germany 
   other.data = t(read.csv("pathogenwatch.csv"))
@@ -158,7 +180,7 @@ if(reduce.data == TRUE) {
 
 png(paste0(expt, "-data.png"), width=600*sf, height=400*sf, res=72*sf)
 #print(pheatmap(src.data))
-print(pheatmap(src.data, color = c("white", "grey"), show_rownames = FALSE, legend=FALSE))
+pheatmap(src.data, color = c("white", "grey"), show_rownames = FALSE, legend=FALSE)
 dev.off()
 
 clustered.structure = cHHMM.cluster.features(src.data,method="Gap")
@@ -279,6 +301,107 @@ png(paste0(expt, "-out-all.png"), width=1600*sf, height=1200*sf, res=72*sf)
 print(g.all)
 dev.off()
 
+if(expt == "malaria") {
+  png("big-malaria.png", width=1600*sf, height=1000*sf, res=72*sf)
+  print(
+    ggarrange(
+      ggarrange(
+        as.ggplot(pheatmap(src.data, color = c("white", "grey"), show_colnames = FALSE, treeheight_row = 0, treeheight_col = 0, legend=FALSE)),
+        ggarrange(
+        fviz_cluster(clustered.structure[["km_res"]], data = clustered.structure[["data"]],
+                     ellipse.type = "convex",
+                     palette = "viridis",
+                     ggtheme = theme_minimal()),
+        g.cids,
+        nrow=2, heights=c(2,1), labels=c("B", "C")),
+        nrow=1, labels=c("A", "")),
+      ggarrange(
+        plot.cHHMM(cross.sectional.obs$cross_sectional_data, fit.cross.sectional, label="Independent\nAny occupancy"),
+        plot.cHHMM(cross.sectional.obs.relative$cross_sectional_data, fit.cross.sectional.relative, label="Independent\nRelative occupancy"),
+        nrow = 1, labels=c("D", "E")),
+      nrow=2)
+  )
+  dev.off()
+  png("big-malaria-alt.png", width=1200*sf, height=1000*sf, res=72*sf)
+  print(
+    ggarrange(
+      ggarrange(
+        as.ggplot(pheatmap(src.data, color = c("white", "grey"), show_colnames = FALSE, treeheight_row = 0, treeheight_col = 0, legend=FALSE)),
+        ggarrange(
+          fviz_cluster(clustered.structure[["km_res"]], data = clustered.structure[["data"]],
+                       ellipse.type = "convex",
+                       palette = "viridis",
+                       ggtheme = theme_minimal()),
+          g.cids,
+          nrow=2, heights=c(2,1), labels=c("B", "C")),
+        nrow=1, labels=c("A", "")),
+             plot.cHHMM(cross.sectional.obs$cross_sectional_data, fit.cross.sectional, label="Independent\nAny occupancy"),
+      nrow=2, labels=c("", "D"))
+  )
+  dev.off()
+}
+
+
+if(expt == "synthetic2") {
+  png("big-synth2-alt.png", width=1200*sf, height=1000*sf, res=72*sf)
+  print(
+    ggarrange(
+      ggarrange(
+        as.ggplot(pheatmap(src.data, color = c("white", "grey"), show_colnames = FALSE, treeheight_row = 0, treeheight_col = 0, legend=FALSE)),
+        ggarrange(
+          fviz_cluster(clustered.structure[["km_res"]], data = clustered.structure[["data"]],
+                       ellipse.type = "convex",
+                       palette = "viridis",
+                       ggtheme = theme_minimal()),
+          g.cids,
+          nrow=2, heights=c(2,1), labels=c("B", "C")),
+        nrow=1, labels=c("A", "")),
+      plot.cHHMM(cross.sectional.obs.majority$cross_sectional_data, fit.cross.sectional.majority, label="Independent\nMajority occupancy"),
+      nrow=2, labels=c("", "D"))
+  )
+  dev.off()
+}
+
+if(expt == "Kleborate") {
+  png("big-kp.png", width=1600*sf, height=1000*sf, res=72*sf)
+  print(
+    ggarrange(
+      ggarrange(
+        as.ggplot(pheatmap(src.data, color = c("white", "grey"), show_colnames = FALSE, treeheight_row = 0, treeheight_col = 0, legend=FALSE)),
+        ggarrange(
+          fviz_cluster(clustered.structure[["km_res"]], data = clustered.structure[["data"]],
+                       ellipse.type = "convex",
+                       palette = "viridis",
+                       ggtheme = theme_minimal()),
+          g.cids,
+          nrow=2, heights=c(2,1), labels=c("B", "C")),
+        nrow=1, labels=c("A", "")),
+      ggarrange(
+        plot.cHHMM(phylogenetic.obs$dests, fit.phylogenetic, label="Similarity\nAny occupancy"),
+        plot.cHHMM(phylogenetic.pars.obs.relative$dests, fit.phylogenetic.pars.relative, label="Parsimony\nRelative occupancy"),
+        nrow = 1, labels=c("D", "E")),
+      nrow=2)
+  )
+  dev.off()
+  png("big-kp-alt.png", width=1200*sf, height=1000*sf, res=72*sf)
+  print(
+    ggarrange(
+      ggarrange(
+        as.ggplot(pheatmap(src.data, color = c("white", "grey"), show_colnames = FALSE, treeheight_row = 0, treeheight_col = 0, legend=FALSE)),
+        ggarrange(
+          fviz_cluster(clustered.structure[["km_res"]], data = clustered.structure[["data"]],
+                       ellipse.type = "convex",
+                       palette = "viridis",
+                       ggtheme = theme_minimal()),
+          g.cids,
+          nrow=2, heights=c(2,1), labels=c("B", "C")),
+        nrow=1, labels=c("A", "")),
+      plot.cHHMM(phylogenetic.obs$dests, fit.phylogenetic, label="Similarity\nAny occupancy"),
+      nrow=2, labels=c("", "D"))
+  )
+  dev.off()
+}
+
 comp.any.cs.phy = cHHMM.matrix.comparison(fit.cross.sectional, fit.phylogenetic)
 comp.cs = cHHMM.matrix.comparison(fit.cross.sectional, fit.cross.sectional.majority)
 comp.phy = cHHMM.matrix.comparison(fit.phylogenetic, fit.phylogenetic.majority)
@@ -318,7 +441,7 @@ clustered.structure.alt = cHHMM.cluster.features(src.data ,method="NbClust")
 
 sd_index <- data.frame((clustered.structure.alt[["gap_stat"]])$All.index)
 # Cluster numbers
-c_numbers <- 2:20
+c_numbers <- 2:15
 # Create data frame
 cluster_df <- data.frame(sd_index,c_numbers )
 colnames(cluster_df )[1]="sd_index"
