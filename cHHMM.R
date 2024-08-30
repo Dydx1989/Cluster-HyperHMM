@@ -101,7 +101,7 @@ cHHMM.cluster.features = function(binary_data,method="Gap",
   
   
   if(method=="NbClust") 
-  { Nb_stat<-NbClust(binary_data, min.nc=2, max.nc=20, 
+  { Nb_stat<-NbClust(binary_data, min.nc=2, max.nc=15, 
                      method = "kmeans", index = "sdindex")
   
   KK=as.integer(Nb_stat$Best.nc[1])
