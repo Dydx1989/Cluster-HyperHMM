@@ -157,7 +157,8 @@ cHHMM.cross.sectional = function(cluster.structure, occupancy="any") {
   Cluster_gene=as.matrix(Cluster_gene)
   #dim(Data_2)
   #head(Data_2[,1:6])
-  N2=(Cluster_gene)
+  N2t=(Cluster_gene)
+  N2 = N2t[match(colnames(N1), rownames(N2t)),]
   #head(N2[,1:6])
   #dim(N2)
   

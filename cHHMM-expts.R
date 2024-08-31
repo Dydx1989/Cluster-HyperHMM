@@ -534,7 +534,7 @@ g.all.alt = ggarrange( plot.cHHMM(cross.sectional.obs.alt$cross_sectional_data, 
                    nrow=3, ncol=2,
                    labels=c("A.", "B.", "C.", "D.", "E.", "F."))
 png(paste0(expt, "-alt-out-all.png"), width=1600*sf, height=1200*sf, res=72*sf)
-print(g.all)
+print(g.all.alt)
 dev.off()
 
 
@@ -564,3 +564,28 @@ png(paste0(expt, "-alt-comparison-matrices.png"), width=1000*sf, height=600*sf, 
 print(g.matrices.alt)
 dev.off()
 
+if(expt == "malaria-notfus") {
+  png("big-malaria-notfus-alt.png", width=1200*sf, height=1000*sf, res=72*sf)
+  print(
+    ggarrange(
+      ggarrange(
+        as.ggplot(pheatmap(src.data, color = c("white", "grey"), show_colnames = FALSE, treeheight_row = 0, treeheight_col = 0, legend=FALSE)),
+        ggarrange(
+          fviz_cluster(clustered.structure.alt[["km_res"]], data = clustered.structure.alt[["data"]],
+                       ellipse.type = "convex",
+                       palette = "viridis",
+                       ggtheme = theme_minimal()),
+          g.cids.alt,
+          nrow=2, heights=c(2,1), labels=c("B", "C")),
+        nrow=1, labels=c("A", "")),
+      plot.cHHMM(cross.sectional.obs.alt$cross_sectional_data, fit.cross.sectional.alt, label="Independent\nAny occupancy"),
+      nrow=2, labels=c("", "D"))
+  )
+  dev.off()
+}
+
+fever = which(rownames(src.data) == "fever")
+rowSums(src.data)[fever]
+ncol(src.data)
+rowSums(clustered.structure.alt$data)[fever]
+colSums(cross.sectional.obs.alt$cross_sectional_data)[2]
