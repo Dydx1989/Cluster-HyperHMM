@@ -527,3 +527,19 @@ plot.hypercube.flux = function(my.post, thresh = 0.05, node.labels = FALSE,
   }
   return(this.plot)
 }
+
+plot.matrix.comparison = function(m, tstr="") {
+  df = melt(m)
+  df$value = sapply(df$value, round, digits=2)
+  return( ggplot(df, aes(x=Var1, y=Var2, fill=value, label=value)) + 
+    geom_tile() +
+    geom_text() + 
+      scale_fill_gradientn(
+        colors = c("red", "white", "blue"),  # Define the colors
+        values = c(0, 0.5, 1),               # Set the corresponding values for the colors
+        limits = c(0, 1)                     # Ensure the scale is from 0 to 1
+      ) +
+      labs(x = "Earlier", y = "Later", fill = "Probability") +
+      theme_minimal() + ggtitle(tstr)
+  )
+} 
