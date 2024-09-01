@@ -394,10 +394,10 @@ plot.hypercube2 = function(translist,               # set of transitions
   return(cube.plot)
 }
 
-plot.cHHMM = function(data, fitted, label="") {
+plot.cHHMM = function(data, fitted, label="", max.layers = Inf) {
         bubble.src = fitted[["stats"]] 
         plot.bubs = plot.bubbles2(bubble.src, formatted=TRUE)
-        plot.flux = plot.hypercube.flux(fitted, thresh = 0.02) + 
+        plot.flux = plot.hypercube.flux(fitted, thresh = 0.02, max.layers=max.layers) + 
           theme(legend.position = "none") 
         if(all(data==data[1,1])) {
           plot.data = ggplot() + geom_blank() + ggtitle(label) + theme(plot.title = element_text(hjust = 1))
@@ -460,7 +460,8 @@ BinToDec <- function(state) {
 
 # adapted HyperTraPS plot for HyperHMM outputs
 plot.hypercube.flux = function(my.post, thresh = 0.05, node.labels = FALSE, 
-                               use.probability = FALSE, old.style = FALSE) {
+                               use.probability = FALSE, old.style = FALSE,
+                               max.layers = Inf) {
   ### produce hypercube subgraph
   bigL = my.post$L
   if(use.probability == TRUE) {
@@ -484,6 +485,11 @@ plot.hypercube.flux = function(my.post, thresh = 0.05, node.labels = FALSE,
     bs = V(trans.g)$name
     V(trans.g)$binname = bs
     layers = str_count(bs, "1")
+    which.go = which(layers > max.layers)
+    if(length(which.go) > 1) {
+      trans.g = delete_vertices(trans.g, which.go)
+      layers = layers[-which.go]
+    }
     if(use.probability == TRUE) {
       this.plot =  ggraph(trans.g, layout="sugiyama", layers=layers) + 
         geom_edge_link(aes(edge_width=Flux, edge_alpha=Flux, label=Change), color="#AAAAFF", 

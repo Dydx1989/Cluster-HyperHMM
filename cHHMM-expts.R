@@ -578,12 +578,13 @@ if(expt == "malaria-notfus") {
           g.cids.alt,
           nrow=2, heights=c(2,1), labels=c("B", "C")),
         nrow=1, labels=c("A", "")),
-      plot.cHHMM(cross.sectional.obs.alt$cross_sectional_data, fit.cross.sectional.alt, label="Independent\nAny occupancy"),
+      plot.cHHMM(cross.sectional.obs.alt$cross_sectional_data, fit.cross.sectional.alt, label="Independent\nAny occupancy", max.layers = 6),
       nrow=2, labels=c("", "D"))
   )
   dev.off()
 }
 
+### debugging content 
 fever = which(rownames(src.data) == "fever")
 rowSums(src.data)[fever]
 ncol(src.data)
