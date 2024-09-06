@@ -1,5 +1,4 @@
 library(pheatmap) ## for heatmap generation
-#library(tidyverse) ## for data wrangling
 library(ggplotify) ## to convert pheatmap to ggplot2
 library(heatmaply) ## for constructing 
 library("cluster")
@@ -8,14 +7,10 @@ library("magrittr")
 library(latticeExtra)
 library(data.table)
 library(Matrix)
-library("data.table")
-library("cluster")
-library("magrittr")
 library(NbClust)
 library(phytools)
 library(phangorn)
 library(ape)
-### New packages
 library(parameters)
 library(easystats)
 library(Rcpp)
