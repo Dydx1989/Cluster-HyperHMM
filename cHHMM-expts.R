@@ -1,8 +1,7 @@
 required_packages <- c(
-  "pheatmap", "ggplotify", "heatmaply", "cluster", 
-  "factoextra", "magrittr", "latticeExtra", "data.table", 
-  "Matrix", "NbClust", "phytools", "phangorn", "ape",
-  "parameters", "easystats", "Rcpp", "RcppArmadillo", 
+  "pheatmap", "ggplotify", "cluster", 
+  "factoextra", "latticeExtra", "NbClust", "phytools", "phangorn", "ape",
+  "parameters", "Rcpp", "RcppArmadillo", 
   "ggpubr", "git2r"
 )
 
