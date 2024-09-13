@@ -1,22 +1,4 @@
-required_packages <- c(
-  "pheatmap", "ggplotify", "cluster", 
-  "factoextra", "latticeExtra", "NbClust", "phytools", "phangorn", "ape",
-  "parameters", "Rcpp", "RcppArmadillo", 
-  "ggpubr", "git2r"
-)
-
-# Function to check and install missing packages
-check_and_install <- function(pkg) {
-  if (!require(pkg, character.only = TRUE)) {
-    install.packages(pkg, dependencies = TRUE)
-    library(pkg, character.only = TRUE)
-  }
-}
-
-# Apply the function to each package
-sapply(required_packages, check_and_install)
-
-# Source the cHHMM.R script
+#Gap method without Monte Carlo (“bootstrap”) samples (B)
 source("cHHMM.R")
 
 # we must have source data with observations as rows and features as columns
@@ -35,12 +17,13 @@ expt = "malaria"
 expt = "malaria-full"
 expt = "malaria-notfus"
 expt = "synthetic2"
+expt = "synthetic3"
 #expt = "PATHOGEN"
 sf = 2
 given.tree = FALSE
 reduce.data = FALSE
 if(expt == "Kleborate") {
-  reduce.data = FALSE
+  reduce.data = TRUE
 }
 
 if(expt == "AMR") {
@@ -95,6 +78,33 @@ if(expt == "AMR") {
       synth.data[i,] = c(rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.9), rbinom(nc/4, 1, 0.9), rbinom(nc/4, 1, 0.9))
     } else if(i <= 7*fc) {
       synth.data[i,] = c(rbinom(nc/4, 1, 0.9), rbinom(nc/4, 1, 0.9), rbinom(nc/4, 1, 0.9), rbinom(nc/4, 1, 0.9))
+    } else {
+      synth.data[i,] = rbinom(nc, 1, 0.08)
+    }
+  }
+  src.data = as.data.frame(t(synth.data))
+} else if(expt == "synthetic3") {
+  set.seed(1)
+  nr = 200
+  nc = 160
+  fc = 20
+  synth.data = matrix(0, nrow=nr, ncol=nc)
+  for(i in 1:nrow(synth.data)) {
+    # 1000, 1100, 1110, 0001, 0011, 1110, 1111
+    if(i <= 1*fc) {
+      synth.data[i,] = c(rbinom(nc/4, 1, 0.5), rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.1))
+    } else if(i <= 2*fc) {
+      synth.data[i,] = c(rbinom(nc/4, 1, 0.75), rbinom(nc/4, 1, 0.5), rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.1))
+    } else if(i <= 3*fc) {
+      synth.data[i,] = c(rbinom(nc/4, 1, 0.75), rbinom(nc/4, 1, 0.75), rbinom(nc/4, 1, 0.5), rbinom(nc/4, 1, 0.1))
+    } else if(i <= 4*fc) {
+      synth.data[i,] = c(rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.5))
+    } else if(i <= 5*fc) {
+      synth.data[i,] = c(rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.5), rbinom(nc/4, 1, 0.75))
+    } else if(i <= 6*fc) {
+      synth.data[i,] = c(rbinom(nc/4, 1, 0.1), rbinom(nc/4, 1, 0.5), rbinom(nc/4, 1, 0.75), rbinom(nc/4, 1, 0.75))
+    } else if(i <= 7*fc) {
+      synth.data[i,] = c(rbinom(nc/4, 1, 0.75), rbinom(nc/4, 1, 0.75), rbinom(nc/4, 1, 0.75), rbinom(nc/4, 1, 0.75))
     } else {
       synth.data[i,] = rbinom(nc, 1, 0.08)
     }
@@ -186,7 +196,7 @@ if(expt == "AMR") {
   given.tree = TRUE
 }
 
-if(reduce.data == FALSE) {
+if(reduce.data == TRUE) {
   set.seed(1)
   old.src.data = src.data
   src.data = src.data[which(rowSums(src.data)>10),]
@@ -195,11 +205,6 @@ if(reduce.data == FALSE) {
 
 ## Use plot for Gap method without Monte Carlo (“bootstrap”) samples (B)
 #plot((clustered.structure[["gap_stat"]]))
-
-# Create sample plots A, B, C, D
-plot_A <-as.ggplot(pheatmap(src.data , color = c("white", "grey"), show_rownames =TRUE, 
-                            legend=FALSE,show_colnames = FALSE,cluster_rows = FALSE,
-                            cluster_cols = FALSE)) 
 
 png(paste0(expt, "-data.png"), width=600*sf, height=400*sf, res=72*sf)
 #print(pheatmap(src.data))
@@ -365,8 +370,8 @@ if(expt == "malaria") {
 }
 
 
-if(expt == "synthetic2") {
-  png("big-synth2-alt.png", width=1200*sf, height=1000*sf, res=72*sf)
+if(expt == "synthetic3") {
+  png("big-synth3-alt.png", width=1200*sf, height=1000*sf, res=72*sf)
   print(
     ggarrange(
       ggarrange(
@@ -390,7 +395,7 @@ if(expt == "Kleborate") {
   print(
     ggarrange(
       ggarrange(
-        as.ggplot(pheatmap(src.data, color = c("white", "grey"), show_colnames = FALSE,show_rownames =FALSE, treeheight_row = 0, treeheight_col = 0, legend=FALSE)),
+        as.ggplot(pheatmap(src.data, color = c("white", "grey"), show_colnames = FALSE, treeheight_row = 0, treeheight_col = 0, legend=FALSE)),
         ggarrange(
           fviz_cluster(clustered.structure[["km_res"]], data = clustered.structure[["data"]],
                        ellipse.type = "convex",
@@ -410,7 +415,7 @@ if(expt == "Kleborate") {
   print(
     ggarrange(
       ggarrange(
-        as.ggplot(pheatmap(src.data, color = c("white", "grey"), show_colnames = FALSE,show_rownames =FALSE, treeheight_row = 0, treeheight_col = 0, legend=FALSE)),
+        as.ggplot(pheatmap(src.data, color = c("white", "grey"), show_colnames = FALSE, treeheight_row = 0, treeheight_col = 0, legend=FALSE)),
         ggarrange(
           fviz_cluster(clustered.structure[["km_res"]], data = clustered.structure[["data"]],
                        ellipse.type = "convex",
@@ -429,30 +434,16 @@ comp.any.cs.phy = cHHMM.matrix.comparison(fit.cross.sectional, fit.phylogenetic)
 comp.cs = cHHMM.matrix.comparison(fit.cross.sectional, fit.cross.sectional.majority)
 comp.phy = cHHMM.matrix.comparison(fit.phylogenetic, fit.phylogenetic.majority)
 
-rwb.col <- colorRampPalette(c("red", "white", "blue"))(100)
-
-g.any.cs.phy = as.ggplot(pheatmap(comp.any.cs.phy$results_matrix, show_rownames = TRUE,cluster_cols=F,cluster_rows=F,
-         cex=1,clustering_distance_rows = "manhattan", cex=1,
-         clustering_distance_cols = "manhattan", clustering_method = "complete",border_color = TRUE,display_numbers = T,
-         color = rwb.col))
-g.cs = as.ggplot(pheatmap(comp.cs$results_matrix, show_rownames = TRUE,cluster_cols=F,cluster_rows=F,
-                                  cex=1,clustering_distance_rows = "manhattan", cex=1,
-                                  clustering_distance_cols = "manhattan", clustering_method = "complete",border_color = TRUE,display_numbers = T,
-                          color = rwb.col))
-g.phy = as.ggplot(pheatmap(comp.phy$results_matrix, show_rownames = TRUE,cluster_cols=F,cluster_rows=F,
-                                  cex=1,clustering_distance_rows = "manhattan", cex=1,
-                                  clustering_distance_cols = "manhattan", clustering_method = "complete",border_color = TRUE,display_numbers = T,
-                           color = rwb.col))
+g.any.cs.phy = plot.matrix.comparison(comp.any.cs.phy$results_matrix, "A. Cross-sectional vs similarity")
+g.cs = plot.matrix.comparison(comp.cs$results_matrix, "B. Any vs majority occupancy")
+g.phy = plot.matrix.comparison(comp.phy$results_matrix, "C. Similarity; any vs majority occupancy")
 g.matrices = ggarrange(g.any.cs.phy,
-                       g.cs,
-                       g.phy,
-                       g.cids,
-                       labels = c("A. Any cs v phy", "B. cs any vs maj", "C. phy any vs maj", ""))
+                           g.cs,
+                           g.phy)
 
 png(paste0(expt, "-comparison-matrices.png"), width=1000*sf, height=600*sf, res=72*sf)
 print(g.matrices)
 dev.off()
-
 
 ############## Optimal cluster: NbClust
 
@@ -565,23 +556,12 @@ comp.any.cs.phy.alt = cHHMM.matrix.comparison(fit.cross.sectional.alt, fit.phylo
 comp.cs.alt = cHHMM.matrix.comparison(fit.cross.sectional.alt, fit.cross.sectional.majority.alt)
 comp.phy.alt = cHHMM.matrix.comparison(fit.phylogenetic.alt, fit.phylogenetic.majority.alt)
 
-g.any.cs.phy.alt = as.ggplot(pheatmap(comp.any.cs.phy.alt$results_matrix, show_rownames = TRUE,cluster_cols=F,cluster_rows=F,
-                                  cex=1,clustering_distance_rows = "manhattan", cex=1,
-                                  clustering_distance_cols = "manhattan", clustering_method = "complete",border_color = TRUE,display_numbers = T,
-                                  color = rwb.col))
-g.cs.alt = as.ggplot(pheatmap(comp.cs.alt$results_matrix, show_rownames = TRUE,cluster_cols=F,cluster_rows=F,
-                          cex=1,clustering_distance_rows = "manhattan", cex=1,
-                          clustering_distance_cols = "manhattan", clustering_method = "complete",border_color = TRUE,display_numbers = T,
-                          color = rwb.col))
-g.phy.alt = as.ggplot(pheatmap(comp.phy.alt$results_matrix, show_rownames = TRUE,cluster_cols=F,cluster_rows=F,
-                           cex=1,clustering_distance_rows = "manhattan", cex=1,
-                           clustering_distance_cols = "manhattan", clustering_method = "complete",border_color = TRUE,display_numbers = T,
-                           color = rwb.col))
+g.any.cs.phy.alt = plot.matrix.comparison(comp.any.cs.phy.alt$results_matrix, "A. Cross-sectional vs similarity")
+g.cs.alt = plot.matrix.comparison(comp.cs.alt$results_matrix, "B. Any vs majority occupancy")
+g.phy.alt = plot.matrix.comparison(comp.phy.alt$results_matrix, "C. Similarity; any vs majority occupancy")
 g.matrices.alt = ggarrange(g.any.cs.phy.alt,
                        g.cs.alt,
-                       g.phy.alt,
-                       g.cids.alt,
-                       labels = c("A. Any cs v phy", "B. cs any vs maj", "C. phy any vs maj", ""))
+                       g.phy.alt)
 
 png(paste0(expt, "-alt-comparison-matrices.png"), width=1000*sf, height=600*sf, res=72*sf)
 print(g.matrices.alt)
@@ -601,12 +581,13 @@ if(expt == "malaria-notfus") {
           g.cids.alt,
           nrow=2, heights=c(2,1), labels=c("B", "C")),
         nrow=1, labels=c("A", "")),
-      plot.cHHMM(cross.sectional.obs.alt$cross_sectional_data, fit.cross.sectional.alt, label="Independent\nAny occupancy"),
+      plot.cHHMM(cross.sectional.obs.alt$cross_sectional_data, fit.cross.sectional.alt, label="Independent\nAny occupancy", max.layers = 6),
       nrow=2, labels=c("", "D"))
   )
   dev.off()
 }
 
+### debugging content 
 fever = which(rownames(src.data) == "fever")
 rowSums(src.data)[fever]
 ncol(src.data)
