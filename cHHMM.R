@@ -1,18 +1,13 @@
 library(pheatmap) ## for heatmap generation
 library(ggplotify) ## to convert pheatmap to ggplot2
-library(heatmaply) ## for constructing 
 library("cluster")
 library("factoextra")
-library("magrittr")
 library(latticeExtra)
-library(data.table)
-library(Matrix)
 library(NbClust)
 library(phytools)
 library(phangorn)
 library(ape)
 library(parameters)
-library(easystats)
 library(Rcpp)
 library(RcppArmadillo)
 library(ggpubr)
