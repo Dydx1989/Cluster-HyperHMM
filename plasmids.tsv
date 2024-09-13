@@ -1,0 +1,37 @@
+Gene	Cluster	Species	NCBI Chromosome	NCBI Plasmid	NCBI WGS	NCBI GI
+sul1	1	Klebsiella pneumoniae	8.22%	10.08%	26.67%	37.14%
+mphA	1	Klebsiella pneumoniae	1.07%	5.43%	17.44%	3.81%
+dfrA12	1	Klebsiella pneumoniae	1.24%	3.89%	15.97%	3.81%
+aadA2	1	Klebsiella pneumoniae	17.46%	4.16%	18.3%	34.29%
+KPC-2	2	Klebsiella pneumoniae	0.65%	5.68%	12.41%	0%
+catA1	2	Klebsiella pneumoniae	0.83%	2.23%	11.28%	0%
+aph(3')-Ia	2	Klebsiella pneumoniae	1.24%	3.87%	13.4%	3.81%
+TEM-1	3	Klebsiella pneumoniae	2.49%	11.55%	29.85%	0.95%	
+CTX-M-15	3	Klebsiella pneumoniae	10.83%	5.41%	20.83%	0%	
+tet(D)	5	Klebsiella pneumoniae	0.24%	1.24%	6.61%	0%
+qnrS1	5	Klebsiella pneumoniae	0.36%	3.83%	8.25%	1.9%
+NDM-1	5	Klebsiella pneumoniae	0.41%	1.88%	4.1%	0%
+msrE	5	Klebsiella pneumoniae	1.01%	1.68%	2.89%	0.95%
+mphE	5	Klebsiella pneumoniae	1.3%	1.81%	3.14%	0%
+dfrA27	5	Klebsiella pneumoniae	0%	1.54%	3.27%	0%
+dfrA1	5	Klebsiella pneumoniae	0.24%	1.13%	4.38%	0%
+catII	5	Klebsiella pneumoniae	0%	0%	0.1%	0%
+arr-3	5	Klebsiella pneumoniae	0.3%	2.52%	4.62%	1.9%
+armA	5	Klebsiella pneumoniae	1.24%	1.55%	3.08%	3.81%
+aph(3')-via	5	Klebsiella pneumoniae	0.18%	0.79%	1.41%	0%
+aadA16	5	Klebsiella pneumoniae	0.06%	1.51%	3.55%	0.95%
+aac(3)-IId	5	Klebsiella pneumoniae	2.49%	2.52%	5.96%	0%
+tet(A)	6	Klebsiella pneumoniae	1.95%	6.41%	16.73%	0%
+qnrB1	6	Klebsiella pneumoniae	0.89%	2.34%	8.84%	0%
+OXA-1	6	Klebsiella pneumoniae	4.67%	3.13%	15.2%	0%
+catB3	6	Klebsiella pneumoniae	0.36%	0.98%	1.63%	5.71%
+aac(6')-Ib-cr1	6	Klebsiella pneumoniae	0%	0%	0.05%	5.71%
+aac(3)-IIa	6	Klebsiella pneumoniae	0%	0%	0%	6.67%
+sul2	7	Klebsiella pneumoniae	2.07%	6.95%	19.3%	2.86%
+APH(6)-Id	7	Klebsiella pneumoniae	1.72%	6.63%	18.75%	1.9%
+APH(6)-Ia	7	NA	NA	NA	NA	NA
+dfrA14	7	Klebsiella pneumoniae	0.18%	5.27%	15.83%	0%
+OXA-9	8	Klebsiella pneumoniae	0.24%	0.93%	4.83%	0%
+KPC-3	8	Klebsiella pneumoniae	0.24%	1.36%	6.72%	0.95%
+aadA	8	Klebsiella pneumoniae	0.53%	2.43%	9.05%	1.9%
+aac(6')-Ib'	8	Klebsiella pneumoniae	0%	0.28%	0.12%	0%
