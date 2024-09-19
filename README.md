@@ -47,6 +47,6 @@ See the above figure for each key function's position in the workflow. These are
 | `HyperHMM` | Performs HyperHMM inference (see refs) | (see documentation) |
 | `plot.cHHMM` | Takes a dataset and a HyperHMM fit and produces summary visualisations of the output | |
 | `cHHMM.matrix.comparison` | Takes two HyperHMM fits (from different protocol choices) and returns a matrix summarising the similarities and differences in the inferred dynamics | |
-| `.Rdata file` |Consists of results generated through the following functions: `cHHMM.cross.sectional`, `cHHMM.cluster.features`, and `cHHMM.phylogenetic.estimation` for Klebsiella data, providing quick access and demonstration. | E.g.: `load("cross.sectional.obs.RData");load("fit.cross.sectional.RData"); plot.cHHMM(cross.sectional.obs$cross_sectional_data, fit.cross.sectional, label="Independent\nMajority occupancy")` 
+| `.Rdata file` |Consists of results generated through the following functions: `cHHMM.cross.sectional`, `cHHMM.cluster.features`, and `cHHMM.phylogenetic.estimation` for Klebsiella data, providing quick access and demonstration. | E.g. `load("cross.sectional.obs.RData");load("fit.cross.sectional.RData"); plot.cHHMM(cross.sectional.obs$cross_sectional_data, fit.cross.sectional, label="Independent\nMajority occupancy")` 
  |
 
